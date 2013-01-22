@@ -1,0 +1,20 @@
+<viewdata model="IList[[BlogPost]]" />
+
+<content name="page-title">
+Manage Queued Posts
+</content>
+
+<content name="content">
+  <h2>Technophobia Labs</h2>
+
+  <ol>
+    <li each="var post in Model">
+      <a href="!{post.GetUrl()}">${post.Title}</a> -
+      <a href="!{post.GetApprovalUrl()}">
+        <if condition="!post.Published">Approve</if>
+        <else>Unapprove</else>
+      </a>
+    </li>
+  </ol>
+</content>
+

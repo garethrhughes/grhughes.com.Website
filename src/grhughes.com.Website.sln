@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "grhughes.com.Website.Web", "grhughes.com.Website.Web\grhughes.com.Website.Web.csproj", "{AC506FBF-3048-44A5-9762-C14A6AA5B8EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "grhughes.com.Website.MetaWeblogApi", "grhughes.com.Website.MetaWeblog\grhughes.com.Website.MetaWeblogApi.csproj", "{180D7AC3-0C59-4C16-8820-363F9B0CF2EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "grhughes.com.Website.Core", "grhughes.com.Website.Core\grhughes.com.Website.Core.csproj", "{D412E8C8-7908-4280-B23E-86F7BA2A9507}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "grhughes.com.Website.Migrations", "grhughes.com.Website.Migrations\grhughes.com.Website.Migrations.csproj", "{D4A35192-D708-412D-B197-19B09961B45B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AC506FBF-3048-44A5-9762-C14A6AA5B8EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC506FBF-3048-44A5-9762-C14A6AA5B8EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC506FBF-3048-44A5-9762-C14A6AA5B8EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC506FBF-3048-44A5-9762-C14A6AA5B8EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{180D7AC3-0C59-4C16-8820-363F9B0CF2EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{180D7AC3-0C59-4C16-8820-363F9B0CF2EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{180D7AC3-0C59-4C16-8820-363F9B0CF2EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{180D7AC3-0C59-4C16-8820-363F9B0CF2EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D412E8C8-7908-4280-B23E-86F7BA2A9507}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D412E8C8-7908-4280-B23E-86F7BA2A9507}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D412E8C8-7908-4280-B23E-86F7BA2A9507}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D412E8C8-7908-4280-B23E-86F7BA2A9507}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4A35192-D708-412D-B197-19B09961B45B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4A35192-D708-412D-B197-19B09961B45B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4A35192-D708-412D-B197-19B09961B45B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4A35192-D708-412D-B197-19B09961B45B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = grhughes.com.Website.Web\grhughes.com.Website.Web.csproj
+		Policies = $0
+		$0.TextStylePolicy = $1
+		$1.FileWidth = 120
+		$1.TabWidth = 2
+		$1.RemoveTrailingWhitespace = True
+		$1.inheritsSet = VisualStudio
+		$1.inheritsScope = text/plain
+		$1.scope = text/plain
+		$0.TextStylePolicy = $2
+		$2.inheritsSet = null
+		$2.scope = text/x-csharp
+		$0.CSharpFormattingPolicy = $3
+		$3.inheritsSet = Mono
+		$3.inheritsScope = text/x-csharp
+		$3.scope = text/x-csharp
+	EndGlobalSection
+EndGlobal

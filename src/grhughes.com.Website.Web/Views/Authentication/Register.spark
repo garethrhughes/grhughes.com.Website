@@ -1,0 +1,9 @@
+<content name="page-title">
+Register
+</content>
+
+<content name="content">
+  <h2>Technophobia Labs</h2>
+
+  <a href="${UrlHelper.GoogleAccessUrl}">Register with your Technophobia Google Apps account.</a>
+</content>

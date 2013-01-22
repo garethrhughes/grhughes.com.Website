@@ -1,0 +1,77 @@
+﻿@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic);
+/* font-family: 'Ubuntu', sans-serif; */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600,600italic,700,700italic,800,800italic);
+/* font-family: 'Open Sans', sans-serif; */
+
+body {
+  font-family: 'Segoe UI', 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+h1, h2, h3, h4 {
+  font-weight: normal;
+}
+
+#top-bar {
+  height: 15px;
+  background-color: #444444;
+}
+
+#wrapper {
+  width: 100%;
+}
+
+header {
+  height: 100px;
+  background-color: #EEEEEE;
+}
+
+header h1 {
+  font-size: 25px;
+  line-height: 95px;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: inline-block;
+}
+
+header h1 span {
+  color: #999;
+}
+
+header #header-wrapper {
+  width: 1170px;
+  margin: 0px auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#main {
+  width: 1170px;
+  margin: 2em auto;
+}
+
+#search-container {
+  float: right;
+  margin-top: 30px;
+}
+
+footer {
+  height: 200px;
+  background-color: #444;
+}
+
+ul.left-nav 
+{
+  margin-top: 1em;
+}
+
+article span.info 
+{
+  display: inline-block;
+  margin-bottom: 1em;
+  margin-right: 1em;
+}
+
+#posts article:not(:first-child) {
+    margin-top: 3em;
+}

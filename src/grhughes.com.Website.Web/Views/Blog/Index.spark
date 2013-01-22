@@ -1,0 +1,16 @@
+﻿<viewdata model="IList[[BlogPost]]" />
+
+<content name="page-title">
+Labs
+</content>
+
+<content name="content">
+  <h2>Technophobia Labs</h2>
+
+  <ol>
+    <li each="var post in Model">
+      <a href="!{post.GetUrl()}">${post.Title}</a>
+    </li>
+  </ol>
+</content>
+

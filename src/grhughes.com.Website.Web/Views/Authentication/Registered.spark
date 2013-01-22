@@ -1,0 +1,9 @@
+<viewdata model="dynamic" />
+<content name="page-title">
+Register
+</content>
+
+<content name="content">
+  Welcome ${Model.data.name} - ${Model.data.email}
+ Your access code is: ${Model.code}
+</content>

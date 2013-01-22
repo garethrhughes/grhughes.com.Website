@@ -1,0 +1,1 @@
+.\packages\FluentMigrator.1.0.6.0\tools\Migrate.exe -db SqlServer2008 -connectionString "Server=(local)\SQLEXPRESS; Database=blog; Integrated Security=SSPI" -a ".\grhughes.com.Website.Migrations\bin\Debug\Technophobia.TechnicalBlogs.Migrations.dll"

@@ -1,0 +1,28 @@
+<content name="page-title">
+Login
+</content>
+
+<content name="content">
+
+  <form action="" method="post">
+
+    <fieldset>
+
+      <div>Username
+      <input type="text" name="Username" />
+</div>
+<div>
+Password
+      <input type="password" name="Password" />
+</div>
+
+      <div>
+        <input type="submit" name="submit" value="Submit" />
+      </div>
+
+    </fieldset>
+
+  </form>
+
+
+</content>

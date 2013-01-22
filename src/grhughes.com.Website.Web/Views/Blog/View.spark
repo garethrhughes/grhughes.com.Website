@@ -1,0 +1,13 @@
+<viewdata model="BlogPost" />
+
+<content name="page-title">
+${Model.Title} - Labs
+</content>
+
+<content name="content">
+  <h2>${Model.Title}</h2>
+
+  !{Model.Content}
+
+</content>
+
