@@ -2,15 +2,15 @@
   $().ready(function () {
     var sidebar = $('#sidebar'),
         top = sidebar.offset().top,
-        height = sidebar.height(),
         footer = $('footer');
 
 
     $(window).scroll(function () {
-      var scrollTop = (document.documentElement && document.documentElement.scrollTop) ||  document.body.scrollTop;
+      var scrollTop = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
       if (scrollTop > (top - 20)) {
+        var height = sidebar.height(),
+            footerTop = footer.offset().top;
 
-        var footerTop = footer.offset().top;
         if (scrollTop + height > (footerTop - 40)) {
           sidebar.css({ position: 'fixed', top: -(scrollTop + height - footerTop + 20), width: sidebar.width() });
         } else {
