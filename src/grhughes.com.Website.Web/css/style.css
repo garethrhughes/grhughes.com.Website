@@ -13,7 +13,7 @@ h1, h2, h3, h4 {
 }
 
 #top-bar {
-  height: 15px;
+  height: 20px;
   background-color: #444444;
 }
 
@@ -85,6 +85,12 @@ footer p.heading
   padding-bottom: 10px;
 }
 
+footer p.heading small
+{
+  float: right;
+  font-style: italic;
+}
+
 footer {
   height: 200px;
   background-color: #565656;
@@ -113,6 +119,11 @@ footer ul li
   margin-bottom: 5px;
 }
 
+footer ul#social-media li
+{
+  margin-right: 8px;
+}
+
 footer ul#slideshow li img
 {
   width: 55px;
@@ -127,3 +138,7 @@ div.bottom
   color: #C3C0B9; 
 }
 
+#disqus_thread 
+{
+  margin-top: 2em;
+}

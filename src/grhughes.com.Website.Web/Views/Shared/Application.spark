@@ -2,13 +2,14 @@
 <html lang="en">
   
   <head>
-    <title>Gareth Hughes</title>
+    <title>Gareth Hughes > Blog</title>
 
     <link href="css/bootstrap.css" type="text/css" rel="stylesheet"/>
     <link href="css/style.css" type="text/css" rel="stylesheet"/>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
 
+    <link rel="shortcut icon" type="image/ico" href="/img/favicon.ico"/>
     <!--[if lt IE 9]>
     <script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -38,31 +39,15 @@
 
         <div class="container-fluid">
           <div class="row-fluid">
-            <div class="span3">
 
-              <div id="sidebar">
-
-                <div class="thumbnail">
-
-                  <img src="/img/me.jpg" alt="Gareth Hughes" />
-                  <!--<img data-src="holder.js/300x200" alt="300x200" style="width: 300px; height: 200px;" src="data:image/png;base64,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">-->
-                  <div class="caption">
-                    <h3>Thumbnail label</h3>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                  </div>
-                </div>
-
-                <ul class="nav nav-tabs nav-stacked left-nav">
-                  <li class="nav-header">List header</li>
-                  <li class="active"><a href="#">Home</a></li>
-                  <li><a href="#">Library</a></li>
-                </ul>
-
-              </div>
-
-            </div>
 
             <div class="span9">
+              <div class="alert alert-block">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <h4>Warning!</h4>
+                Best check yo self, you're not...
+              </div>
+
               <ul class="breadcrumb">
                 <li><a href="#">Home</a> <span class="divider">/</span></li>
                 <li><a href="#">Library</a> <span class="divider">/</span></li>
@@ -70,6 +55,8 @@
               </ul>
 
               <div id="posts">
+   
+
                 <article>
 
                   <h2>Something about something</h2>
@@ -85,6 +72,7 @@
                   <p>Morbi eget elit eget dolor condimentum vestibulum ac vel lectus. Donec posuere nisl eget purus pellentesque eget pulvinar purus placerat. Nullam tempor mattis tortor, non sollicitudin dolor tempor quis. Ut placerat dictum vehicula. Fusce metus libero, mollis eu ultricies non, suscipit non tellus. Ut quis massa nec sapien dignissim auctor eu in leo. Morbi mattis, diam vitae porttitor scelerisque, mauris massa condimentum velit, a imperdiet nisl massa ut nisi. Aenean aliquet, lorem nec lacinia elementum, magna justo vestibulum ante, sed semper nibh eros vel augue. Proin eget nisi mattis elit hendrerit blandit sit amet a mi. Curabitur vitae orci nibh, eget tincidunt tellus. In hac habitasse platea dictumst. Sed vel diam ut nulla fringilla bibendum. Vestibulum felis ante, venenatis ac luctus ut, egestas nec elit. Curabitur enim libero, posuere vestibulum tempor et, interdum sodales nisi.</p>
 
                   <p>Integer non tempus nulla. Phasellus sapien metus, dignissim non sodales sed, pulvinar in ipsum. Fusce vestibulum orci tortor. Fusce ut ligula ac sem dapibus aliquet. Etiam iaculis ultrices blandit. Curabitur et quam sapien, in accumsan felis. Mauris mauris purus, tincidunt sollicitudin hendrerit mattis, iaculis a massa. Maecenas enim risus, interdum in accumsan nec, pellentesque quis urna. Nam bibendum molestie velit, laoreet euismod nunc porta nec. Aliquam rutrum eleifend feugiat. Quisque facilisis egestas viverra. Donec nibh lacus, fringilla id fermentum non, ultrices at purus.</p>
+                
                 </article>
 
                 <article>
@@ -120,6 +108,22 @@
 
                   <p>Integer non tempus nulla. Phasellus sapien metus, dignissim non sodales sed, pulvinar in ipsum. Fusce vestibulum orci tortor. Fusce ut ligula ac sem dapibus aliquet. Etiam iaculis ultrices blandit. Curabitur et quam sapien, in accumsan felis. Mauris mauris purus, tincidunt sollicitudin hendrerit mattis, iaculis a massa. Maecenas enim risus, interdum in accumsan nec, pellentesque quis urna. Nam bibendum molestie velit, laoreet euismod nunc porta nec. Aliquam rutrum eleifend feugiat. Quisque facilisis egestas viverra. Donec nibh lacus, fringilla id fermentum non, ultrices at purus.</p>
                 </article>
+
+                <div id="disqus_thread"></div>
+                <script type="text/javascript">
+                  /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+                  var disqus_shortname = 'garethhughes'; // required: replace example with your forum shortname
+
+                  /* * * DON'T EDIT BELOW THIS LINE * * */
+                  (function () {
+                    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                    dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                  })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
               </div>
               <ul class="pager">
                 <li class="previous disabled">
@@ -127,6 +131,67 @@
                 </li>
                 <li class="next"><a href="#">Newer &rarr;</a></li>
               </ul>
+            </div>
+
+            <div class="span3">
+
+              <div id="sidebar">
+
+                <div class="thumbnail">
+                  <img src="/img/me.jpg" alt="Gareth Hughes" />
+             
+                  <div class="caption">
+                    <h3>Thumbnail label</h3>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                  </div>
+                </div>
+
+                <section>
+                  <h3 class="widget-title">Navigation</h3>
+                  <ul class="nav nav-tabs nav-stacked left-nav">
+ 
+                    <li class="active"><a href="#">Blog</a></li>
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                  </ul>
+                </section>
+
+                <section>
+                  <h3 class="widget-title">Latest Posts</h3>
+
+                  <div class="media">
+                    <a class="pull-left" href="#">
+                      <img class="media-object" data-src="holder.js/64x64" alt="64x64" style="width: 64px; height: 64px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACDUlEQVR4Xu2Yz6/BQBDHpxoEcfTjVBVx4yjEv+/EQdwa14pTE04OBO+92WSavqoXOuFp+u1JY3d29rvfmQ9r7Xa7L8rxY0EAOAAlgB6Q4x5IaIKgACgACoACoECOFQAGgUFgEBgEBnMMAfwZAgaBQWAQGAQGgcEcK6DG4Pl8ptlsRpfLxcjYarVoOBz+knSz2dB6vU78Lkn7V8S8d8YqAa7XK83ncyoUCjQej2m5XNIPVmkwGFC73TZrypjD4fCQAK+I+ZfBVQLwZlerFXU6Her1eonreJ5HQRAQn2qj0TDukHm1Ws0Ix2O2260RrlQqpYqZtopVAoi1y+UyHY9Hk0O32w3FkI06jkO+74cC8Dh2y36/p8lkQovFgqrVqhFDEzONCCoB5OSk7qMl0Gw2w/Lo9/vmVMUBnGi0zi3Loul0SpVKJXRDmphvF0BOS049+n46nW5sHRVAXMAuiTZObcxnRVA5IN4DJHnXdU3dc+OLP/V63Vhd5haLRVM+0jg1MZ/dPI9XCZDUsbmuxc6SkGxKHCDzGJ2j0cj0A/7Mwti2fUOWR2Km2bxagHgt83sUgfcEkN4RLx0phfjvgEdi/psAaRf+lHmqEviUTWjygAC4EcKNEG6EcCOk6aJZnwsKgAKgACgACmS9k2vyBwVAAVAAFAAFNF0063NBAVAAFAAFQIGsd3JN/qBA3inwDTUHcp+19ttaAAAAAElFTkSuQmCC">
+                    </a>
+                    <div class="media-body">
+                      <h4 class="media-heading">Media heading</h4>
+                      Cras sit amet nibh libero, in gravida nulla. 
+                    </div>
+                  </div>
+
+                  <div class="media">
+                    <a class="pull-left" href="#">
+                      <img class="media-object" data-src="holder.js/64x64" alt="64x64" style="width: 64px; height: 64px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACDUlEQVR4Xu2Yz6/BQBDHpxoEcfTjVBVx4yjEv+/EQdwa14pTE04OBO+92WSavqoXOuFp+u1JY3d29rvfmQ9r7Xa7L8rxY0EAOAAlgB6Q4x5IaIKgACgACoACoECOFQAGgUFgEBgEBnMMAfwZAgaBQWAQGAQGgcEcK6DG4Pl8ptlsRpfLxcjYarVoOBz+knSz2dB6vU78Lkn7V8S8d8YqAa7XK83ncyoUCjQej2m5XNIPVmkwGFC73TZrypjD4fCQAK+I+ZfBVQLwZlerFXU6Her1eonreJ5HQRAQn2qj0TDukHm1Ws0Ix2O2260RrlQqpYqZtopVAoi1y+UyHY9Hk0O32w3FkI06jkO+74cC8Dh2y36/p8lkQovFgqrVqhFDEzONCCoB5OSk7qMl0Gw2w/Lo9/vmVMUBnGi0zi3Loul0SpVKJXRDmphvF0BOS049+n46nW5sHRVAXMAuiTZObcxnRVA5IN4DJHnXdU3dc+OLP/V63Vhd5haLRVM+0jg1MZ/dPI9XCZDUsbmuxc6SkGxKHCDzGJ2j0cj0A/7Mwti2fUOWR2Km2bxagHgt83sUgfcEkN4RLx0phfjvgEdi/psAaRf+lHmqEviUTWjygAC4EcKNEG6EcCOk6aJZnwsKgAKgACgACmS9k2vyBwVAAVAAFAAFNF0063NBAVAAFAAFQIGsd3JN/qBA3inwDTUHcp+19ttaAAAAAElFTkSuQmCC">
+                    </a>
+                    <div class="media-body">
+                      <h4 class="media-heading">Media heading</h4>
+                      Cras sit amet nibh libero, in gravida nulla. 
+                    </div>
+                  </div>
+
+                  <div class="media">
+                    <a class="pull-left" href="#">
+                      <img class="media-object" data-src="holder.js/64x64" alt="64x64" style="width: 64px; height: 64px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACDUlEQVR4Xu2Yz6/BQBDHpxoEcfTjVBVx4yjEv+/EQdwa14pTE04OBO+92WSavqoXOuFp+u1JY3d29rvfmQ9r7Xa7L8rxY0EAOAAlgB6Q4x5IaIKgACgACoACoECOFQAGgUFgEBgEBnMMAfwZAgaBQWAQGAQGgcEcK6DG4Pl8ptlsRpfLxcjYarVoOBz+knSz2dB6vU78Lkn7V8S8d8YqAa7XK83ncyoUCjQej2m5XNIPVmkwGFC73TZrypjD4fCQAK+I+ZfBVQLwZlerFXU6Her1eonreJ5HQRAQn2qj0TDukHm1Ws0Ix2O2260RrlQqpYqZtopVAoi1y+UyHY9Hk0O32w3FkI06jkO+74cC8Dh2y36/p8lkQovFgqrVqhFDEzONCCoB5OSk7qMl0Gw2w/Lo9/vmVMUBnGi0zi3Loul0SpVKJXRDmphvF0BOS049+n46nW5sHRVAXMAuiTZObcxnRVA5IN4DJHnXdU3dc+OLP/V63Vhd5haLRVM+0jg1MZ/dPI9XCZDUsbmuxc6SkGxKHCDzGJ2j0cj0A/7Mwti2fUOWR2Km2bxagHgt83sUgfcEkN4RLx0phfjvgEdi/psAaRf+lHmqEviUTWjygAC4EcKNEG6EcCOk6aJZnwsKgAKgACgACmS9k2vyBwVAAVAAFAAFNF0063NBAVAAFAAFQIGsd3JN/qBA3inwDTUHcp+19ttaAAAAAElFTkSuQmCC">
+                    </a>
+                    <div class="media-body">
+                      <h4 class="media-heading">Media heading</h4>
+                      Cras sit amet nibh libero, in gravida nulla. 
+                    </div>
+                  </div>
+                </section>
+
+              </div>
+
             </div>
           </div>
         </div>
@@ -138,17 +203,10 @@
           <div class="container-fluid">
             <div class="row-fluid">
 
-                <div class="span4" id="social-media">
+                <div class="span4">
                     <p class="heading">Social Media</p>
-                    <ul>
-                      <li><a href=""><img src="/img/social-media/facebook.png" alt="Facebook" /></a></li>
-                      <li> <a href=""><img src="/img/social-media/twitter.png" alt="Twitter" /></a></li>
-                      <li><a href=""><img src="/img/social-media/linkedin.png" alt="LinkedIn" /></a></li>
-                      <li><a href=""><img src="/img/social-media/lastfm.png" alt="Last.fm" /> </a></li>
-                      <li><a href=""><img src="/img/social-media/google-plus.png" alt="Google Plus" /> </a></li>
-                      <li><a href=""><img src="/img/social-media/picasa.png" alt="Picasa" /> </a></li>
-                      <li><a href=""><img src="/img/social-media/instagram.png" alt="Instagram" /> </a></li>
-                       <li><a href=""><img src="/img/social-media/rss.png" alt="RSS" /> </a></li>
+                    <ul id="social-media">
+                      <li><a href=""><img src="/img/social-media/facebook.png" alt="Facebook" /></a></li><li><a href=""><img src="/img/social-media/twitter.png" alt="Twitter" /></a></li><li><a href=""><img src="/img/social-media/linkedin.png" alt="LinkedIn" /></a></li><li><a href=""><img src="/img/social-media/lastfm.png" alt="Last.fm" /> </a></li><li><a href=""><img src="/img/social-media/google-plus.png" alt="Google Plus" /> </a></li><li><a href=""><img src="/img/social-media/picasa.png" alt="Picasa" /> </a></li><li><a href=""><img src="/img/social-media/instagram.png" alt="Instagram" /> </a></li><li><a href=""><img src="/img/social-media/github.png" alt="Github" /> </a></li><li><a href=""><img src="/img/social-media/rss.png" alt="RSS" /> </a></li>
                     </ul>
                    
                 </div>              
@@ -159,7 +217,7 @@
                   </ul>
                 </div>
                 <div class="span4">
-                  <p class="heading">Location</p>
+                  <p class="heading">Location <small>Sheffield, England</small></p>
                   <div id="map-canvas" style="width:100%; height:120px"></div>
                 </div>
             </div>

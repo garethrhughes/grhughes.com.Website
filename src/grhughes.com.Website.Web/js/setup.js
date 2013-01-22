@@ -1,13 +1,30 @@
 ﻿(function () {
-  var sidebar = $('#sidebar'),
-              top = sidebar.offset().top;
+  $().ready(function () {
+    var sidebar = $('#sidebar'),
+        top = sidebar.offset().top,
+        height = sidebar.height(),
+        footer = $('footer');
 
-  $(window).scroll(function () {
-    if (document.body.scrollTop > (top - 20)) {
-      sidebar.css({ position: 'fixed', top: '20px', width: sidebar.width() });
-    } else {
-      sidebar.css({ position: 'relative', top: '0', width: 'auto' });
-    }
+
+    $(window).scroll(function () {
+      var scrollTop = (document.documentElement && document.documentElement.scrollTop) ||  document.body.scrollTop;
+      if (scrollTop > (top - 20)) {
+
+        var footerTop = footer.offset().top;
+        if (scrollTop + height > (footerTop - 40)) {
+          sidebar.css({ position: 'fixed', top: -(scrollTop + height - footerTop + 20), width: sidebar.width() });
+        } else {
+          sidebar.css({ position: 'fixed', top: '20px', width: sidebar.width() });
+        }
+      } else {
+        sidebar.css({ position: 'relative', top: '0', width: 'auto' });
+      }
+    });
+
+    $('#slideshow').embedagram({
+      instagram_id: '12485765',
+      limit: 12
+    });
   });
 
   var mapOptions = {
@@ -19,12 +36,5 @@
 
   new google.maps.Map(document.getElementById("map-canvas"),
               mapOptions);
-
-  $().ready(function () {
-    $('#slideshow').embedagram({
-      instagram_id: '12485765',
-      limit: 12
-    });
-  });
 
 })();
