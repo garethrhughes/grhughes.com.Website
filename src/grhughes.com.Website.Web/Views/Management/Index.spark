@@ -4,7 +4,8 @@
 Manage Queued Posts
 </content>
 
-<content name="main">
+<content name="main>
+
   <ol>
     <li each="var post in Model">
       <a href="!{post.GetUrl()}">${post.Title}</a> -

@@ -206,6 +206,7 @@
   <ItemGroup>
     <Compile Include="Modules\BaseModule.cs" />
     <Compile Include="Modules\BlogModule.cs" />
+    <Compile Include="Modules\SearchModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Bootstrapper.cs" />
     <Compile Include="Modules\ManagementModule.cs" />
@@ -222,6 +223,9 @@
     <None Include="img\social-media\.DS_Store" />
     <None Include="img\social-media\Thumbs.db" />
     <None Include="Views\Blog\Index.spark">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Views\Search\Index.spark">
       <SubType>Designer</SubType>
     </None>
     <None Include="Views\Shared\Application.spark" />

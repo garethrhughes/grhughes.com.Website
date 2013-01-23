@@ -22,8 +22,8 @@
         <div id="header-wrapper">
           <div class="container-fluid">
             <div id="search-container">
-              <form class="navbar-search pull-left">
-                <input type="text" class="search-query" placeholder="Search">
+              <form class="navbar-search pull-left" method="GET" action="/search">
+                <input type="text" class="search-query" name="query" placeholder="Search" value="${ViewBag.SearchQuery}" />
               </form>
             </div>
 
@@ -38,16 +38,6 @@
         <div class="container-fluid">
           <div class="row-fluid">
 
-            <div class="span9">
-  
-              <div class="alert alert-block" if="!ViewBag.HideCookieNotice">
-                <button type="button" class="close cookie-dismiss" data-dismiss="alert">&times;</button>
-                This website uses cookies to improve user experience. By continuing to use this website I assume that you are okay with this.
-              </div>
-
-              <use content="main" />
-            </div>
-
             <div class="span3">
 
               <div id="sidebar">
@@ -56,8 +46,9 @@
                   <img src="/img/me.jpg" alt="Gareth Hughes" />
              
                   <div class="caption">
-                    <h3>Thumbnail label</h3>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <h3>About Me</h3>
+                    
+                    <p>Software Developer from Sheffield, England with a first class degree in Software Engineering. Specialising in .NET, JavaScript and PHP.</p>
                   </div>
                 </div>
 
@@ -82,6 +73,16 @@
 
               </div>
 
+            </div>
+
+            <div class="span9">
+  
+              <div class="alert alert-block" if="!ViewBag.HideCookieNotice">
+                <button type="button" class="close cookie-dismiss" data-dismiss="alert">&times;</button>
+                This website uses cookies to improve user experience. By continuing to use this website I assume that you are okay with this.
+              </div>
+
+              <use content="main" />
             </div>
           </div>
         </div>

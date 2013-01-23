@@ -6,7 +6,7 @@
   {
     public int Page { get; set; }
     public int TotalResults { get; set; }
-    public List<SearchResult> Results { get; set; }
+    public List<BlogPost> Results { get; set; }
     public int ResultsPerPage { get; set; }
   }
 }

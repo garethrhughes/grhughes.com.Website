@@ -12,11 +12,13 @@ namespace grhughes.com.Website.MetaWeblog
   public class MetaWeblog : XmlRpcService, IMetaWeblog
   {
     private readonly IBlogService blogService;
+    private readonly ISearchService searchService;
     private readonly IAuthenticationService authenticationService;
 
     public MetaWeblog()
     {
       blogService = new BlogService();
+      searchService = new SearchService(blogService);
       authenticationService = new AuthenticationService();
     }
 
@@ -40,9 +42,13 @@ namespace grhughes.com.Website.MetaWeblog
                         Published = false
                       };
 
-      newPost.Slug = newPost.Title.Slug();
 
-      return blogService.Save(newPost).Id.ToString();
+      newPost.Slug = newPost.Title.Slug();
+      newPost = blogService.Save(newPost);
+
+      searchService.Add(newPost);
+
+      return newPost.Id.ToString();
     }
 
     bool IMetaWeblog.UpdatePost(string postid, string username, string password,
@@ -53,15 +59,16 @@ namespace grhughes.com.Website.MetaWeblog
 
       var blog = blogService.LoadById(int.Parse(postid));
 
-      if (blog.User.Email != username || blog.Published)
+      if (blog.User.Email != username)
         throw new XmlRpcFaultException(0, "User does not have permission to edit this item.");
 
       blog.Title = post.title;
       blog.Slug = blog.Title.Slug();
       blog.Content = post.description;
-      blog.PublishDate = post.dateCreated.ToUniversalTime();
+      blog.PublishDate = post.dateCreated.Year != 0001 ? post.dateCreated.ToUniversalTime() : blog.PublishDate;
 
       blogService.Save(blog);
+      searchService.Update(blog);
 
       return true;
     }
@@ -132,8 +139,11 @@ namespace grhughes.com.Website.MetaWeblog
 
       var blog = blogService.LoadById(int.Parse(postid));
 
-      if (!blog.Published && blog.User.Email == username)
+      if (blog.User.Email == username)
+      {
+        searchService.Delete(blog);
         blogService.Delete(int.Parse(postid));
+      }
       else
         return false;
 

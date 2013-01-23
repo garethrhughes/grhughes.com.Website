@@ -1,5 +1,8 @@
 namespace grhughes.com.Website.Web
 {
+  using System.Threading.Tasks;
+  using Core.Services;
+  using Core.Services.Interfaces;
   using Nancy;
   using Nancy.Authentication.Forms;
   using Nancy.Bootstrapper;
@@ -13,6 +16,9 @@ namespace grhughes.com.Website.Web
     protected override void ApplicationStartup(TinyIoCContainer container, IPipelines pipelines)
     {
       base.ApplicationStartup(container, pipelines);
+      var searchService = container.Resolve<ISearchService>();
+
+      new Task(searchService.ReIndex).Start();
     }
 
     protected override DiagnosticsConfiguration DiagnosticsConfiguration

@@ -32,14 +32,14 @@ namespace grhughes.com.Website.Core.Services
     {
       dynamic db = GetDatabase();
 
-      return db.BlogPosts.FindAll(db.BlogPosts.Author.Email == email).ToList<BlogPost>();
+      return db.BlogPosts.FindAll(db.BlogPosts.User.Email == email).WithUser().ToList<BlogPost>();
     }
 
     public BlogPost LoadById(int blogId)
     {
       dynamic db = GetDatabase();
 
-      return db.BlogPosts.Find(db.BlogPosts.Id == blogId);
+      return db.BlogPosts.FindAll(db.BlogPosts.Id == blogId).WithUser().FirstOrDefault();
     }
 
     public BlogPost Load(int year, int month, int day, string slug)
@@ -50,8 +50,8 @@ namespace grhughes.com.Website.Core.Services
       var endDate = new DateTime(year, month, day, 23, 59, 59);
 
       return
-        db.BlogPosts.Find(db.BlogPosts.PublishDate >= startDate && db.BlogPosts.PublishDate <= endDate &&
-                          db.BlogPosts.Slug == slug);
+        db.BlogPosts.FindAll(db.BlogPosts.PublishDate >= startDate && db.BlogPosts.PublishDate <= endDate &&
+                          db.BlogPosts.Slug == slug).WithUser().FirstOrDefault();
     }
 
     public BlogPost Save(BlogPost blogpost)
