@@ -14,14 +14,18 @@ namespace grhughes.com.Website.Core.Services
       db.BlogPosts.Delete(db.BlogPosts.Id == blogId);
     }
 
-    public IList<BlogPost> Load(int page, int limit, bool loadAll = false)
+    public IList<BlogPost> Load(int page, int limit)
     {
       dynamic db = GetDatabase();
 
-      if (loadAll)
-        return db.BlogPosts.All().OrderByPublishDateDescending().Skip(limit * page).Take(limit).ToList<BlogPost>();
-
       return db.BlogPosts.FindAll(db.BlogPosts.Published == true).OrderByPublishDateDescending().Skip(limit * page).Take(limit).ToList<BlogPost>();
+    }
+
+    public IList<BlogPost> LoadAll()
+    {
+      dynamic db = GetDatabase();
+
+      return db.BlogPosts.FindAll(db.BlogPosts.Published == true).OrderByPublishDateDescending().ToList<BlogPost>();
     }
 
     public IList<BlogPost> LoadForUser(string email)

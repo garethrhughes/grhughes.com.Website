@@ -19,31 +19,38 @@
   {
     private static readonly SimpleFSLockFactory LockFactory = new SimpleFSLockFactory();
     private static bool Expired = true;
+    private readonly IBlogService blogService;
     private static IndexSearcher Searcher { get; set; }
+
+    public SearchService(IBlogService blogService)
+    {
+      this.blogService = blogService;
+    }
 
     public void ReIndex()
     {
-      FSDirectory fsDirectory = FsDirectory();
+      var fsDirectory = FsDirectory();
 
       if (Directory.Exists(IndexDirectory()))
         Directory.Delete(IndexDirectory(), true);
 
       var writer = new IndexWriter(fsDirectory, new StandardAnalyzer(Version.LUCENE_30), true,
                                    IndexWriter.MaxFieldLength.UNLIMITED);
-      /*var nodes = library.GetXmlNodeByXPath("/root//*[@id]");
 
-      while (nodes.MoveNext())
+
+      var posts = blogService.LoadAll();
+      foreach (var blogPost in posts)
       {
-        var current = nodes.Current;
-        if (current != null)
-        {
-          var node = new Node(int.Parse(current.GetAttribute("id", "")));
-          writer.AddDocument(Document(node));
-        }
-      }*/
+        writer.AddDocument(CreateDocument(blogPost));
+      }
 
       writer.Optimize();
-      writer.Close();
+      writer.Dispose();
+    }
+
+    private Document CreateDocument(BlogPost blogPost)
+    {
+      throw new NotImplementedException();
     }
 
     public SearchResults Search(string query, int page = 0, int limit = 10)
@@ -51,28 +58,29 @@
       if (string.IsNullOrWhiteSpace(query))
         return new SearchResults();
 
-      IndexSearcher searcher = IndexSearcher();
+      var searcher = IndexSearcher();
 
-      Query luceneQuery =
-        new QueryParser(Version.LUCENE_29, "searchable", new StandardAnalyzer(Version.LUCENE_29)).Parse(query);
+      var luceneQuery =
+        new QueryParser(Version.LUCENE_29, "searchable", new StandardAnalyzer(Version.LUCENE_30)).Parse(query);
 
-      var booleanQuery = new BooleanQuery();
-      booleanQuery.Add(luceneQuery, Occur.MUST);
+      var booleanQuery = new BooleanQuery {{luceneQuery, Occur.MUST}};
 
       if (limit <= 0) limit = 10;
 
-      int skipRecords = (page*limit);
-      TopDocs hits = searcher.Search(booleanQuery, null, skipRecords + limit);
+      var skipRecords = (page*limit);
+      var hits = searcher.Search(booleanQuery, null, skipRecords + limit);
       var docs = new List<SearchResult>();
 
-      for (int i = skipRecords; i < hits.TotalHits; i++)
+      for (var i = skipRecords; i < hits.TotalHits; i++)
       {
         if (i > skipRecords + (limit - 1)) break;
 
-        Document currentDoc = searcher.Doc(hits.ScoreDocs[i].Doc);
+        var currentDoc = searcher.Doc(hits.ScoreDocs[i].Doc);
         //var node = currentDoc.GetField("node").StringValue();
 
         //docs.Add(new JavaScriptSerializer().Deserialize<Models.Node>(node));
+
+        //TODO: Load from index
       }
 
       searcher.Dispose();
@@ -88,25 +96,48 @@
 
     public void Add(BlogPost blogPost)
     {
+      using(var writer = CreateIndexWriter())
+      {
+        writer.AddDocument(CreateDocument(blogPost));
+        writer.Commit();
+      }
+
       Expired = true;
-      throw new NotImplementedException();
     }
 
     public void Delete(BlogPost blogPost)
     {
+      using (var writer = CreateIndexWriter())
+      {
+        var query = new BooleanQuery {{new TermQuery(new Term("id", blogPost.Id.ToString())), Occur.MUST}};
+        writer.DeleteDocuments(query);
+        writer.Commit();
+      }
+
       Expired = true;
-      throw new NotImplementedException();
     }
 
     public void Update(BlogPost blogPost)
     {
+      using (var writer = CreateIndexWriter())
+      {
+        var query = new BooleanQuery {{new TermQuery(new Term("id", blogPost.Id.ToString())), Occur.MUST}};
+        writer.DeleteDocuments(query);
+        writer.AddDocument(CreateDocument(blogPost));
+        writer.Commit();
+      }
+
       Expired = true;
-      throw new NotImplementedException();
+    }
+
+    private static IndexWriter CreateIndexWriter()
+    {
+      return new IndexWriter(FsDirectory(), new StandardAnalyzer(Version.LUCENE_30), false, Lucene.Net.Index.IndexWriter.MaxFieldLength.UNLIMITED);
     }
 
     private static FSDirectory FsDirectory()
     {
-      string indexDirectory = IndexDirectory();
+      var indexDirectory = IndexDirectory();
 
       if (!Directory.Exists(indexDirectory))
         Directory.CreateDirectory(indexDirectory);

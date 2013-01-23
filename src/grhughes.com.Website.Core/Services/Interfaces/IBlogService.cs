@@ -5,7 +5,9 @@ namespace grhughes.com.Website.Core.Services.Interfaces
 
   public interface IBlogService
   {
-    IList<BlogPost> Load(int page, int limit = 10, bool loadAll = false);
+    IList<BlogPost> Load(int page, int limit = 10);
+
+    IList<BlogPost> LoadAll();
 
     BlogPost LoadById(int blogId);
 

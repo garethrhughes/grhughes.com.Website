@@ -79,6 +79,7 @@ namespace grhughes.com.Website.MetaWeblog
                      title = blog.Title,
                      description = blog.Content,
                      dateCreated = blog.PublishDate.ToUniversalTime(),
+                     userid = username,
                      wp_slug = blog.Slug
                    };
 
@@ -105,7 +106,7 @@ namespace grhughes.com.Website.MetaWeblog
         throw new XmlRpcFaultException(0, "User is not valid!");
 
 
-      var blogs = blogService.LoadForUser(username).Where(b => !b.Published).Take(10);
+      var blogs = blogService.LoadForUser(username).Take(10);
 
       return blogs.Select(blog => new Post
                                     {
@@ -113,6 +114,7 @@ namespace grhughes.com.Website.MetaWeblog
                                       title = blog.Title,
                                       description = blog.Content,
                                       dateCreated = blog.PublishDate,
+                                      userid = blog.User.Email,
                                       wp_slug = blog.Slug,
                                     }).ToArray();
     }
@@ -148,8 +150,8 @@ namespace grhughes.com.Website.MetaWeblog
                          new BlogInfo
                            {
                              blogid = "1",
-                             blogName = "Technophobia Labs",
-                             url = "http://tplabs/"
+                             blogName = "grhughes.com",
+                             url = "http://grhughes.com/"
                            }
                        };
 

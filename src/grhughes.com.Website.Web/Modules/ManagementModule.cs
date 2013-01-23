@@ -13,7 +13,7 @@ namespace grhughes.com.Website.Web.Modules
       this.blogService = blogService;
       this.RequiresAuthentication();
 
-      Get["/articles"] = _ => View["Index.spark", this.blogService.Load(0, 100, true)];
+      Get["/articles"] = _ => View["Index.spark", this.blogService.LoadAll()];
       Get["/users"] = _ => "Boom 2";
       Get["/approve/{id}"] = p =>
                                {
