@@ -1,7 +1,5 @@
 ﻿@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic);
-/* font-family: 'Ubuntu', sans-serif; */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600,600italic,700,700italic,800,800italic);
-/* font-family: 'Open Sans', sans-serif; */
 
 body {
   font-family: 'Segoe UI', 'Open Sans', sans-serif;
@@ -67,8 +65,24 @@ article span.info
   margin-right: 1em;
 }
 
+article span.info > a 
+{
+  color: inherit;
+}
+
+article span.info > a:hover 
+{
+  text-decoration: none;
+  color: #005580;
+}
+
 #posts article:not(:first-child) {
     margin-top: 3em;
+}
+
+#posts article:first-child > h2 
+{
+  margin-top: 0;
 }
 
 .navbar-search .search-query 
@@ -141,4 +155,24 @@ div.bottom
 #disqus_thread 
 {
   margin-top: 2em;
+}
+
+h1 > a 
+{
+  color: inherit;
+}
+
+h1 > a:hover 
+{
+  text-decoration: none;
+}
+
+article h2 > a 
+{
+  color: inherit;
+}
+
+article h2 > a:hover 
+{
+  text-decoration: none;
 }

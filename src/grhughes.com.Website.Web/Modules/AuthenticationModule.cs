@@ -8,7 +8,7 @@ namespace grhughes.com.Website.Web.Modules
   using Nancy.Authentication.Forms;
   using Nancy.ModelBinding;
 
-  public class AuthenticationModule : NancyModule
+  public class AuthenticationModule : BaseModule
   {
     private readonly IAuthenticationService authenticationService;
 

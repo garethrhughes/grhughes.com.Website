@@ -1,17 +1,15 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-  
   <head>
-    <title>Gareth Hughes > Blog</title>
+    <title>Gareth Hughes > <use content="title" /></title>
 
-    <link href="css/bootstrap.css" type="text/css" rel="stylesheet"/>
-    <link href="css/style.css" type="text/css" rel="stylesheet"/>
+    <link href="/css/bootstrap.css" type="text/css" rel="stylesheet"/>
+    <link href="/css/style.css" type="text/css" rel="stylesheet"/>
 
-    <link rel="shortcut icon" type="image/ico" href="/img/favicon.ico"/>    
-      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-      <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" type="image/ico" href="/img/favicon.ico"/>
+
     <!--[if lt IE 9]>
-    <script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <script type="text/javascript" src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
   </head>
@@ -29,7 +27,7 @@
               </form>
             </div>
 
-            <h1>Gareth Hughes <span>&gt; Blog</span></h1>
+            <h1><a href="/">Gareth Hughes</a> <span>&gt; <use content="title" /></span></h1>
 
           </div>
         </div>
@@ -40,96 +38,14 @@
         <div class="container-fluid">
           <div class="row-fluid">
 
-
             <div class="span9">
-              <div class="alert alert-block">
-                <button type="button" class="close" data-dismiss="alert">&times;</button>
+  
+              <div class="alert alert-block" if="!ViewBag.HideCookieNotice">
+                <button type="button" class="close cookie-dismiss" data-dismiss="alert">&times;</button>
                 This website uses cookies to improve user experience. By continuing to use this website I assume that you are okay with this.
               </div>
 
-              <ul class="breadcrumb">
-                <li><a href="#">Home</a> <span class="divider">/</span></li>
-                <li><a href="#">Library</a> <span class="divider">/</span></li>
-                <li class="active">Data</li>
-              </ul>
-
-              <div id="posts">
-   
-
-                <article>
-
-                  <h2>Something about something</h2>
-                  <hr />
-                  <span class="info"><i class="icon-calendar"></i> 11th February 1986</span>
-                  <span class="info"><i class="icon-comment"></i> 22 Comments</span>
-             
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ultrices accumsan arcu eu bibendum. Fusce varius dignissim nibh, dictum ullamcorper leo imperdiet vitae. Morbi tempus ipsum id diam dapibus sit amet sodales tellus molestie. Donec interdum, tortor quis ullamcorper feugiat, tortor purus porta augue, quis placerat enim massa eget dolor. Curabitur pellentesque vestibulum felis in tincidunt. Phasellus aliquam elementum metus sed cursus. Ut tempus tempus augue aliquet pretium. Vivamus ante justo, fermentum quis dapibus id, fringilla at erat. Vivamus volutpat sagittis purus eleifend mollis. Ut nibh erat, suscipit luctus commodo vel, hendrerit id lectus. Praesent accumsan, eros placerat tincidunt porta, elit mauris porttitor turpis, a blandit libero ligula et magna. Donec accumsan egestas aliquet.</p>
-
-                  <p>Morbi eget elit eget dolor condimentum vestibulum ac vel lectus. Donec posuere nisl eget purus pellentesque eget pulvinar purus placerat. Nullam tempor mattis tortor, non sollicitudin dolor tempor quis. Ut placerat dictum vehicula. Fusce metus libero, mollis eu ultricies non, suscipit non tellus. Ut quis massa nec sapien dignissim auctor eu in leo. Morbi mattis, diam vitae porttitor scelerisque, mauris massa condimentum velit, a imperdiet nisl massa ut nisi. Aenean aliquet, lorem nec lacinia elementum, magna justo vestibulum ante, sed semper nibh eros vel augue. Proin eget nisi mattis elit hendrerit blandit sit amet a mi. Curabitur vitae orci nibh, eget tincidunt tellus. In hac habitasse platea dictumst. Sed vel diam ut nulla fringilla bibendum. Vestibulum felis ante, venenatis ac luctus ut, egestas nec elit. Curabitur enim libero, posuere vestibulum tempor et, interdum sodales nisi.</p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ultrices accumsan arcu eu bibendum. Fusce varius dignissim nibh, dictum ullamcorper leo imperdiet vitae. Morbi tempus ipsum id diam dapibus sit amet sodales tellus molestie. Donec interdum, tortor quis ullamcorper feugiat, tortor purus porta augue, quis placerat enim massa eget dolor. Curabitur pellentesque vestibulum felis in tincidunt. Phasellus aliquam elementum metus sed cursus. Ut tempus tempus augue aliquet pretium. Vivamus ante justo, fermentum quis dapibus id, fringilla at erat. Vivamus volutpat sagittis purus eleifend mollis. Ut nibh erat, suscipit luctus commodo vel, hendrerit id lectus. Praesent accumsan, eros placerat tincidunt porta, elit mauris porttitor turpis, a blandit libero ligula et magna. Donec accumsan egestas aliquet.</p>
-
-                  <p>Morbi eget elit eget dolor condimentum vestibulum ac vel lectus. Donec posuere nisl eget purus pellentesque eget pulvinar purus placerat. Nullam tempor mattis tortor, non sollicitudin dolor tempor quis. Ut placerat dictum vehicula. Fusce metus libero, mollis eu ultricies non, suscipit non tellus. Ut quis massa nec sapien dignissim auctor eu in leo. Morbi mattis, diam vitae porttitor scelerisque, mauris massa condimentum velit, a imperdiet nisl massa ut nisi. Aenean aliquet, lorem nec lacinia elementum, magna justo vestibulum ante, sed semper nibh eros vel augue. Proin eget nisi mattis elit hendrerit blandit sit amet a mi. Curabitur vitae orci nibh, eget tincidunt tellus. In hac habitasse platea dictumst. Sed vel diam ut nulla fringilla bibendum. Vestibulum felis ante, venenatis ac luctus ut, egestas nec elit. Curabitur enim libero, posuere vestibulum tempor et, interdum sodales nisi.</p>
-
-                  <p>Integer non tempus nulla. Phasellus sapien metus, dignissim non sodales sed, pulvinar in ipsum. Fusce vestibulum orci tortor. Fusce ut ligula ac sem dapibus aliquet. Etiam iaculis ultrices blandit. Curabitur et quam sapien, in accumsan felis. Mauris mauris purus, tincidunt sollicitudin hendrerit mattis, iaculis a massa. Maecenas enim risus, interdum in accumsan nec, pellentesque quis urna. Nam bibendum molestie velit, laoreet euismod nunc porta nec. Aliquam rutrum eleifend feugiat. Quisque facilisis egestas viverra. Donec nibh lacus, fringilla id fermentum non, ultrices at purus.</p>
-                
-                </article>
-
-                <article>
-
-                  <h2>Something about something</h2>
-                  <hr />
-                  <span class="info"><i class="icon-calendar"></i> 11th February 1986</span>
-                  <span class="info"><i class="icon-comment"></i> 22 Comments</span>
-             
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ultrices accumsan arcu eu bibendum. Fusce varius dignissim nibh, dictum ullamcorper leo imperdiet vitae. Morbi tempus ipsum id diam dapibus sit amet sodales tellus molestie. Donec interdum, tortor quis ullamcorper feugiat, tortor purus porta augue, quis placerat enim massa eget dolor. Curabitur pellentesque vestibulum felis in tincidunt. Phasellus aliquam elementum metus sed cursus. Ut tempus tempus augue aliquet pretium. Vivamus ante justo, fermentum quis dapibus id, fringilla at erat. Vivamus volutpat sagittis purus eleifend mollis. Ut nibh erat, suscipit luctus commodo vel, hendrerit id lectus. Praesent accumsan, eros placerat tincidunt porta, elit mauris porttitor turpis, a blandit libero ligula et magna. Donec accumsan egestas aliquet.</p>
-
-                  <p>Morbi eget elit eget dolor condimentum vestibulum ac vel lectus. Donec posuere nisl eget purus pellentesque eget pulvinar purus placerat. Nullam tempor mattis tortor, non sollicitudin dolor tempor quis. Ut placerat dictum vehicula. Fusce metus libero, mollis eu ultricies non, suscipit non tellus. Ut quis massa nec sapien dignissim auctor eu in leo. Morbi mattis, diam vitae porttitor scelerisque, mauris massa condimentum velit, a imperdiet nisl massa ut nisi. Aenean aliquet, lorem nec lacinia elementum, magna justo vestibulum ante, sed semper nibh eros vel augue. Proin eget nisi mattis elit hendrerit blandit sit amet a mi. Curabitur vitae orci nibh, eget tincidunt tellus. In hac habitasse platea dictumst. Sed vel diam ut nulla fringilla bibendum. Vestibulum felis ante, venenatis ac luctus ut, egestas nec elit. Curabitur enim libero, posuere vestibulum tempor et, interdum sodales nisi.</p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ultrices accumsan arcu eu bibendum. Fusce varius dignissim nibh, dictum ullamcorper leo imperdiet vitae. Morbi tempus ipsum id diam dapibus sit amet sodales tellus molestie. Donec interdum, tortor quis ullamcorper feugiat, tortor purus porta augue, quis placerat enim massa eget dolor. Curabitur pellentesque vestibulum felis in tincidunt. Phasellus aliquam elementum metus sed cursus. Ut tempus tempus augue aliquet pretium. Vivamus ante justo, fermentum quis dapibus id, fringilla at erat. Vivamus volutpat sagittis purus eleifend mollis. Ut nibh erat, suscipit luctus commodo vel, hendrerit id lectus. Praesent accumsan, eros placerat tincidunt porta, elit mauris porttitor turpis, a blandit libero ligula et magna. Donec accumsan egestas aliquet.</p>
-
-                  <p>Morbi eget elit eget dolor condimentum vestibulum ac vel lectus. Donec posuere nisl eget purus pellentesque eget pulvinar purus placerat. Nullam tempor mattis tortor, non sollicitudin dolor tempor quis. Ut placerat dictum vehicula. Fusce metus libero, mollis eu ultricies non, suscipit non tellus. Ut quis massa nec sapien dignissim auctor eu in leo. Morbi mattis, diam vitae porttitor scelerisque, mauris massa condimentum velit, a imperdiet nisl massa ut nisi. Aenean aliquet, lorem nec lacinia elementum, magna justo vestibulum ante, sed semper nibh eros vel augue. Proin eget nisi mattis elit hendrerit blandit sit amet a mi. Curabitur vitae orci nibh, eget tincidunt tellus. In hac habitasse platea dictumst. Sed vel diam ut nulla fringilla bibendum. Vestibulum felis ante, venenatis ac luctus ut, egestas nec elit. Curabitur enim libero, posuere vestibulum tempor et, interdum sodales nisi.</p>
-
-                  <p>Integer non tempus nulla. Phasellus sapien metus, dignissim non sodales sed, pulvinar in ipsum. Fusce vestibulum orci tortor. Fusce ut ligula ac sem dapibus aliquet. Etiam iaculis ultrices blandit. Curabitur et quam sapien, in accumsan felis. Mauris mauris purus, tincidunt sollicitudin hendrerit mattis, iaculis a massa. Maecenas enim risus, interdum in accumsan nec, pellentesque quis urna. Nam bibendum molestie velit, laoreet euismod nunc porta nec. Aliquam rutrum eleifend feugiat. Quisque facilisis egestas viverra. Donec nibh lacus, fringilla id fermentum non, ultrices at purus.</p>
-                </article>
-
-                <article>
-
-                  <h2>Something about something</h2>
-                  <hr />
-                  <span class="info"><i class="icon-calendar"></i> 11th February 1986</span>
-                  <span class="info"><i class="icon-comment"></i> 22 Comments</span>
-             
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ultrices accumsan arcu eu bibendum. Fusce varius dignissim nibh, dictum ullamcorper leo imperdiet vitae. Morbi tempus ipsum id diam dapibus sit amet sodales tellus molestie. Donec interdum, tortor quis ullamcorper feugiat, tortor purus porta augue, quis placerat enim massa eget dolor. Curabitur pellentesque vestibulum felis in tincidunt. Phasellus aliquam elementum metus sed cursus. Ut tempus tempus augue aliquet pretium. Vivamus ante justo, fermentum quis dapibus id, fringilla at erat. Vivamus volutpat sagittis purus eleifend mollis. Ut nibh erat, suscipit luctus commodo vel, hendrerit id lectus. Praesent accumsan, eros placerat tincidunt porta, elit mauris porttitor turpis, a blandit libero ligula et magna. Donec accumsan egestas aliquet.</p>
-
-                  <p>Morbi eget elit eget dolor condimentum vestibulum ac vel lectus. Donec posuere nisl eget purus pellentesque eget pulvinar purus placerat. Nullam tempor mattis tortor, non sollicitudin dolor tempor quis. Ut placerat dictum vehicula. Fusce metus libero, mollis eu ultricies non, suscipit non tellus. Ut quis massa nec sapien dignissim auctor eu in leo. Morbi mattis, diam vitae porttitor scelerisque, mauris massa condimentum velit, a imperdiet nisl massa ut nisi. Aenean aliquet, lorem nec lacinia elementum, magna justo vestibulum ante, sed semper nibh eros vel augue. Proin eget nisi mattis elit hendrerit blandit sit amet a mi. Curabitur vitae orci nibh, eget tincidunt tellus. In hac habitasse platea dictumst. Sed vel diam ut nulla fringilla bibendum. Vestibulum felis ante, venenatis ac luctus ut, egestas nec elit. Curabitur enim libero, posuere vestibulum tempor et, interdum sodales nisi.</p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ultrices accumsan arcu eu bibendum. Fusce varius dignissim nibh, dictum ullamcorper leo imperdiet vitae. Morbi tempus ipsum id diam dapibus sit amet sodales tellus molestie. Donec interdum, tortor quis ullamcorper feugiat, tortor purus porta augue, quis placerat enim massa eget dolor. Curabitur pellentesque vestibulum felis in tincidunt. Phasellus aliquam elementum metus sed cursus. Ut tempus tempus augue aliquet pretium. Vivamus ante justo, fermentum quis dapibus id, fringilla at erat. Vivamus volutpat sagittis purus eleifend mollis. Ut nibh erat, suscipit luctus commodo vel, hendrerit id lectus. Praesent accumsan, eros placerat tincidunt porta, elit mauris porttitor turpis, a blandit libero ligula et magna. Donec accumsan egestas aliquet.</p>
-
-                  <p>Morbi eget elit eget dolor condimentum vestibulum ac vel lectus. Donec posuere nisl eget purus pellentesque eget pulvinar purus placerat. Nullam tempor mattis tortor, non sollicitudin dolor tempor quis. Ut placerat dictum vehicula. Fusce metus libero, mollis eu ultricies non, suscipit non tellus. Ut quis massa nec sapien dignissim auctor eu in leo. Morbi mattis, diam vitae porttitor scelerisque, mauris massa condimentum velit, a imperdiet nisl massa ut nisi. Aenean aliquet, lorem nec lacinia elementum, magna justo vestibulum ante, sed semper nibh eros vel augue. Proin eget nisi mattis elit hendrerit blandit sit amet a mi. Curabitur vitae orci nibh, eget tincidunt tellus. In hac habitasse platea dictumst. Sed vel diam ut nulla fringilla bibendum. Vestibulum felis ante, venenatis ac luctus ut, egestas nec elit. Curabitur enim libero, posuere vestibulum tempor et, interdum sodales nisi.</p>
-
-                  <p>Integer non tempus nulla. Phasellus sapien metus, dignissim non sodales sed, pulvinar in ipsum. Fusce vestibulum orci tortor. Fusce ut ligula ac sem dapibus aliquet. Etiam iaculis ultrices blandit. Curabitur et quam sapien, in accumsan felis. Mauris mauris purus, tincidunt sollicitudin hendrerit mattis, iaculis a massa. Maecenas enim risus, interdum in accumsan nec, pellentesque quis urna. Nam bibendum molestie velit, laoreet euismod nunc porta nec. Aliquam rutrum eleifend feugiat. Quisque facilisis egestas viverra. Donec nibh lacus, fringilla id fermentum non, ultrices at purus.</p>
-                </article>
-
-                <div id="disqus_thread"></div>
-                <script type="text/javascript">
-                  /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-                  var disqus_shortname = 'garethhughes'; // required: replace example with your forum shortname
-
-                  /* * * DON'T EDIT BELOW THIS LINE * * */
-                  (function () {
-                    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                    dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-                  })();
-                </script>
-                <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-                <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-    
-              </div>
-              <ul class="pager">
-                <li class="previous disabled">
-                  <a href="#">&larr; Older</a>
-                </li>
-                <li class="next"><a href="#">Newer &rarr;</a></li>
-              </ul>
+              <use content="main" />
             </div>
 
             <div class="span3">
@@ -150,46 +66,19 @@
                   <ul class="nav nav-tabs nav-stacked left-nav">
  
                     <li class="active"><a href="#">Blog</a></li>
-                    <li><a href="#">About Me</a></li>
-                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="/profile">Profile</a></li>
+                    <li><a href="/portfolio">Portfolio</a></li>
                   </ul>
                 </section>
 
                 <section>
-                  <h3 class="widget-title">Latest Posts</h3>
-
-                  <div class="media">
-                    <a class="pull-left" href="#">
-                      <img class="media-object" data-src="holder.js/64x64" alt="64x64" style="width: 64px; height: 64px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACDUlEQVR4Xu2Yz6/BQBDHpxoEcfTjVBVx4yjEv+/EQdwa14pTE04OBO+92WSavqoXOuFp+u1JY3d29rvfmQ9r7Xa7L8rxY0EAOAAlgB6Q4x5IaIKgACgACoACoECOFQAGgUFgEBgEBnMMAfwZAgaBQWAQGAQGgcEcK6DG4Pl8ptlsRpfLxcjYarVoOBz+knSz2dB6vU78Lkn7V8S8d8YqAa7XK83ncyoUCjQej2m5XNIPVmkwGFC73TZrypjD4fCQAK+I+ZfBVQLwZlerFXU6Her1eonreJ5HQRAQn2qj0TDukHm1Ws0Ix2O2260RrlQqpYqZtopVAoi1y+UyHY9Hk0O32w3FkI06jkO+74cC8Dh2y36/p8lkQovFgqrVqhFDEzONCCoB5OSk7qMl0Gw2w/Lo9/vmVMUBnGi0zi3Loul0SpVKJXRDmphvF0BOS049+n46nW5sHRVAXMAuiTZObcxnRVA5IN4DJHnXdU3dc+OLP/V63Vhd5haLRVM+0jg1MZ/dPI9XCZDUsbmuxc6SkGxKHCDzGJ2j0cj0A/7Mwti2fUOWR2Km2bxagHgt83sUgfcEkN4RLx0phfjvgEdi/psAaRf+lHmqEviUTWjygAC4EcKNEG6EcCOk6aJZnwsKgAKgACgACmS9k2vyBwVAAVAAFAAFNF0063NBAVAAFAAFQIGsd3JN/qBA3inwDTUHcp+19ttaAAAAAElFTkSuQmCC">
-                    </a>
-                    <div class="media-body">
-                      <h4 class="media-heading">Media heading</h4>
-                      Cras sit amet nibh libero, in gravida nulla. 
-                    </div>
-                  </div>
-
-                  <div class="media">
-                    <a class="pull-left" href="#">
-                      <img class="media-object" data-src="holder.js/64x64" alt="64x64" style="width: 64px; height: 64px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACDUlEQVR4Xu2Yz6/BQBDHpxoEcfTjVBVx4yjEv+/EQdwa14pTE04OBO+92WSavqoXOuFp+u1JY3d29rvfmQ9r7Xa7L8rxY0EAOAAlgB6Q4x5IaIKgACgACoACoECOFQAGgUFgEBgEBnMMAfwZAgaBQWAQGAQGgcEcK6DG4Pl8ptlsRpfLxcjYarVoOBz+knSz2dB6vU78Lkn7V8S8d8YqAa7XK83ncyoUCjQej2m5XNIPVmkwGFC73TZrypjD4fCQAK+I+ZfBVQLwZlerFXU6Her1eonreJ5HQRAQn2qj0TDukHm1Ws0Ix2O2260RrlQqpYqZtopVAoi1y+UyHY9Hk0O32w3FkI06jkO+74cC8Dh2y36/p8lkQovFgqrVqhFDEzONCCoB5OSk7qMl0Gw2w/Lo9/vmVMUBnGi0zi3Loul0SpVKJXRDmphvF0BOS049+n46nW5sHRVAXMAuiTZObcxnRVA5IN4DJHnXdU3dc+OLP/V63Vhd5haLRVM+0jg1MZ/dPI9XCZDUsbmuxc6SkGxKHCDzGJ2j0cj0A/7Mwti2fUOWR2Km2bxagHgt83sUgfcEkN4RLx0phfjvgEdi/psAaRf+lHmqEviUTWjygAC4EcKNEG6EcCOk6aJZnwsKgAKgACgACmS9k2vyBwVAAVAAFAAFNF0063NBAVAAFAAFQIGsd3JN/qBA3inwDTUHcp+19ttaAAAAAElFTkSuQmCC">
-                    </a>
-                    <div class="media-body">
-                      <h4 class="media-heading">Media heading</h4>
-                      Cras sit amet nibh libero, in gravida nulla. 
-                    </div>
-                  </div>
-
-                  <div class="media">
-                    <a class="pull-left" href="#">
-                      <img class="media-object" data-src="holder.js/64x64" alt="64x64" style="width: 64px; height: 64px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACDUlEQVR4Xu2Yz6/BQBDHpxoEcfTjVBVx4yjEv+/EQdwa14pTE04OBO+92WSavqoXOuFp+u1JY3d29rvfmQ9r7Xa7L8rxY0EAOAAlgB6Q4x5IaIKgACgACoACoECOFQAGgUFgEBgEBnMMAfwZAgaBQWAQGAQGgcEcK6DG4Pl8ptlsRpfLxcjYarVoOBz+knSz2dB6vU78Lkn7V8S8d8YqAa7XK83ncyoUCjQej2m5XNIPVmkwGFC73TZrypjD4fCQAK+I+ZfBVQLwZlerFXU6Her1eonreJ5HQRAQn2qj0TDukHm1Ws0Ix2O2260RrlQqpYqZtopVAoi1y+UyHY9Hk0O32w3FkI06jkO+74cC8Dh2y36/p8lkQovFgqrVqhFDEzONCCoB5OSk7qMl0Gw2w/Lo9/vmVMUBnGi0zi3Loul0SpVKJXRDmphvF0BOS049+n46nW5sHRVAXMAuiTZObcxnRVA5IN4DJHnXdU3dc+OLP/V63Vhd5haLRVM+0jg1MZ/dPI9XCZDUsbmuxc6SkGxKHCDzGJ2j0cj0A/7Mwti2fUOWR2Km2bxagHgt83sUgfcEkN4RLx0phfjvgEdi/psAaRf+lHmqEviUTWjygAC4EcKNEG6EcCOk6aJZnwsKgAKgACgACmS9k2vyBwVAAVAAFAAFNF0063NBAVAAFAAFQIGsd3JN/qBA3inwDTUHcp+19ttaAAAAAElFTkSuQmCC">
-                    </a>
-                    <div class="media-body">
-                      <h4 class="media-heading">Media heading</h4>
-                      Cras sit amet nibh libero, in gravida nulla. 
-                    </div>
-                  </div>
+                  <h3 class="widget-title">Projects</h3>
+                  <ul class="nav nav-tabs nav-stacked left-nav">
+ 
+                    <li><a href="#">grhughes.com.Website</a></li>
+                    <li><a href="#">JS-Mobile-Gestures</a></li>
+                  </ul>
                 </section>
-
-
 
               </div>
 
@@ -205,9 +94,9 @@
             <div class="row-fluid">
 
                 <div class="span4">
-                    <p class="heading">Social Media</p>
+                    <p class="heading">Links</p>
                     <ul id="social-media">
-                      <li><a href=""><img src="/img/social-media/facebook.png" alt="Facebook" /></a></li><li><a href=""><img src="/img/social-media/twitter.png" alt="Twitter" /></a></li><li><a href=""><img src="/img/social-media/linkedin.png" alt="LinkedIn" /></a></li><li><a href=""><img src="/img/social-media/lastfm.png" alt="Last.fm" /> </a></li><li><a href=""><img src="/img/social-media/google-plus.png" alt="Google Plus" /> </a></li><li><a href=""><img src="/img/social-media/picasa.png" alt="Picasa" /> </a></li><li><a href=""><img src="/img/social-media/instagram.png" alt="Instagram" /> </a></li><li><a href=""><img src="/img/social-media/github.png" alt="Github" /> </a></li><li><a href=""><img src="/img/social-media/rss.png" alt="RSS" /> </a></li>
+                      <li><a href="http://www.facebook.com/garethrhughes"><img src="/img/social-media/facebook.png" alt="Facebook" /></a></li><li><a href="http://twitter.com/garethrhughes"><img src="/img/social-media/twitter.png" alt="Twitter" /></a></li><li><a href="http://www.linkedin.com/in/garethhughes"><img src="/img/social-media/linkedin.png" alt="LinkedIn" /></a></li><li><a href="http://www.last.fm/user/Gareth125"><img src="/img/social-media/lastfm.png" alt="Last.fm" /> </a></li><li><a href="https://plus.google.com/104031731835490033921/posts"><img src="/img/social-media/google-plus.png" alt="Google Plus" /> </a></li><li><a href=""><img src="/img/social-media/picasa.png" alt="Picasa" /> </a></li><li><a href="http://instagram.com/garethrhughes"><img src="/img/social-media/instagram.png" alt="Instagram" /> </a></li><li><a href="https://github.com/garethrhughes"><img src="/img/social-media/github.png" alt="Github" /> </a></li><li><a href="mailto:gareth@grhughes.com"><img src="/img/social-media/email.png" alt="Email" /> </a></li><li><a href="/rss"><img src="/img/social-media/rss.png" alt="RSS" /> </a></li>
                     </ul>
                    
                 </div>              
@@ -228,9 +117,11 @@
       </footer>
 
       <div class="bottom">
-        <p>&copy; Gareth Hughes 2013 &mdash; <a href="">gareth@grhughes.com</a> &mdash; +447948321190</p>
+        <p>&copy; Gareth Hughes 2013 &mdash; <a href="mailto:gareth@grhughes.com">gareth@grhughes.com</a> &mdash; +447948321190</p>
       </div>
 
+      <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+      <script type="text/javascript" src="/js/bootstrap.min.js"></script>
       <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1EGlJfOdILSGYdbK2Al7VhKNtd2zzB2Y&sensor=false"></script>
       <script type="text/javascript" src="/js/jquery-embedagram.pack.js"></script>
       <script type="text/javascript" src="/js/setup.js"></script>
@@ -238,5 +129,15 @@
     </div>
 
   </body>
+
+  <script type="text/javascript">
+    var disqus_shortname = 'garethhughes'; // required: replace example with your forum shortname
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+
     
 </html>

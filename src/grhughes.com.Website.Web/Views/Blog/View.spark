@@ -1,13 +1,42 @@
 <viewdata model="BlogPost" />
 
-<content name="page-title">
-${Model.Title} - Labs
+<content name="title">
+  ${Model.Title}
 </content>
 
-<content name="content">
-  <h2>${Model.Title}</h2>
+<content name="main">
+  <ul class="breadcrumb">
+    <li>
+      <a href="/">Home</a>
+      <span class="divider">/</span>
+    </li>
+    <li>
+      ${Model.Title}
+    </li>
+  </ul>
 
-  !{Model.Content}
+  <article>
 
+    <h2>${Model.Title}</h2>
+    <hr />
+    <span class="info">
+      <i class="icon-calendar"></i> ${Model.PublishDate.ToString("dd MMMM yyyy")}
+    </span>
+    <span class="info">
+      <i class="icon-comment"></i> 22 Comments
+    </span>
+
+    !{Model.Content}
+
+  </article>
+
+  <div id="disqus_thread"></div>
+  <noscript>
+    Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+  </noscript>
+  <a href="http://disqus.com" class="dsq-brlink">
+    comments powered by <span class="logo-disqus">Disqus</span>
+  </a>
+  
 </content>
 

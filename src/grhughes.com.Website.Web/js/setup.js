@@ -25,6 +25,17 @@
       instagram_id: '12485765',
       limit: 12
     });
+
+    $('.cookie-dismiss').click(function () {
+      setCookie('CookiePolicyAccepted', 1, 365);
+    });
+
+    var setCookie = function (c_name, value, exdays) {
+      var exdate = new Date();
+      exdate.setDate(exdate.getDate() + exdays);
+      var c_value = escape(value) + ((exdays == null) ? "" : "; expires=" + exdate.toUTCString());
+      document.cookie = c_name + "=" + c_value;
+    }
   });
 
   var mapOptions = {

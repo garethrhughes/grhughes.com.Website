@@ -4,7 +4,7 @@ namespace grhughes.com.Website.Web.Modules
   using Nancy;
   using Nancy.Security;
 
-  public class ManagementModule : NancyModule
+  public class ManagementModule : BaseModule
   {
     private readonly IBlogService blogService;
 

@@ -1,16 +1,38 @@
 ﻿<viewdata model="IList[[BlogPost]]" />
 
-<content name="page-title">
-Labs
+<content name="title">
+  Blog
 </content>
 
-<content name="content">
-  <h2>Technophobia Labs</h2>
+<content name="main">
 
-  <ol>
-    <li each="var post in Model">
-      <a href="!{post.GetUrl()}">${post.Title}</a>
+  <div id="posts">
+
+    <article each="var article in Model">
+
+      <h2>
+        <a href="!{article.GetUrl()}">${article.Title}</a>
+      </h2>
+      <hr />
+      <span class="info">
+        <i class="icon-calendar"></i> ${article.PublishDate.ToString("dd MMMM yyyy")}
+      </span>
+      <span class="info">
+        <i class="icon-comment"></i> <a href="!{article.GetUrl()}#disqus_thread">22 Comments</a>
+      </span>
+
+      !{article.Content}
+
+    </article>
+
+  </div>
+  <ul class="pager">
+    <li class="previous disabled">
+      <a href="#">&larr; Older</a>
     </li>
-  </ol>
+    <li class="next">
+      <a href="#">Newer &rarr;</a>
+    </li>
+  </ul>
 </content>
 

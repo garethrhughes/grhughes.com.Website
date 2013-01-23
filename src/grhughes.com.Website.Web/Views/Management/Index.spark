@@ -1,12 +1,10 @@
 <viewdata model="IList[[BlogPost]]" />
 
-<content name="page-title">
+<content name="title">
 Manage Queued Posts
 </content>
 
-<content name="content">
-  <h2>Technophobia Labs</h2>
-
+<content name="main">
   <ol>
     <li each="var post in Model">
       <a href="!{post.GetUrl()}">${post.Title}</a> -

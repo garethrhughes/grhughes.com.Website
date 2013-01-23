@@ -2,7 +2,7 @@
 Login
 </content>
 
-<content name="content">
+<content name="main">
 
   <form action="" method="post">
 

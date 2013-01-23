@@ -19,9 +19,9 @@ namespace grhughes.com.Website.Core.Services
       dynamic db = GetDatabase();
 
       if (loadAll)
-        return db.BlogPosts.All().Skip(limit*page).Take(limit).ToList<BlogPost>();
-      else
-        return db.BlogPosts.FindAll(db.BlogPosts.Published == true).Skip(limit*page).Take(limit).ToList<BlogPost>();
+        return db.BlogPosts.All().OrderByPublishDateDescending().Skip(limit * page).Take(limit).ToList<BlogPost>();
+
+      return db.BlogPosts.FindAll(db.BlogPosts.Published == true).OrderByPublishDateDescending().Skip(limit * page).Take(limit).ToList<BlogPost>();
     }
 
     public IList<BlogPost> LoadForUser(string email)
