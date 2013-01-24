@@ -6,14 +6,16 @@
 
   public class SearchModule : BaseModule
   {
-    public SearchModule (ISearchService searchService)
+    public SearchModule (ISearchService<BlogPost> searchService)
     {
       Get["/search"] = p =>
                          {
                            var query = this.Bind<SearchQuery>();
+                           var result = searchService.Search(query.Query, query.Page, 5);
+
                            ViewBag.SearchQuery = query.Query;
                            
-                           return View["Index", searchService.Search(query.Query).Results];
+                           return View["Index", result];
                          };
     }
   }

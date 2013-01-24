@@ -22,9 +22,6 @@
     <span class="info">
       <i class="icon-calendar"></i> ${Model.PublishDate.ToString("dd MMMM yyyy")}
     </span>
-    <span class="info">
-      <i class="icon-comment"></i> 22 Comments
-    </span>
 
     !{Model.Content}
 

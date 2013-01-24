@@ -1,5 +1,6 @@
 namespace grhughes.com.Website.Web.Modules
 {
+  using Core.Model;
   using Core.Services.Interfaces;
   using Nancy;
   using Helpers;
@@ -13,7 +14,27 @@ namespace grhughes.com.Website.Web.Modules
     {
       this.blogService = blogService;
 
-      Get["/"] = _ => View["Index", this.blogService.Load(0)];
+      Get["/"] = _ =>
+                   {
+                     return View["Index", new BlogViewModel
+                                           {
+                                             Page = 0,
+                                             Posts = this.blogService.Load(0, 5),
+                                             TotalPosts = this.blogService.Count(),
+                                             Limit = 5
+                                           }];
+                   };
+
+      Get[@"/page/(?<page>[\d]+)"] = p =>  {
+                     return View["Index", new BlogViewModel
+                                           {
+                                             Page = p.Page,
+                                             Posts = this.blogService.Load((int)p.Page, 5),
+                                             TotalPosts = this.blogService.Count(),
+                                             Limit = 5
+                                           }];
+                   };
+
       Get["/rss"] = _ => View["RSS", this.blogService.Load(0)];
       Get["/rss.xml"] = _ => View["RSS", this.blogService.Load(0)];
 
@@ -38,7 +59,7 @@ namespace grhughes.com.Website.Web.Modules
                                  return Response.AsRedirect(blog.GetUrl(), RedirectResponse.RedirectType.Permanent);
                                };
 
-      Get[@"/(?<page>[\d]+)"] = p => View["Index", this.blogService.Load(p.page)];
+     
     }
   }
 }

@@ -1,4 +1,4 @@
-﻿<viewdata model="IList[[BlogPost]]" />
+﻿<viewdata model="BlogViewModel" />
 
 <content name="title">
   Blog
@@ -6,15 +6,9 @@
 
 <content name="main">
 
-<!--  <ul class="breadcrumb">
-    <li>
-      Home
-    </li>
-  </ul>-->
-
   <div id="posts">
 
-    <article each="var article in Model">
+    <article each="var article in Model.Posts">
 
       <h2>
         <a href="!{article.GetUrl()}">${article.Title}</a>
@@ -24,7 +18,7 @@
         <i class="icon-calendar"></i> ${article.PublishDate.ToString("dd MMMM yyyy")}
       </span>
       <span class="info">
-        <i class="icon-comment"></i> <a href="!{article.GetUrl()}#disqus_thread">22 Comments</a>
+        <i class="icon-comment"></i> <a href="!{article.GetUrl()}#disqus_thread"> Comments</a>
       </span>
 
       !{article.Content}
@@ -33,11 +27,11 @@
 
   </div>
   <ul class="pager">
-    <li class="previous disabled">
-      <a href="#">&larr; Older</a>
+    <li class="previous disabled?{!(Model.TotalPosts > ((Model.Page+1) * Model.Limit))}">
+      <a href="${UrlHelper.ForPage(Model.Page+1)}">&larr; Older</a>
     </li>
-    <li class="next">
-      <a href="#">Newer &rarr;</a>
+    <li class="next disabled?{Model.Page == 0}">
+      <a href="${UrlHelper.ForPage(Model.Page-1)}">Newer &rarr;</a>
     </li>
   </ul>
 </content>

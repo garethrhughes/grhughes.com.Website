@@ -12,13 +12,11 @@ namespace grhughes.com.Website.MetaWeblog
   public class MetaWeblog : XmlRpcService, IMetaWeblog
   {
     private readonly IBlogService blogService;
-    private readonly ISearchService searchService;
     private readonly IAuthenticationService authenticationService;
 
     public MetaWeblog()
     {
-      blogService = new BlogService();
-      searchService = new SearchService(blogService);
+      blogService = new BlogService(new SearchService());
       authenticationService = new AuthenticationService();
     }
 
@@ -39,16 +37,11 @@ namespace grhughes.com.Website.MetaWeblog
                         PublishDate = year == 1 ? DateTime.Now : post.dateCreated.ToUniversalTime(),
                         CreationDate = DateTime.Now,
                         User = authenticationService.Load(username),
-                        Published = false
+                        Published = false,
+                        Slug = post.title.Slug()
                       };
 
-
-      newPost.Slug = newPost.Title.Slug();
-      newPost = blogService.Save(newPost);
-
-      searchService.Add(newPost);
-
-      return newPost.Id.ToString();
+      return blogService.Save(newPost).Id.ToString();
     }
 
     bool IMetaWeblog.UpdatePost(string postid, string username, string password,
@@ -65,10 +58,9 @@ namespace grhughes.com.Website.MetaWeblog
       blog.Title = post.title;
       blog.Slug = blog.Title.Slug();
       blog.Content = post.description;
-      blog.PublishDate = post.dateCreated.Year != 0001 ? post.dateCreated.ToUniversalTime() : blog.PublishDate;
+      blog.PublishDate = post.dateCreated.Year != 1 ? post.dateCreated.ToUniversalTime() : blog.PublishDate;
 
       blogService.Save(blog);
-      searchService.Update(blog);
 
       return true;
     }
@@ -113,7 +105,7 @@ namespace grhughes.com.Website.MetaWeblog
         throw new XmlRpcFaultException(0, "User is not valid!");
 
 
-      var blogs = blogService.LoadForUser(username).Take(10);
+      var blogs = blogService.LoadForUser(username).OrderByDescending(x=>x.PublishDate);
 
       return blogs.Select(blog => new Post
                                     {
@@ -140,10 +132,7 @@ namespace grhughes.com.Website.MetaWeblog
       var blog = blogService.LoadById(int.Parse(postid));
 
       if (blog.User.Email == username)
-      {
-        searchService.Delete(blog);
         blogService.Delete(int.Parse(postid));
-      }
       else
         return false;
 

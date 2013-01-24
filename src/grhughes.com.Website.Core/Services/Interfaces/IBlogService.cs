@@ -20,5 +20,7 @@ namespace grhughes.com.Website.Core.Services.Interfaces
     void Delete(int blogId);
 
     void ToggleApproval(int blogId);
+
+    int Count();
   }
 }

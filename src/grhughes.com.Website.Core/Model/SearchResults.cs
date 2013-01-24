@@ -2,11 +2,12 @@
 {
   using System.Collections.Generic;
 
-  public class SearchResults
+  public class SearchResults<T>
   {
     public int Page { get; set; }
+    public string Query { get; set; }
     public int TotalResults { get; set; }
-    public List<BlogPost> Results { get; set; }
-    public int ResultsPerPage { get; set; }
+    public List<T> Results { get; set; }
+    public int Limit { get; set; }
   }
 }

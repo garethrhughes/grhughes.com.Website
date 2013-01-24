@@ -1,15 +1,16 @@
 <viewdata model="IList[[BlogPost]]" />
 
 <content name="title">
-Manage Queued Posts
+  Manage Posts
 </content>
 
-<content name="main>
-
-  <ol>
-    <li each="var post in Model">
-      <a href="!{post.GetUrl()}">${post.Title}</a> -
-      <a href="!{post.GetApprovalUrl()}">
+<content name="main">
+  <h2>Manage Posts</h2>
+  <hr />
+  <ol class="admin-list">
+    <li each="var post in Model" class="clear">
+      <a href="!{post.GetUrl()}">${post.Title}</a>
+      <a class="pull-right btn btn-mini" href="!{post.GetApprovalUrl()}">
         <if condition="!post.Published">Approve</if>
         <else>Unapprove</else>
       </a>

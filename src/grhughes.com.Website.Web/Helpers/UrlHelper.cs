@@ -24,6 +24,22 @@ namespace grhughes.com.Website.Web.Helpers
       return string.Format("/{0}/{1}.html", post.PublishDate.ToString("yyyy/MM/dd"), post.Slug);
     }
 
+    public static string ForSearch(string query, int page = 0)
+    {
+      if (page == 0)
+        return string.Format("/search?query={0}", query);
+
+      return string.Format("/search?query={0}&page={1}", query, page);
+    }
+
+    public static string ForPage(int page = 0)
+    {
+      if (page == 0)
+        return string.Format("/");
+
+      return string.Format("/page/{0}", page);
+    }
+
     public static string GetApprovalUrl(this BlogPost post)
     {
       return string.Format("/manage/approve/{0}", post.Id);

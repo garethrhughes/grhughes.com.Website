@@ -6,21 +6,17 @@ namespace grhughes.com.Website.Web.Modules
 
   public class ManagementModule : BaseModule
   {
-    private readonly IBlogService blogService;
-
     public ManagementModule(IBlogService blogService) : base("/manage")
     {
-      this.blogService = blogService;
       this.RequiresAuthentication();
 
-      Get["/articles"] = _ => View["Index.spark", this.blogService.LoadAll()];
-      Get["/users"] = _ => "Boom 2";
+      Get["/"] = _ => View["Index.spark", blogService.LoadAll()];
       Get["/approve/{id}"] = p =>
                                {
                                  blogService.ToggleApproval((int) p.id);
 
-                                 return Response.AsRedirect("/manage/articles");
+                                 return Response.AsRedirect("/manage");
                                };
     }
-  }
+  } 
 }

@@ -1,28 +1,22 @@
-<content name="page-title">
-Login
+<content name="title">
+  Login Required
 </content>
 
 <content name="main">
-
-  <form action="" method="post">
-
-    <fieldset>
-
-      <div>Username
-      <input type="text" name="Username" />
-</div>
-<div>
-Password
-      <input type="password" name="Password" />
-</div>
-
-      <div>
-        <input type="submit" name="submit" value="Submit" />
+  <h2>Login Required</h2>
+  <hr />
+  <form class="" action="" method=post>
+    <div class="control-group">
+      <div class="controls">
+        <input type="text" id="inputEmail" placeholder="Email" name="username">
       </div>
-
-    </fieldset>
-
+      <div class="controls">
+        <input type="password" id="inputPassword" placeholder="Password" name="password">
+      </div>
+      <div class="controls">
+        <button type="submit" class="btn">Sign in</button>
+      </div>
+    </div>
   </form>
-
 
 </content>

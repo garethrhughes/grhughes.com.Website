@@ -1,6 +1,10 @@
 namespace grhughes.com.Website.Web
 {
+  using System.Configuration;
+  using System.IO;
   using System.Threading.Tasks;
+  using System.Web.Hosting;
+  using Core.Model;
   using Core.Services;
   using Core.Services.Interfaces;
   using Nancy;
@@ -16,9 +20,14 @@ namespace grhughes.com.Website.Web
     protected override void ApplicationStartup(TinyIoCContainer container, IPipelines pipelines)
     {
       base.ApplicationStartup(container, pipelines);
-      var searchService = container.Resolve<ISearchService>();
+      container.Register<ISearchService<BlogPost>, SearchService>();
 
-      new Task(searchService.ReIndex).Start();
+      if (!Directory.Exists(HostingEnvironment.MapPath(ConfigurationManager.AppSettings["IndexPath"])))
+      {
+        var searchService = container.Resolve<ISearchService<BlogPost>>();
+        var blogService = container.Resolve<IBlogService>();
+        new Task(() => searchService.Index(blogService.LoadAll())).Start();
+      }
     }
 
     protected override DiagnosticsConfiguration DiagnosticsConfiguration

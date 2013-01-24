@@ -2,10 +2,13 @@
   $().ready(function () {
     var sidebar = $('#sidebar'),
         top = sidebar.offset().top,
-        footer = $('footer');
+        footer = $('footer'),
+        mainContent = $('#main-content');
 
 
     $(window).scroll(function () {
+      if (sidebar.height() >= mainContent.height()) return;
+
       var scrollTop = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
       if (scrollTop > (top - 20)) {
         var height = sidebar.height(),

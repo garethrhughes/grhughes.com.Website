@@ -7,60 +7,69 @@ namespace grhughes.com.Website.Core.Services
 
   public class BlogService : BaseService, IBlogService
   {
+    private readonly ISearchService<BlogPost> blogSearchService;
+
+    public BlogService(ISearchService<BlogPost> blogSearchService)
+    {
+      this.blogSearchService = blogSearchService;
+    }
+
     public void Delete(int blogId)
     {
-      dynamic db = GetDatabase();
+      var db = GetDatabase();
 
       db.BlogPosts.Delete(db.BlogPosts.Id == blogId);
     }
 
     public IList<BlogPost> Load(int page, int limit)
     {
-      dynamic db = GetDatabase();
+      var db = GetDatabase();
 
-      return db.BlogPosts.FindAll(db.BlogPosts.Published == true).OrderByPublishDateDescending().Skip(limit * page).Take(limit).ToList<BlogPost>();
+      return
+        db.BlogPosts.FindAll(db.BlogPosts.Published == true).OrderByPublishDateDescending().Skip(limit*page).Take(limit)
+          .ToList<BlogPost>();
     }
 
     public IList<BlogPost> LoadAll()
     {
-      dynamic db = GetDatabase();
+      var db = GetDatabase();
 
-      return db.BlogPosts.FindAll(db.BlogPosts.Published == true).OrderByPublishDateDescending().ToList<BlogPost>();
+      return db.BlogPosts.All().OrderByPublishDateDescending().ToList<BlogPost>();
     }
 
     public IList<BlogPost> LoadForUser(string email)
     {
-      dynamic db = GetDatabase();
+      var db = GetDatabase();
 
       return db.BlogPosts.FindAll(db.BlogPosts.User.Email == email).WithUser().ToList<BlogPost>();
     }
 
     public BlogPost LoadById(int blogId)
     {
-      dynamic db = GetDatabase();
+      var db = GetDatabase();
 
       return db.BlogPosts.FindAll(db.BlogPosts.Id == blogId).WithUser().FirstOrDefault();
     }
 
     public BlogPost Load(int year, int month, int day, string slug)
     {
-      dynamic db = GetDatabase();
+      var db = GetDatabase();
 
       var startDate = new DateTime(year, month, day, 0, 0, 0);
       var endDate = new DateTime(year, month, day, 23, 59, 59);
 
       return
         db.BlogPosts.FindAll(db.BlogPosts.PublishDate >= startDate && db.BlogPosts.PublishDate <= endDate &&
-                          db.BlogPosts.Slug == slug).WithUser().FirstOrDefault();
+                             db.BlogPosts.Slug == slug).WithUser().FirstOrDefault();
     }
 
     public BlogPost Save(BlogPost blogpost)
     {
-      dynamic db = GetDatabase();
+      var db = GetDatabase();
 
       if (blogpost.Id == 0)
       {
-        var post = db.BlogPosts.Insert(
+        blogpost = db.BlogPosts.Insert(
           new
             {
               blogpost.Title,
@@ -71,11 +80,17 @@ namespace grhughes.com.Website.Core.Services
               UserId = blogpost.User.Id,
               blogpost.Content
             });
-
-        return LoadById(post.Id);
+      }
+      else
+      {
+        db.BlogPosts.Update(blogpost);
       }
 
-      db.BlogPosts.Update(blogpost);
+      if (blogpost.Published)
+        blogSearchService.Index(blogpost);
+      else 
+        blogSearchService.Delete(blogpost);
+
       return blogpost;
     }
 
@@ -86,6 +101,13 @@ namespace grhughes.com.Website.Core.Services
       post.Published = !post.Published;
 
       Save(post);
+    }
+
+    public int Count()
+    {
+      var db = GetDatabase();
+
+      return db.BlogPosts.Query(db.BlogPosts.Published == true).Count();
     }
   }
 }
