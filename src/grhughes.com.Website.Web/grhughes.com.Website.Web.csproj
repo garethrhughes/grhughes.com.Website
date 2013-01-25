@@ -33,17 +33,21 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Nancy">
-      <HintPath>..\packages\Nancy.0.15.1\lib\net40\Nancy.dll</HintPath>
+    <Reference Include="Nancy, Version=0.15.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Nancy.dll</HintPath>
     </Reference>
-    <Reference Include="Nancy.Authentication.Forms">
-      <HintPath>..\packages\Nancy.Authentication.Forms.0.15.1\lib\net40\Nancy.Authentication.Forms.dll</HintPath>
+    <Reference Include="Nancy.Authentication.Forms, Version=0.15.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Nancy.Authentication.Forms.dll</HintPath>
     </Reference>
-    <Reference Include="Nancy.Hosting.Aspnet">
-      <HintPath>..\packages\Nancy.Hosting.Aspnet.0.15.1\lib\net40\Nancy.Hosting.Aspnet.dll</HintPath>
+    <Reference Include="Nancy.Hosting.Aspnet, Version=0.15.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Nancy.Hosting.Aspnet.dll</HintPath>
     </Reference>
-    <Reference Include="Nancy.ViewEngines.Spark">
-      <HintPath>..\packages\Nancy.Viewengines.Spark.0.15.1\lib\net40\Nancy.ViewEngines.Spark.dll</HintPath>
+    <Reference Include="Nancy.ViewEngines.Spark, Version=0.15.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Nancy.ViewEngines.Spark.dll</HintPath>
     </Reference>
     <Reference Include="Spark">
       <HintPath>..\packages\Spark.1.7.5.1\lib\NET40\Spark.dll</HintPath>
@@ -191,6 +195,25 @@
     <Content Include="img\social-media\youtube.png" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\galleria\galleria-1.2.5.js" />
+    <Content Include="js\galleria\plugins\flickr\flickr-demo.html" />
+    <Content Include="js\galleria\plugins\flickr\flickr-loader.gif" />
+    <Content Include="js\galleria\plugins\flickr\galleria.flickr.js" />
+    <Content Include="js\galleria\plugins\flickr\galleria.flickr.min.js" />
+    <Content Include="js\galleria\plugins\flickr\loader.gif" />
+    <Content Include="js\galleria\plugins\history\galleria.history.js" />
+    <Content Include="js\galleria\plugins\history\galleria.history.min.js" />
+    <Content Include="js\galleria\plugins\history\history-demo.html" />
+    <Content Include="js\galleria\plugins\picasa\galleria.picasa.js" />
+    <Content Include="js\galleria\plugins\picasa\galleria.picasa.min.js" />
+    <Content Include="js\galleria\plugins\picasa\loader.gif" />
+    <Content Include="js\galleria\plugins\picasa\picasa-demo.html" />
+    <Content Include="js\galleria\themes\classic\classic-demo.html" />
+    <Content Include="js\galleria\themes\classic\classic-loader.gif" />
+    <Content Include="js\galleria\themes\classic\classic-map.png" />
+    <Content Include="js\galleria\themes\classic\galleria.classic.css" />
+    <Content Include="js\galleria\themes\classic\galleria.classic.js" />
+    <Content Include="js\galleria\themes\classic\galleria.classic.min.js" />
     <Content Include="js\jquery-embedagram.pack.js" />
     <Content Include="js\setup.js" />
     <Content Include="Web.Debug.config">
@@ -222,9 +245,11 @@
   <ItemGroup>
     <None Include="img\social-media\.DS_Store" />
     <None Include="img\social-media\Thumbs.db" />
+    <None Include="js\galleria\LICENSE" />
     <None Include="Views\Blog\Index.spark">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Views\Blog\RSS.spark" />
     <None Include="Views\Search\Index.spark">
       <SubType>Designer</SubType>
     </None>

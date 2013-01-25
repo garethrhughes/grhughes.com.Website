@@ -2,17 +2,18 @@ namespace grhughes.com.Website.Core.Security
 {
   using System;
   using System.Linq;
+  using DevOne.Security.Cryptography.BCrypt;
 
   public static class PasswordUtil
   {
     public static string HashPassword(string password, string salt)
     {
-      return BCrypt.HashPassword(password, salt);
+      return BCryptHelper.HashPassword(password, salt);
     }
 
     public static string GeneratePassword()
     {
-      var chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+      const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
       var random = new Random();
       var result = new string(
         Enumerable.Repeat(chars, 8)

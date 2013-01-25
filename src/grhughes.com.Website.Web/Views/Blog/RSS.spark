@@ -1,0 +1,25 @@
+﻿<?xml version="1.0"?>
+<viewdata model="IList[[BlogPost]]" />
+<use master="" />
+<rss version="2.0">
+	<channel>
+		<description>Gareth Hughes Blog RSS Feed</description>
+		<link>http://grhughes.com/</link>
+		<title>Gareth Hughes</title>
+		<language>en-uk</language>
+		<ttl>600</ttl>
+		<pubDate>${Model.Take(1).FirstOrDefault().PublishDate.ToString("R")}</pubDate>
+		
+		<item each="var post in Model.Take(10).ToList()">
+			<title>${post.Title}</title>
+			<link>http://grhughes.com${post.GetUrl()}</link>
+			<guid>http://grhughes.com${post.GetUrl()}</guid>
+			<pubDate>${post.PublishDate.ToString("R")}</pubDate>
+			<description><![CDATA[
+				!{post.Content}
+			]]></description>
+
+		</item>
+
+	</channel>
+</rss>

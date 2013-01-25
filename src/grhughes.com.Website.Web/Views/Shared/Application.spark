@@ -12,6 +12,13 @@
       <script type="text/javascript" src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/galleria/galleria-1.2.5.js"></script>
+    <script type="text/javascript" src="/js/galleria/plugins/flickr/galleria.flickr.min.js"></script>
+
+    <script type="text/javascript">
+      Galleria.loadTheme('/js/galleria/themes/classic/galleria.classic.min.js');
+    </script>
   </head>
 
   <body>
@@ -125,10 +132,12 @@
         <p>&copy; Gareth Hughes 2013 &mdash; <a href="mailto:gareth@grhughes.com">gareth@grhughes.com</a> &mdash; +447948321190</p>
       </div>
 
-      <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+      
       <script type="text/javascript" src="/js/bootstrap.min.js"></script>
       <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1EGlJfOdILSGYdbK2Al7VhKNtd2zzB2Y&sensor=false"></script>
       <script type="text/javascript" src="/js/jquery-embedagram.pack.js"></script>
+
+
       <script type="text/javascript" src="/js/setup.js"></script>
 
     </div>

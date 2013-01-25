@@ -4,6 +4,7 @@ namespace grhughes.com.Website.Core.Services
   using System.Configuration;
   using System.IO;
   using System.Net;
+  using DevOne.Security.Cryptography.BCrypt;
   using Interfaces;
   using Model;
   using Nancy;
@@ -34,14 +35,14 @@ namespace grhughes.com.Website.Core.Services
 
       var user = db.Users.FindByEmail(username);
 
-      return BCrypt.CheckPassword(password, user.Password);
+      return BCryptHelper.CheckPassword(password, user.Password);
     }
 
     public string AddUser(OAuthUserDetails userDetails, string code)
     {
       dynamic db = GetDatabase();
 
-      var salt = BCrypt.GenerateSalt();
+      var salt = BCryptHelper.GenerateSalt();
       var password = PasswordUtil.GeneratePassword();
       var hashedPassword = PasswordUtil.HashPassword(password, salt);
 
@@ -104,14 +105,6 @@ namespace grhughes.com.Website.Core.Services
 
       return JsonConvert.DeserializeObject<OAuthUserDetails>(reader.ReadToEnd());
     }
-
-/*    public IUserIdentity Validate (string username, string password)
-    {
-      if (Authenticate (username, password))
-        return new UserIdentity{UserName = username};
-
-      return null;
-    }*/
 
     public IUserIdentity GetUserFromIdentifier(Guid identifier, NancyContext context)
     {

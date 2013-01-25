@@ -1,7 +1,7 @@
 ﻿<viewdata model="SearchResults[[BlogPost]]" />
 
 <content name="title">
-  Searchx
+  Search
 </content>
 
 <content name="main">
