@@ -51,10 +51,9 @@ namespace grhughes.com.Website.Web
     protected override void ConfigureConventions(NancyConventions nancyConventions)
     {
       nancyConventions.StaticContentsConventions.Add(StaticContentConventionBuilder.AddDirectory("css", @"css"));
-      nancyConventions.StaticContentsConventions.Add(StaticContentConventionBuilder.AddDirectory("font", @"font"));
-      nancyConventions.StaticContentsConventions.Add(StaticContentConventionBuilder.AddDirectory("ico", @"ico"));
       nancyConventions.StaticContentsConventions.Add(StaticContentConventionBuilder.AddDirectory("js", @"js"));
       nancyConventions.StaticContentsConventions.Add(StaticContentConventionBuilder.AddDirectory("img", @"img"));
+      nancyConventions.StaticContentsConventions.Add(StaticContentConventionBuilder.AddFile("/robots.txt", "/robots.txt"));
 
       StaticConfiguration.CaseSensitive = false;
       StaticConfiguration.DisableErrorTraces = false;

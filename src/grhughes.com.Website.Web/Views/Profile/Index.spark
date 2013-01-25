@@ -1,0 +1,76 @@
+﻿<content name="title">Profile</content>
+
+<content name="main">
+
+  <h3>Gareth Hughes</h3>
+
+  <p>Senior web and mobile developer specialising in 
+  <a href="#" rel="popover" data-trigger="hover" data-placement="top" data-original-title=".NET Framework" data-content="ASP.NET MVC 1-4, ASP.NET, C#, F#, Sql Server, NancyFX, NUnit, Entity Framework, Umbraco, NHibernate Lucene, and Simple.Data">.NET</a>, 
+  <a href="#" rel="popover" data-trigger="hover" data-placement="top" data-original-title="PHP" data-content="PDO, PHP, MySQL, Wordpress">PHP</a> and 
+  <a href="#" rel="popover" data-trigger="hover" data-placement="top" data-original-title="JavaScript" data-content="HTML 5, jQuery, Prototype, Canvas, SVG">JavaScript</a>. I have over 8 years experience developing rich web, enterprise and mobile applications using a range of technologies. I also have a first class degree with honours from Sheffield Hallam University where I graduated from in 2008. I started web application development in 2001 before going on to study it at college and university,</p><hr />
+  
+  <h3>Profile, Skills and Technologies</h3>
+  
+  <p>My background is prominently web application development with some desktop, mobile and game development using .NET, C# and a sprinkling of  F#, PHP and JavaScript. I also have experience with mobile application development both web and native and minor experience in game development. I am a very fast worker and am very quick at learning new technologies and I am always open to learning new things.
+  </p>
+  <p>
+  My other skills include, ASP.NET, ASP.NET MVC 1- 4, jQuery, Prototype, SVG, Canvas, CSS, HTML 5, MySQL, SQL Server, NHibernate, Lucene, TDD with NUnit and JUnit, BDD with Specflow, Software Design Patterns, NancyFX (and I have contributed to this project), IOC, Entity Framework, Umbraco, RavenDB, PHP, PDO, PHPUnit and Wordpress.
+  </p>
+  <p>
+  Mobile web development using HTML 5, JavaScript, CSS, PhoneGap and FeedHenry. Native mobile development using Objective-C, XCode and Good Dynamics. Version control using CVS, Git and SVN,
+  </p>
+  <hr />
+
+  <h3>Qualifications</h3>
+
+  <ul>
+    <li>Sheffield Hallam University (2008)
+
+
+    <ul>
+      <li>BSc (Hons) Computing (Software Engineering) First Class</li>
+      <li>Cisco IT Essentials 1: PC Hardware and Software</li>
+    </ul>
+
+  </li>
+  <li>
+
+    Dearne Valley College (2004)
+
+    <ul>
+      <li>AVCE ICT – A </li>
+      <li>CCNA 1 & 2</li>
+    </ul>
+
+  </li>
+
+</ul>
+
+<hr />
+
+  <h3>Hobbies &amp; Interests</h3>
+
+  <dl>
+    <dt>Software Development</dt>
+    <dd>I enjoy web and game development. Starting development in 2001 after getting my first computer.</dd>
+
+    <dt>Gaming</dt>
+    <dd>Generally RPG and MMO games. I have an interest in game development and it is something I wish to persue in the future.</dd>
+
+    <dt>Sports</dt>
+    <dd>I like Ice Skating, Football, Cycling and Running</dd>
+  </dl>
+
+</content>
+
+<content name="footer">
+<script type="text/javascript">
+  $("a[rel=popover]")
+      .popover()
+      .click(function (e) {
+        e.preventDefault()
+      });
+
+      </script>
+
+</content>

@@ -50,7 +50,7 @@
               <div id="sidebar">
 
                 <div class="thumbnail">
-                  <img src="/img/me.jpg" alt="Gareth Hughes" />
+                  <img src="/img/me.jpg" alt="Gareth Hughes" class="img-rounded" />
              
                   <div class="caption">
                     <h3>About Me</h3>
@@ -63,18 +63,17 @@
                   <h3 class="widget-title">Navigation</h3>
                   <ul class="nav nav-tabs nav-stacked left-nav">
  
-                    <li class="active"><a href="#">Blog</a></li>
-                    <li><a href="/profile">Profile</a></li>
-                    <li><a href="/portfolio">Portfolio</a></li>
+                    <li class="active?{ViewBag.Active == 'Blog'}"><a href="/">My Blog</a></li>
+                    <li class="active?{ViewBag.Active == 'Profile'}"><a href="/profile">Profile</a></li>
+                    <li class="active?{ViewBag.Active == 'Portfolio'}"><a href="/portfolio">Portfolio</a></li>
                   </ul>
                 </section>
 
                 <section>
                   <h3 class="widget-title">Projects</h3>
                   <ul class="nav nav-tabs nav-stacked left-nav">
- 
-                    <li><a href="#">grhughes.com.Website</a></li>
-                    <li><a href="#">JS-Mobile-Gestures</a></li>
+                    <li><a href="https://github.com/garethrhughes/grhughes.com.Website">grhughes.com Website Source</a></li>
+                    <li><a href="https://github.com/garethrhughes/JS-Gesture-Library">JS Gesture Library Source</a></li>
                   </ul>
                 </section>
 
@@ -108,7 +107,7 @@
                 <div class="span4">
                     <p class="heading">Links</p>
                     <ul id="social-media">
-                      <li><a href="http://www.facebook.com/garethrhughes"><img src="/img/social-media/facebook.png" alt="Facebook" /></a></li><li><a href="http://twitter.com/garethrhughes"><img src="/img/social-media/twitter.png" alt="Twitter" /></a></li><li><a href="http://www.linkedin.com/in/garethhughes"><img src="/img/social-media/linkedin.png" alt="LinkedIn" /></a></li><li><a href="http://www.last.fm/user/Gareth125"><img src="/img/social-media/lastfm.png" alt="Last.fm" /> </a></li><li><a href="https://plus.google.com/104031731835490033921/posts"><img src="/img/social-media/google-plus.png" alt="Google Plus" /> </a></li><li><a href=""><img src="/img/social-media/picasa.png" alt="Picasa" /> </a></li><li><a href="http://instagram.com/garethrhughes"><img src="/img/social-media/instagram.png" alt="Instagram" /> </a></li><li><a href="https://github.com/garethrhughes"><img src="/img/social-media/github.png" alt="Github" /> </a></li><li><a href="mailto:gareth@grhughes.com"><img src="/img/social-media/email.png" alt="Email" /> </a></li><li><a href="/rss"><img src="/img/social-media/rss.png" alt="RSS" /> </a></li>
+                      <li><a href="http://www.facebook.com/garethrhughes"><img src="/img/social-media/facebook.png" alt="Facebook" /></a></li><li><a href="http://twitter.com/garethrhughes"><img src="/img/social-media/twitter.png" alt="Twitter" /></a></li><li><a href="http://www.linkedin.com/in/garethhughes"><img src="/img/social-media/linkedin.png" alt="LinkedIn" /></a></li><li><a href="http://www.last.fm/user/Gareth125"><img src="/img/social-media/lastfm.png" alt="Last.fm" /> </a></li><li><a href="https://plus.google.com/104031731835490033921/posts"><img src="/img/social-media/google-plus.png" alt="Google Plus" /> </a></li><li><a href=""><img src="/img/social-media/picasa.png" alt="Picasa" /> </a></li><li><a href="http://instagram.com/garethrhughes"><img src="/img/social-media/instagram.png" alt="Instagram" /> </a></li><li><a href="http://flickr.com/garethrhughes"><img src="/img/social-media/flickr.png" alt="Flickr" /> </a></li><li><a href="https://github.com/garethrhughes"><img src="/img/social-media/github.png" alt="Github" /> </a></li><li><a href="mailto:gareth@grhughes.com"><img src="/img/social-media/email.png" alt="Email" /> </a></li><li><a href="/rss"><img src="/img/social-media/rss.png" alt="RSS" /> </a></li>
                     </ul>
                    
                 </div>              
@@ -132,12 +131,9 @@
         <p>&copy; Gareth Hughes 2013 &mdash; <a href="mailto:gareth@grhughes.com">gareth@grhughes.com</a> &mdash; +447948321190</p>
       </div>
 
-      
       <script type="text/javascript" src="/js/bootstrap.min.js"></script>
       <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1EGlJfOdILSGYdbK2Al7VhKNtd2zzB2Y&sensor=false"></script>
       <script type="text/javascript" src="/js/jquery-embedagram.pack.js"></script>
-
-
       <script type="text/javascript" src="/js/setup.js"></script>
 
     </div>
@@ -147,12 +143,6 @@
   <script type="text/javascript">
     var disqus_shortname = 'garethhughes'; // required: replace example with your forum shortname
     (function () {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-
-    (function () {
       var s = document.createElement('script'); s.async = true;
       s.type = 'text/javascript';
       s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
@@ -161,6 +151,6 @@
   </script>
 
 
-
+  <use content="footer" />
     
 </html>

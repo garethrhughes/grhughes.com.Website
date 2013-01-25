@@ -11,12 +11,15 @@ namespace grhughes.com.Website.Web.Modules
       this.RequiresAuthentication();
 
       Get["/"] = _ => View["Index.spark", blogService.LoadAll()];
-      Get["/approve/{id}"] = p =>
-                               {
-                                 blogService.ToggleApproval((int) p.id);
+      Get["/approve/{id}"] = p => Approve(blogService, p);
+                             
+    }
 
-                                 return Response.AsRedirect("/manage");
-                               };
+    private object Approve(IBlogService blogService, dynamic p)
+    {
+      blogService.ToggleApproval((int) p.id);
+
+      return Response.AsRedirect("/manage");
     }
   } 
 }

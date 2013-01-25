@@ -83,6 +83,28 @@
     <Content Include="img\glyphicons-halflings-white.png" />
     <Content Include="img\glyphicons-halflings.png" />
     <Content Include="img\me.jpg" />
+    <Content Include="img\portfolio\alfisti.png" />
+    <Content Include="img\portfolio\buying-solutions.png" />
+    <Content Include="img\portfolio\byrons.png" />
+    <Content Include="img\portfolio\grhughes.png" />
+    <Content Include="img\portfolio\itsbetteronline.png" />
+    <Content Include="img\portfolio\metro.png" />
+    <Content Include="img\portfolio\niveus.png" />
+    <Content Include="img\portfolio\ocr.png" />
+    <Content Include="img\portfolio\personal-site-new.png" />
+    <Content Include="img\portfolio\Pex.png" />
+    <Content Include="img\portfolio\pni-new.jpg" />
+    <Content Include="img\portfolio\smmt-article.png" />
+    <Content Include="img\portfolio\smmt-editing.png" />
+    <Content Include="img\portfolio\smmt-loading.png" />
+    <Content Include="img\portfolio\smmt-main.png" />
+    <Content Include="img\portfolio\smmt-media.png" />
+    <Content Include="img\portfolio\smmt.png" />
+    <Content Include="img\portfolio\technophobia.png" />
+    <Content Include="img\portfolio\vp.jpg" />
+    <Content Include="img\portfolio\wysiwyg.png" />
+    <Content Include="img\portfolio\xmas.jpg" />
+    <Content Include="img\portfolio\yorkshire.png" />
     <Content Include="img\social-media\500px.png" />
     <Content Include="img\social-media\aboutme.png" />
     <Content Include="img\social-media\add-this.png" />
@@ -216,6 +238,7 @@
     <Content Include="js\galleria\themes\classic\galleria.classic.min.js" />
     <Content Include="js\jquery-embedagram.pack.js" />
     <Content Include="js\setup.js" />
+    <Content Include="robots.txt" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -229,6 +252,8 @@
   <ItemGroup>
     <Compile Include="Modules\BaseModule.cs" />
     <Compile Include="Modules\BlogModule.cs" />
+    <Compile Include="Modules\PortfolioModule.cs" />
+    <Compile Include="Modules\ProfileModule.cs" />
     <Compile Include="Modules\SearchModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Bootstrapper.cs" />
@@ -243,6 +268,8 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="img\portfolio\cv.pdf" />
+    <None Include="img\portfolio\Thumbs.db" />
     <None Include="img\social-media\.DS_Store" />
     <None Include="img\social-media\Thumbs.db" />
     <None Include="js\galleria\LICENSE" />
@@ -250,6 +277,8 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Views\Blog\RSS.spark" />
+    <None Include="Views\Portfolio\Index.spark" />
+    <None Include="Views\Profile\Index.spark" />
     <None Include="Views\Search\Index.spark">
       <SubType>Designer</SubType>
     </None>

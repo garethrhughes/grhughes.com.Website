@@ -26,6 +26,12 @@ namespace grhughes.com.Website.Web.Modules
 
       Get[@"/{year}/{month}/{day}/{slug}.html"] = p => BlogPage(p);
       Get[@"/{id}/{slug}"] = p => BlogPageRedirect(p);
+
+      After += ctx =>
+                 {
+                   ctx.ViewBag.Active = "Blog";
+                 };
+
     }
 
     private Negotiator BlogRSS()

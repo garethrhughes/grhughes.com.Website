@@ -1,0 +1,341 @@
+﻿<content name="title">Portfolio</content>
+
+<content name="main">
+
+<div class="page-header">
+<h3>Portfolio</h3>
+</div>
+
+<div class="case-study">
+   <h3>SMMT Case Study</h3>
+
+   <p>
+    The second iteration of the SMMT prototype. After the first was developed and I learned a lot more about how the touch events are handled I wanted to scrap the code and start again, 
+    I wrote a <a href="https://github.com/garethrhughes/JS-Gesture-Library">gesture library</a> to handle the tracking of a number of gestures and actions and built all the interactions on top of this. This meant 
+    I had much more control over which events would fire depending on the number of fingers on screen and what elements had focus.
+  </p>
+  <p>
+    I also developed a small <a href="https://github.com/garethrhughes/JS-Gesture-Library">mobile framework</a> with some common UI features like a scrollable area with iOS like bounce and interactions.
+    These combined with usage of webkit transforms provided a near native experience through a web app.
+  </p>
+
+  <p>A live demo can be seen at <a href="http://smmt.technophobia.com">smmt.technophobia.com</a> and is best viewed on an iPad.
+
+    
+    <div class="portfolio-entry">
+
+      <div class="portfolio-text-container">
+        <h3>SMMT Loading Screen</h3>
+    
+        <p>
+          This screen makes use of Canvas for rendering the Technophobia Labs logo and Cache manifest and offline storage to handle the progress bar. As this app was developed to work offline the cache manifest events can be used to determine loading progress.
+        </p>
+
+      </div>
+
+      <div class="portfolio-image-container">
+        <img src="/img/portfolio/smmt-loading.png" alt="SMMT Loading Screen" />
+      </div>
+    </div>
+    
+    <div class="portfolio-entry">
+
+
+      <div class="portfolio-text-container">
+        <h3>SMMT Main Screen</h3>
+        <p>
+          This screen allows for swiping left and right on the left panel to show and hide and 2 fingered swipe left and right anywhere on the screen to do the same thing.
+          The years and monthly meetings can also be swiped left and right with accurate finger tracking and displayed using hardware accelerated webkit transitions.
+        </p>
+
+      </div>
+      <div class="portfolio-image-container">
+        <img src="/img/portfolio/smmt-main.png" alt="SMMT Main Screen" />
+      </div>
+    </div>
+
+    <div class="portfolio-entry">
+
+
+
+      <div class="portfolio-text-container">
+        <h3>SMMT Article</h3>
+        <p>
+          Invdividual article pages with text editing and left and right swipe gestures, again using webkit transitions. Text area can be also be scrolled.
+        </p>
+
+      </div>
+
+        <div class="portfolio-image-container">
+        <img src="/img/portfolio/smmt-article.png" alt="SMMT Article" />
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+      <div class="portfolio-entry">
+        <div class="portfolio-text-container">
+          <h3>Virtual Planisphere</h3>
+          <hr />
+          
+          <p>
+            This was a project for Open University and the goal was to take an existing web app which was written in Flash and rebuild it with new web technologies. I chose to use <strong>SVG</strong> and <strong>JavaScript</strong>. 
+          </p>
+          <p>
+            This was recently completed and has not yet gone live, the original is currently up at: <a href="http://www.open.edu/openlearn/science-maths-technology/science/physics-and-astronomy/astronomy/virtual-planisphere">http://www.open.edu/openlearn/science-maths-technology/science/physics-and-astronomy/astronomy/virtual-planisphere</a> and the new version can be seen at <a href="http://planisphere.dev.hotwoofy.com/">http://planisphere.dev.hotwoofy.com/</a>.
+          </p>
+        </div>
+
+          <div class="portfolio-image-container">
+          <img src="/img/portfolio/vp.jpg" alt="Virtual Planisphere" />
+        </div>
+      </div>
+
+      <div class="portfolio-entry">
+
+        <div class="portfolio-text-container">
+          <h3>PNI.org.uk</h3>
+          <hr />
+          <p>
+            Charity website built using Wordpress and Proboards. <a href="http://grhughes.com/29/pni-org-uk">I have written a blog post about it here.</a>
+          </p>
+
+        </div>
+
+        <div class="portfolio-image-container">
+          <img src="/img/portfolio/pni-new.jpg" alt="PNI.org.uk" />
+        </div>
+      </div>
+
+      <div class="portfolio-entry">
+
+        <div class="portfolio-text-container">
+          <h3>Brand Partners</h3>
+          <hr />
+          <p>
+            Umbraco website built for Direct Line Group, simple functionality added with Razor and XSLT macros. 
+          </p>
+
+        </div>
+
+        <div class="portfolio-image-container">
+          <img src="/img/portfolio/bp.png" alt="Brand Partners" />
+        </div>
+      </div>
+
+      <div class="portfolio-entry">
+
+
+        <div class="portfolio-text-container">
+          <h3>OCR History Timeline</h3>
+          <hr />
+          <p>
+            This History timeline was built entirely in <strong>Javascript</strong>, making use of <strong>jQuery</strong>, <strong>jQuery Templates</strong> and Html. Some data is dynamically loaded from XML on page load and the rest is added in the background while the rest of the application is initiated.
+          </p>
+        </div>        
+        <div class="portfolio-image-container">
+          <img src="/img/portfolio/ocr.png" alt="OCR" />
+        </div>
+      </div>
+
+      <div class="portfolio-entry">
+
+        
+        <div class="portfolio-text-container">
+          <h3>PEX Mobile</h3>
+          <hr />
+          <p>
+            An <strong>ASP.NET MVC</strong> web site built for mobiles. Uses the Geolocation API to determine the users location and shows them the nearest restaurants. Can show nearest restaurant on a map and also shows the menu.
+            Optimised for speed and aimed at Blackberries, iPhones and Android devices.
+          </p>
+        </div>        
+        <div class="portfolio-image-container">
+          <img src="/img/portfolio/pex.png" alt="Pex Mobile" />
+        </div>
+      </div>
+
+      <div class="portfolio-entry">
+       
+
+
+        <div class="portfolio-text-container">
+          <h3>Previous Personal Website</h3>
+          <hr />
+           <p>
+            One of many iterations of my personal website, it was designed and built by me, this version was made using <strong>ASP.NET MVC</strong>, <strong>NHibernate</strong>, <strong>NHibernate Search</strong>, <strong>Castle Windsor</strong>, <strong>jQuery</strong> and <strong>Spark View Engine</strong>.
+            It also consumes data feeds from <strong>Last.fm</strong>, <strong>Flickr</strong> and <strong>Delicious</strong>.
+          </p>
+        </div>        <div class="portfolio-image-container">
+          <img src="/img/portfolio/grhughes.png" alt="grhughes" />
+        </div>
+      </div>      
+      
+      <div class="portfolio-entry">
+        
+
+        <div class="portfolio-text-container">
+          <h3>Niveus</h3>
+          <hr />
+          
+          <p>
+            The Niveus website is a completely bespoke system designed and developed by me. It is a community website for a group of friends that play games together and named after our World of Warcraft guild. 
+            Originally used a combination of PHPBB and Wordpress the current version uses <strong>ASP.NET MVC</strong>, <strong>NHibernate</strong>, <strong>NHibernate Search</strong>, <strong>Castle Windsor</strong> and <strong>Spark View Engine</strong> plus others. 
+            Completely bespoke forum and news systems were created.
+          </p>
+          
+        </div>
+
+                <div class="portfolio-image-container">
+          <img src="/img/portfolio/niveus.png" alt="Niveus" />
+        </div>
+
+      </div>
+
+      <div class="portfolio-entry">
+       
+
+
+        <div class="portfolio-text-container">
+           <h3>Technophobia</h3>
+          <hr />
+          <p>
+            I was the lead developer on the rebuild of the Technophobia website, it uses a bespoke content management system. 
+            It was created using technologies such as <strong>ASP.NET MVC</strong>, <strong>NHibernate</strong>, <strong>NHibernate Search</strong>, <strong>Castle Windsor</strong>, 
+            <strong>jQuery &amp; jQuerty Validate</strong>, <strong>Bing Maps</strong> and <strong>Spark View Engine</strong>. <strong>NUnit</strong> tests were also created for this project.
+          </p>
+        </div>
+
+                <div class="portfolio-image-container">
+          <img src="/img/portfolio/technophobia.png" alt="Technophobia" />
+        </div>
+      </div>
+
+      <div class="portfolio-entry">
+
+
+        <div class="portfolio-text-container">
+           <h3>It's better online</h3>
+          <hr />
+          <p>
+            I was lead developer on this project which is a Capita initiative to get Capita employees to support Race Online 2012 by providing support to help people help get others online.
+            Technologies used were <strong>ASP.NET MVC</strong>, <strong>NHibernate</strong>, <strong>Castle Windsor</strong>, <strong>NUnit</strong>, <strong>NSubstitute</strong>
+            <strong>jQuery</strong>, <strong>ActionMailer</strong> and <strong>Spark View Engine</strong>
+          </p>
+        </div>
+               
+        <div class="portfolio-image-container">
+          <img src="/img/portfolio/itsbetteronline.png" alt="It's better online" />
+        </div>
+      </div>
+
+      <div class="portfolio-entry">
+
+        <div class="portfolio-text-container">
+          <h3>Welcome to Yorkshire</h3>
+          <hr />
+          <p>This website uses <strong>Umbraco</strong> and Webforms and the Ntop Search service prodvided by Visit Britain. My role on this project was to maintain and enhance the search engine.</p>
+        </div>        
+        <div class="portfolio-image-container">
+          <img src="/img/portfolio/yorkshire.png" alt="Welcome to Yorkshire" />
+        </div>
+
+      </div>
+
+      <div class="portfolio-entry">
+        
+
+
+        <div class="portfolio-text-container">
+          <h3>Alfisti</h3>
+          <hr />
+          <p>
+            Alfisti was a geolocalised community and was built on top of <strong>Bing Maps</strong>. I was responsible for the all mapping, geo-localisation of content and the chat system as well as working in many other areas.
+            </p>
+          <p>
+            Used in this project were <strong>ASP.NET MVC</strong>, <strong>NHibernate</strong>, <strong>Castle Windsor</strong>, <strong>jQuery</strong>, <strong>Bing Maps</strong>, <strong>NUnit</strong>, <strong>Rhino Mocks</strong> and <strong>Spark View Engine</strong>.
+            Users were able to chat with each other using a Html and <strong>Javascript</strong> interface to an <strong>OpenFire chat server</strong>.
+          </p>
+        </div>        
+        
+        <div class="portfolio-image-container">
+          <img src="/img/portfolio/alfisti.png" alt="Alfisti" />
+        </div>
+      </div>
+
+      <div class="portfolio-entry">
+
+        <div class="portfolio-text-container">
+          <h3>Buying Solutions</h3>
+          <hr />
+          <p>
+            
+            This website was made using <strong>PHP</strong>, <strong>MySql</strong>, <strong>Lucene</strong>, <strong>Memcached</strong> and <strong>Prototype &amp; Scriptaculous</strong>. It contained a large product store with over 500,000 products and many suppliers.
+            I inherited the lead developer role and was involved in various large projects including the launch of a new search engine and a rebrand. I was also responsible for many other smaller projects including a fully content managed newsletter creator.
+          </p>
+        </div>
+
+                
+        <div class="portfolio-image-container">
+          <img src="/img/portfolio/buying-solutions.png" alt="Buying Solutions" />
+        </div>
+
+      </div>
+
+      <div class="portfolio-entry">
+        
+
+        <div class="portfolio-text-container">
+          <h3>SMMT</h3>
+          <hr />
+          <p>
+            This iPad prototype was a web based application which was built entirely in Html and Javascript to deliver a near-native iPad experience. A completely custom mobile Javascript library was created using 3d webkit
+            transforms for smooth transitions. The prototype also used Canvas to render an animated loading screen and the cache manifest to store the application offline.
+          </p><p>
+            Local storage was also used to store notes and bookmarks which could be stored locally. This was part of a pitch to win a larger piece of work including a full version of this application which is currently in development.
+          </p>
+        </div>
+
+                <div class="portfolio-image-container">
+          <img src="/img/portfolio/smmt.png" alt="SMMT iPad App" />
+        </div>
+
+      </div>
+
+      <div class="portfolio-entry">
+        
+
+        <div class="portfolio-text-container">
+          <h3>Morrisons Christmas</h3>
+          <hr />
+          <p>
+            Made for Morrisons Christmas in 2006 this website was build using PHP with Postgres SQL using Prototype and XStandard for dynamically manging content. The website was fully content managed and then published, generating html files to keep server load under control.
+          </p>
+        </div>
+
+                <div class="portfolio-image-container">
+          <img src="/img/portfolio/xmas.jpg" alt="Morrisons Christmas" />
+        </div>
+
+      </div>
+
+      <div class="portfolio-entry">
+        
+
+
+        <div class="portfolio-text-container">
+          <h3>Byron Hamburgers</h3>
+          <hr />
+          <p>
+           An internal blog for Bryon Hamburgers. Built in ASP.NET MVC and is a Facebook style wall and basic file management tool for Byrons staff members. 
+          </p>
+        </div>
+
+                <div class="portfolio-image-container">
+          <img src="/img/portfolio/byrons.png" alt="Byron Hamburgers" />
+        </div>
+      </div>
+
+</content>

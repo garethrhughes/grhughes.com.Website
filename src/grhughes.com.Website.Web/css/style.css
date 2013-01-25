@@ -4,6 +4,7 @@
 body {
   font-family: 'Segoe UI', 'Open Sans', sans-serif;
   font-weight: 300;
+  line-height: 24px;
 }
 
 h1, h2, h3, h4 {
@@ -189,4 +190,25 @@ article div.gallery
   background-color: black;
   margin-bottom: 13px;
   padding-top: 5px;
+}
+
+.portfolio-entry
+{
+  margin-bottom: 3em;
+}
+
+.case-study 
+{
+  background-color: rgba(200, 200, 200, 0.1);
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  padding: 5px 15px 0 15px;
+  margin-bottom: 3em;
+  overflow: auto;
+}
+
+li, dd, dt
+{
+  line-height: 24px;
 }
