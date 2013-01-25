@@ -13,6 +13,8 @@
     <RootNamespace>grhughes.com.Website.Web</RootNamespace>
     <AssemblyName>grhughes.com.Website.Web</AssemblyName>
     <UseIISExpress>true</UseIISExpress>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -327,4 +329,5 @@
       <Name>grhughes.com.Website.MetaWeblogApi</Name>
     </ProjectReference>
   </ItemGroup>
+  <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
 </Project>
