@@ -283,22 +283,22 @@
     <None Include="img\social-media\.DS_Store" />
     <None Include="img\social-media\Thumbs.db" />
     <None Include="js\galleria\LICENSE" />
-    <None Include="Views\Blog\Index.spark">
+    <Content Include="Views\Blog\Index.spark">
       <SubType>Designer</SubType>
-    </None>
-    <None Include="Views\Blog\RSS.spark" />
-    <None Include="Views\Portfolio\Index.spark" />
-    <None Include="Views\Profile\Index.spark" />
-    <None Include="Views\Search\Index.spark">
+    </Content>
+    <Content Include="Views\Blog\RSS.spark" />
+    <Content Include="Views\Portfolio\Index.spark" />
+    <Content Include="Views\Profile\Index.spark" />
+    <Content Include="Views\Search\Index.spark">
       <SubType>Designer</SubType>
-    </None>
-    <None Include="Views\Shared\Application.spark" />
-    <None Include="Views\Authentication\Register.spark" />
-    <None Include="Views\Authentication\Registered.spark" />
-    <None Include="Views\Blog\View.spark" />
-    <None Include="Views\Management\Index.spark" />
-    <None Include="Views\Authentication\Login.spark" />
-    <None Include="Views\Authentication\LoginError.spark" />
+    </Content>
+    <Content Include="Views\Shared\Application.spark" />
+    <Content Include="Views\Authentication\Register.spark" />
+    <Content Include="Views\Authentication\Registered.spark" />
+    <Content Include="Views\Blog\View.spark" />
+    <Content Include="Views\Management\Index.spark" />
+    <Content Include="Views\Authentication\Login.spark" />
+    <Content Include="Views\Authentication\LoginError.spark" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
