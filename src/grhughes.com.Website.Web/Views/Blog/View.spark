@@ -1,7 +1,7 @@
 <viewdata model="BlogPost" />
 
 <content name="title">
-  ${Model.Title}
+  !{Model.Title}
 </content>
 
 <content name="main">
@@ -11,13 +11,13 @@
       <span class="divider">/</span>
     </li>
     <li>
-      ${Model.Title}
+      !{Model.Title}
     </li>
   </ul>
 
   <article>
 
-    <h2>${Model.Title}</h2>
+    <h2>!{Model.Title}</h2>
     <hr />
     <span class="info">
       <i class="icon-calendar"></i> ${Model.PublishDate.ToString("dd MMMM yyyy")}

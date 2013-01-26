@@ -11,7 +11,7 @@
 		<pubDate>${Model.Take(1).FirstOrDefault().PublishDate.ToString("R")}</pubDate>
 		
 		<item each="var post in Model.Take(10).ToList()">
-			<title>${post.Title}</title>
+			<title>!{post.Title}</title>
 			<link>http://grhughes.com${post.GetUrl()}</link>
 			<guid>http://grhughes.com${post.GetUrl()}</guid>
 			<pubDate>${post.PublishDate.ToString("R")}</pubDate>

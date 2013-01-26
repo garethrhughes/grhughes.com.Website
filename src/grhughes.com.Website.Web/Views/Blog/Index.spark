@@ -11,7 +11,7 @@
     <article each="var article in Model.Posts">
 
       <h2>
-        <a href="!{article.GetUrl()}">${article.Title}</a>
+        <a href="!{article.GetUrl()}">!{article.Title}</a>
       </h2>
       <hr />
       <span class="info">
