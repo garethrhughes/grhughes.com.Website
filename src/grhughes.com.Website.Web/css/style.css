@@ -212,3 +212,29 @@ li, dd, dt
 {
   line-height: 24px;
 }
+
+iframe 
+{
+  max-width: 100%
+}
+
+article div.gallery 
+{
+  max-width: 100%
+}
+
+@media (max-width: 1440px)   
+{
+  header #header-wrapper {
+    width: 900px;
+  } 
+  
+  #main {
+    width: 900px;
+  }
+  
+  footer .footer-row {
+    width: 900px;
+  }
+}
+ 

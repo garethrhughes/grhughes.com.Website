@@ -14,6 +14,10 @@
 
   var checkScroll = function () {
     if (sidebar.height() >= mainContent.height()) return;
+    if (sidebar.height() >= ($(window).height() - 25)) {
+      sidebar.css({ position: 'relative', top: '0', width: 'auto' });
+      return;
+    }
 
     var scrollTop = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
     if (scrollTop > (top - 20)) {
@@ -32,6 +36,7 @@
 
   $().ready(function () {
     $(window).scroll(checkScroll);
+    $(window).resize(checkScroll);
     checkScroll();
 
     $('#slideshow').embedagram({

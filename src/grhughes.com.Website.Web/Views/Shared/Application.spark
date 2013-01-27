@@ -1,11 +1,14 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Gareth Hughes > <use content="title" /></title>
+    <title>Gareth Hughes - <use content="title" /></title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
     <link href="/css/bootstrap.css" type="text/css" rel="stylesheet"/>
+
     <link href="/css/style.css" type="text/css" rel="stylesheet"/>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link rel="shortcut icon" type="image/ico" href="/img/favicon.ico"/>
 
     <!--[if lt IE 9]>
