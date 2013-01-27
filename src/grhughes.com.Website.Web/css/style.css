@@ -236,5 +236,13 @@ article div.gallery
   footer .footer-row {
     width: 900px;
   }
+  
+  footer ul#slideshow li img {
+    width: 40px;
+  }
+  
+  ul#social-media img {
+    width: 26px;
+  }
 }
  

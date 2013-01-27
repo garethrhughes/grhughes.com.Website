@@ -1,16 +1,17 @@
 /**
- * @preserve Galleria Flickr Plugin 2011-08-01
- * http://galleria.aino.se
+ * Galleria Flickr Plugin 2012-09-04
+ * http://galleria.io
  *
- * Copyright 2011, Aino
- * Licensed under the MIT license.
+ * Licensed under the MIT license
+ * https://raw.github.com/aino/galleria/master/LICENSE
+ *
  */
+
+(function($) {
 
 /*global jQuery, Galleria, window */
 
 Galleria.requires(1.25, 'The Flickr Plugin requires Galleria version 1.2.5 or later.');
-
-(function($) {
 
 // The script path
 var PATH = Galleria.utils.getScriptPath();
@@ -270,14 +271,15 @@ Galleria.Flickr.prototype = {
         params = $.extend({
             method: 'flickr.photos.search',
             extras: 'url_t,url_m,url_o,url_s,url_l,url_z,description',
-            sort: this.options.sort
+            sort: this.options.sort,
+            per_page: Math.min( this.options.max, 500 )
         }, params );
 
         return this._call( params, function(data) {
 
             var gallery = [],
                 photos = data.photos ? data.photos.photo : data.photoset.photo,
-                len = Math.min( this.options.max, photos.length ),
+                len = photos.length,
                 photo,
                 i;
 
@@ -329,8 +331,8 @@ Galleria.prototype.load = function() {
         opts = $.extend({}, self._options.flickrOptions),
         loader = typeof opts.loader !== 'undefined' ?
             opts.loader : $('<div>').css({
-                width: '100%',
-                height: '100%',
+                width: 48,
+                height: 48,
                 opacity: 0.7,
                 background:'#000 url('+PATH+'loader.gif) no-repeat 50% 50%'
             });

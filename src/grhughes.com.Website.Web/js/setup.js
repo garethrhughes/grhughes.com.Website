@@ -10,7 +10,8 @@
   var sidebar = $('#sidebar'),
         top = sidebar.offset().top,
         footer = $('footer'),
-        mainContent = $('#main-content');
+        mainContent = $('#main-content'),
+        leftContainer = $('div.span3');
 
   var checkScroll = function () {
     if (sidebar.height() >= mainContent.height()) return;
@@ -25,9 +26,9 @@
             footerTop = footer.offset().top;
 
       if (scrollTop + height > (footerTop - 40)) {
-        sidebar.css({ position: 'fixed', top: -(scrollTop + height - footerTop + 20), width: sidebar.width() });
+        sidebar.css({ position: 'fixed', top: -(scrollTop + height - footerTop + 20), width: leftContainer.width() });
       } else {
-        sidebar.css({ position: 'fixed', top: '20px', width: sidebar.width() });
+        sidebar.css({ position: 'fixed', top: '20px', width: leftContainer.width() });
       }
     } else {
       sidebar.css({ position: 'relative', top: '0', width: 'auto' });

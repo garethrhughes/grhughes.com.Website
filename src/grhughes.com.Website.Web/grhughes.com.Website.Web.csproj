@@ -227,7 +227,8 @@
     <Content Include="img\social-media\youtube.png" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\bootstrap.min.js" />
-    <Content Include="js\galleria\galleria-1.2.5.js" />
+    <Content Include="js\galleria\galleria-1.2.9.js" />
+    <Content Include="js\galleria\galleria-1.2.9.min.js" />
     <Content Include="js\galleria\plugins\flickr\flickr-demo.html" />
     <Content Include="js\galleria\plugins\flickr\flickr-loader.gif" />
     <Content Include="js\galleria\plugins\flickr\galleria.flickr.js" />
@@ -282,7 +283,6 @@
     <None Include="img\portfolio\Thumbs.db" />
     <None Include="img\social-media\.DS_Store" />
     <None Include="img\social-media\Thumbs.db" />
-    <None Include="js\galleria\LICENSE" />
     <Content Include="Views\Blog\Index.spark">
       <SubType>Designer</SubType>
     </Content>
@@ -299,6 +299,7 @@
     <Content Include="Views\Management\Index.spark" />
     <Content Include="Views\Authentication\Login.spark" />
     <Content Include="Views\Authentication\LoginError.spark" />
+    <None Include="js\galleria\LICENSE" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
