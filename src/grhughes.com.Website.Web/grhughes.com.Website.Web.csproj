@@ -110,6 +110,7 @@
     <Content Include="img\portfolio\ocr.png" />
     <Content Include="img\portfolio\personal-site-new.png" />
     <Content Include="img\portfolio\Pex.png" />
+    <Content Include="img\portfolio\placeholder.png" />
     <Content Include="img\portfolio\pni-new.jpg" />
     <Content Include="img\portfolio\smmt-article.png" />
     <Content Include="img\portfolio\smmt-editing.png" />
@@ -255,6 +256,7 @@
     <Content Include="js\galleria\themes\classic\galleria.classic.js" />
     <Content Include="js\galleria\themes\classic\galleria.classic.min.js" />
     <Content Include="js\jquery-embedagram.pack.js" />
+    <Content Include="js\jquery.lazyload.min.js" />
     <Content Include="js\setup.js" />
     <Content Include="robots.txt" />
     <Content Include="Web.Debug.config">

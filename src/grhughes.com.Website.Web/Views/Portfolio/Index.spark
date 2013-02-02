@@ -66,39 +66,6 @@
   </div>
 
 
-      <div class="portfolio-entry">
-        <div class="portfolio-text-container">
-          <h3>Virtual Planisphere (2012)</h3>
-          <hr />
-          
-          <p>
-            This was a project for Open University and the goal was to take an existing web app which was written in Flash and rebuild it with new web technologies. I chose to use <strong>SVG</strong> and <strong>JavaScript</strong>. 
-          </p>
-          <p>
-            This was recently completed and has not yet gone live, the original is currently up at: <a href="http://www.open.edu/openlearn/science-maths-technology/science/physics-and-astronomy/astronomy/virtual-planisphere">http://www.open.edu/openlearn/science-maths-technology/science/physics-and-astronomy/astronomy/virtual-planisphere</a> and the new version can be seen at <a href="http://planisphere.dev.hotwoofy.com/">http://planisphere.dev.hotwoofy.com/</a>.
-          </p>
-        </div>
-
-          <div class="portfolio-image-container">
-          <img src="/img/portfolio/vp.jpg" alt="Virtual Planisphere" />
-        </div>
-      </div>
-
-      <div class="portfolio-entry">
-
-        <div class="portfolio-text-container">
-          <h3>PNI.org.uk (2011)</h3>
-          <hr />
-          <p>
-            Charity website built using Wordpress and Proboards. <a href="http://grhughes.com/29/pni-org-uk">I have written a blog post about it here.</a>
-          </p>
-
-        </div>
-
-        <div class="portfolio-image-container">
-          <img src="/img/portfolio/pni-new.jpg" alt="PNI.org.uk" />
-        </div>
-      </div>
 
   <div class="portfolio-entry">
 
@@ -156,6 +123,41 @@
     
   </div>
 
+
+  <div class="portfolio-entry">
+    <div class="portfolio-text-container">
+      <h3>Virtual Planisphere (2012)</h3>
+      <hr />
+
+      <p>
+        This was a project for Open University and the goal was to take an existing web app which was written in Flash and rebuild it with new web technologies. I chose to use <strong>SVG</strong> and <strong>JavaScript</strong>.
+      </p>
+      <p>
+        This was recently completed and has not yet gone live, the original is currently up at: <a href="http://www.open.edu/openlearn/science-maths-technology/science/physics-and-astronomy/astronomy/virtual-planisphere">http://www.open.edu/openlearn/science-maths-technology/science/physics-and-astronomy/astronomy/virtual-planisphere</a> and the new version can be seen at <a href="http://planisphere.dev.hotwoofy.com/">http://planisphere.dev.hotwoofy.com/</a>.
+      </p>
+    </div>
+
+    <div class="portfolio-image-container">
+      <img src="/img/portfolio/placeholder.png" data-original="/img/portfolio/vp.jpg" alt="Virtual Planisphere" class="lazy" />
+    </div>
+  </div>
+
+  <div class="portfolio-entry">
+
+    <div class="portfolio-text-container">
+      <h3>PNI.org.uk (2011)</h3>
+      <hr />
+      <p>
+        Charity website built using Wordpress and Proboards. <a href="http://grhughes.com/29/pni-org-uk">I have written a blog post about it here.</a>
+      </p>
+
+    </div>
+
+    <div class="portfolio-image-container">
+      <img src="/img/portfolio/placeholder.png" data-original="/img/portfolio/pni-new.jpg" alt="PNI.org.uk" class="lazy" />
+    </div>
+  </div>
+
       <div class="portfolio-entry">
 
         <div class="portfolio-text-container">
@@ -168,7 +170,7 @@
         </div>
 
         <div class="portfolio-image-container">
-          <img src="/img/portfolio/hcc.png" alt="HCC International" />
+          <img src="/img/portfolio/placeholder.png" data-original="/img/portfolio/hcc.png" alt="HCC International" class="lazy" />
         </div>
       </div>
 
@@ -184,7 +186,7 @@
         </div>
 
         <div class="portfolio-image-container">
-          <img src="/img/portfolio/bp.png" alt="Brand Partners" />
+          <img src="/img/portfolio/placeholder.png" data-original="/img/portfolio/bp.png" alt="Brand Partners" class="lazy" />
         </div>
       </div>
 
@@ -197,7 +199,7 @@
           </p>
         </div>        
         <div class="portfolio-image-container">
-          <img src="/img/portfolio/ocr.png" alt="OCR" />
+          <img src="/img/portfolio/placeholder.png" data-original="/img/portfolio/ocr.png" alt="OCR" class="lazy" />
         </div>
       </div>
 
@@ -213,7 +215,7 @@
           </p>
         </div>        
         <div class="portfolio-image-container">
-          <img src="/img/portfolio/pex.png" alt="Pex Mobile" />
+          <img src="/img/portfolio/placeholder.png" data-original="/img/portfolio/pex.png" alt="Pex Mobile" class="lazy" />
         </div>
       </div>
 
@@ -229,7 +231,7 @@
         </div>        
           
         <div class="portfolio-image-container">
-          <img src="/img/portfolio/grhughes.png" alt="grhughes" />
+          <img src="/img/portfolio/placeholder.png" data-original="/img/portfolio/grhughes.png" alt="grhughes" class="lazy" />
         </div>
       </div>      
       
@@ -248,8 +250,8 @@
           
         </div>
 
-                <div class="portfolio-image-container">
-          <img src="/img/portfolio/niveus.png" alt="Niveus" />
+        <div class="portfolio-image-container">
+          <img src="/img/portfolio/placeholder.png" data-original="/img/portfolio/niveus.png" alt="Niveus" class="lazy" />
         </div>
 
       </div>
@@ -268,8 +270,8 @@
           </p>
         </div>
 
-                <div class="portfolio-image-container">
-          <img src="/img/portfolio/technophobia.png" alt="Technophobia" />
+        <div class="portfolio-image-container">
+          <img src="/img/portfolio/placeholder.png" data-original="/img/portfolio/technophobia.png" alt="Technophobia" class="lazy" />
         </div>
       </div>
 
@@ -287,7 +289,7 @@
         </div>
                
         <div class="portfolio-image-container">
-          <img src="/img/portfolio/itsbetteronline.png" alt="It's better online" />
+          <img src="/img/portfolio/placeholder.png" data-original="/img/portfolio/itsbetteronline.png" alt="It's better online" class="lazy" />
         </div>
       </div>
 
@@ -299,7 +301,7 @@
           <p>This website uses <strong>Umbraco</strong> and Webforms and the Ntop Search service prodvided by Visit Britain. My role on this project was to maintain and enhance the search engine.</p>
         </div>        
         <div class="portfolio-image-container">
-          <img src="/img/portfolio/yorkshire.png" alt="Welcome to Yorkshire" />
+          <img src="/img/portfolio/placeholder.png" data-original="/img/portfolio/yorkshire.png" alt="Welcome to Yorkshire" class="lazy" />
         </div>
 
       </div>
@@ -321,7 +323,7 @@
         </div>        
         
         <div class="portfolio-image-container">
-          <img src="/img/portfolio/alfisti.png" alt="Alfisti" />
+          <img src="/img/portfolio/placeholder.png" data-original="/img/portfolio/alfisti.png" alt="Alfisti" class="lazy" />
         </div>
       </div>
 
@@ -339,7 +341,7 @@
 
                 
         <div class="portfolio-image-container">
-          <img src="/img/portfolio/buying-solutions.png" alt="Buying Solutions" />
+          <img src="/img/portfolio/placeholder.png" data-original="/img/portfolio/buying-solutions.png" alt="Buying Solutions" class="lazy" />
         </div>
 
       </div>
@@ -359,7 +361,7 @@
         </div>
 
                 <div class="portfolio-image-container">
-          <img src="/img/portfolio/smmt.png" alt="SMMT iPad App" />
+          <img src="/img/portfolio/placeholder.png" data-original="/img/portfolio/smmt.png" alt="SMMT iPad App" class="lazy" />
         </div>
 
       </div>
@@ -376,15 +378,13 @@
         </div>
 
                 <div class="portfolio-image-container">
-          <img src="/img/portfolio/xmas.jpg" alt="Morrisons Christmas" />
+          <img src="/img/portfolio/placeholder.png" data-original="/img/portfolio/xmas.jpg" alt="Morrisons Christmas" class="lazy" />
         </div>
 
       </div>
 
       <div class="portfolio-entry">
         
-
-
         <div class="portfolio-text-container">
           <h3>Byron Hamburgers (2010)</h3>
           <hr />
@@ -393,9 +393,17 @@
           </p>
         </div>
 
-                <div class="portfolio-image-container">
-          <img src="/img/portfolio/byrons.png" alt="Byron Hamburgers" />
+        <div class="portfolio-image-container">
+          <img src="/img/portfolio/placeholder.png" data-original="/img/portfolio/byrons.png" alt="Byron Hamburgers" class="lazy" />
         </div>
       </div>
 
+</content>
+
+
+<content name="footer">
+  <script type="text/javascript" src="/js/jquery.lazyload.min.js"></script>
+  <script type="text/javascript">
+    $("img.lazy").lazyload({ threshold : 100 });
+  </script>
 </content>
