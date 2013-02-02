@@ -94,9 +94,16 @@
     <Content Include="img\glyphicons-halflings.png" />
     <Content Include="img\me.jpg" />
     <Content Include="img\portfolio\alfisti.png" />
+    <Content Include="img\portfolio\bp.png" />
     <Content Include="img\portfolio\buying-solutions.png" />
     <Content Include="img\portfolio\byrons.png" />
+    <Content Include="img\portfolio\dsa-1.png" />
+    <Content Include="img\portfolio\dsa-2.png" />
+    <Content Include="img\portfolio\dsa-3.png" />
+    <Content Include="img\portfolio\dsa-4.png" />
+    <Content Include="img\portfolio\dsa-5.png" />
     <Content Include="img\portfolio\grhughes.png" />
+    <Content Include="img\portfolio\hcc.png" />
     <Content Include="img\portfolio\itsbetteronline.png" />
     <Content Include="img\portfolio\metro.png" />
     <Content Include="img\portfolio\niveus.png" />
@@ -279,15 +286,15 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="img\portfolio\cv.pdf" />
-    <None Include="img\portfolio\Thumbs.db" />
     <None Include="img\social-media\.DS_Store" />
     <None Include="img\social-media\Thumbs.db" />
     <Content Include="Views\Blog\Index.spark">
       <SubType>Designer</SubType>
     </Content>
     <Content Include="Views\Blog\RSS.spark" />
-    <Content Include="Views\Portfolio\Index.spark" />
+    <Content Include="Views\Portfolio\Index.spark">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Views\Profile\Index.spark" />
     <Content Include="Views\Search\Index.spark">
       <SubType>Designer</SubType>

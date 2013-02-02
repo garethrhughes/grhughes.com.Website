@@ -223,6 +223,17 @@ article div.gallery
   max-width: 100%
 }
 
+.carousel-control 
+{
+  line-height: 24px;
+}
+
+#dsa-carousel 
+{
+  max-width:768px; 
+  margin: 0 auto;
+}
+
 @media (max-width: 1440px)   
 {
   header #header-wrapper {

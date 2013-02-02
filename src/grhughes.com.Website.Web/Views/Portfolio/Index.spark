@@ -7,7 +7,7 @@
 </div>
 
 <div class="case-study">
-   <h3>SMMT Case Study</h3>
+   <h3>SMMT Case Study (2012)</h3>
 
    <p>
     The second iteration of the SMMT prototype. After the first was developed and I learned a lot more about how the touch events are handled I wanted to scrap the code and start again, 
@@ -19,66 +19,56 @@
     These combined with usage of webkit transforms provided a near native experience through a web app.
   </p>
 
-  <p>A live demo can be seen at <a href="http://smmt.technophobia.com">smmt.technophobia.com</a> and is best viewed on an iPad.
+  <p>
+    A live demo can be seen at <a href="http://smmt.technophobia.com">smmt.technophobia.com</a> and is best viewed on an iPad.
+  </p>
 
-    
-    <div class="portfolio-entry">
 
-      <div class="portfolio-text-container">
-        <h3>SMMT Loading Screen</h3>
-    
-        <p>
-          This screen makes use of Canvas for rendering the Technophobia Labs logo and Cache manifest and offline storage to handle the progress bar. As this app was developed to work offline the cache manifest events can be used to determine loading progress.
-        </p>
+    <div id="smmt-carousel" class="carousel slide">
+      <!-- Carousel items -->
+      <div class="carousel-inner">
+        <div class="active item">
+          <img src="/img/portfolio/smmt-loading.png" alt="SMMT Loading Screen" />
+          <div class="carousel-caption">
+            <h4>SMMT Loading Screen</h4>
+            <p>
+              This screen makes use of Canvas for rendering the Technophobia Labs logo and Cache manifest and offline storage to handle the progress bar. As this app was developed to work offline the cache manifest events can be used to determine loading progress.
+            </p>
+          </div>
+        </div>
 
+        <div class="item">
+          <img src="/img/portfolio/smmt-main.png" alt="SMMT Main Screen" />
+          <div class="carousel-caption">
+            <h4>SMMT Main Screen</h4>
+            <p>
+              This screen allows for swiping left and right on the left panel to show and hide and 2 fingered swipe left and right anywhere on the screen to do the same thing.
+              The years and monthly meetings can also be swiped left and right with accurate finger tracking and displayed using hardware accelerated webkit transitions.
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="/img/portfolio/smmt-article.png" alt="SMMT Article" />
+          <div class="carousel-caption">
+            <h4>SMMT Article</h4>
+            <p>
+              Invdividual article pages with text editing and left and right swipe gestures, again using webkit transitions. Text area can be also be scrolled.
+            </p>
+          </div>
+        </div>
+        
       </div>
-
-      <div class="portfolio-image-container">
-        <img src="/img/portfolio/smmt-loading.png" alt="SMMT Loading Screen" />
-      </div>
+      <!-- Carousel nav -->
+      <a class="carousel-control left" href="#smmt-carousel" data-slide="prev">&lsaquo;</a>
+      <a class="carousel-control right" href="#smmt-carousel" data-slide="next">&rsaquo;</a>
     </div>
-    
-    <div class="portfolio-entry">
-
-
-      <div class="portfolio-text-container">
-        <h3>SMMT Main Screen</h3>
-        <p>
-          This screen allows for swiping left and right on the left panel to show and hide and 2 fingered swipe left and right anywhere on the screen to do the same thing.
-          The years and monthly meetings can also be swiped left and right with accurate finger tracking and displayed using hardware accelerated webkit transitions.
-        </p>
-
-      </div>
-      <div class="portfolio-image-container">
-        <img src="/img/portfolio/smmt-main.png" alt="SMMT Main Screen" />
-      </div>
-    </div>
-
-    <div class="portfolio-entry">
-
-
-
-      <div class="portfolio-text-container">
-        <h3>SMMT Article</h3>
-        <p>
-          Invdividual article pages with text editing and left and right swipe gestures, again using webkit transitions. Text area can be also be scrolled.
-        </p>
-
-      </div>
-
-        <div class="portfolio-image-container">
-        <img src="/img/portfolio/smmt-article.png" alt="SMMT Article" />
-      </div>
-    </div>
-
+   
   </div>
-
-
 
 
       <div class="portfolio-entry">
         <div class="portfolio-text-container">
-          <h3>Virtual Planisphere</h3>
+          <h3>Virtual Planisphere (2012)</h3>
           <hr />
           
           <p>
@@ -97,7 +87,7 @@
       <div class="portfolio-entry">
 
         <div class="portfolio-text-container">
-          <h3>PNI.org.uk</h3>
+          <h3>PNI.org.uk (2011)</h3>
           <hr />
           <p>
             Charity website built using Wordpress and Proboards. <a href="http://grhughes.com/29/pni-org-uk">I have written a blog post about it here.</a>
@@ -110,10 +100,82 @@
         </div>
       </div>
 
+  <div class="portfolio-entry">
+
+    <div class="portfolio-text-container">
+      <h3>DSA Mobile (2012)</h3>
+      <hr />
+      <p>A native iPad application built for the DSA. Written in Objective C using XCode and integrated with Good Dynamics. The server side component uses NancyFX to talk to download schedule information from Office 365. All communication with the client happens securely via the Good Dynamics API.</p>
+    </div>
+
+    <div id="dsa-carousel" class="carousel slide">
+      <!-- Carousel items -->
+      <div class="carousel-inner">
+        <div class="active item">
+          <img src="/img/portfolio/dsa-1.png" alt="" />
+          <div class="carousel-caption">
+            <h4>Good Dynamics Integration</h4>
+            <p>Integration with Good Dynamics provides a secure enterprise framework for management of application installations. Each examiner has to enter their email address and unique one-time activation code.</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="/img/portfolio/dsa-2.png" alt="" />
+          <div class="carousel-caption">
+            <h4>Good Dynamics Integration</h4>
+            <p>Creating a secure channel with Good Dynamics and authenticating the user.</p>  
+          </div>
+        </div>
+        <div class="item">
+          <img src="/img/portfolio/dsa-3.png" alt="" />
+          <div class="carousel-caption">
+            <h4>Examiner Schedule</h4>
+            <p>Examiners can see their details as well as request an updated schedule. They can also see their upcoming days work.</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="/img/portfolio/dsa-4.png" alt="" />
+          <div class="carousel-caption">
+            <h4>Examiner Daily Schedule</h4>
+            <p>This is a filterable list of activities and booked test slots for each day. These screens are all updated using push notifications when the schedule updates on the server.</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="/img/portfolio/dsa-5.png" alt="" />
+          <div class="carousel-caption">
+            <h4>Examiner Booking View</h4>
+            <p>Displays details of the booking to the examiner, it includes test data and all required information.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Carousel nav -->
+      <a class="carousel-control left" href="#dsa-carousel" data-slide="prev">&lsaquo;</a>
+      <a class="carousel-control right" href="#dsa-carousel" data-slide="next">&rsaquo;</a>
+    </div>
+    
+    
+  </div>
+
       <div class="portfolio-entry">
 
         <div class="portfolio-text-container">
-          <h3>Brand Partners</h3>
+          <h3>HCC International (2011)</h3>
+          <hr />
+          <p>
+            Bond management portal for HCCi, allows bond schedule display and bond applications to be created online. Used a custom build JS validation framework (<a href="https://github.com/garethrhughes/JS-Validation-Library">https://github.com/garethrhughes/JS-Validation-Library</a>). Built using ASP.NET MVC, Razor and Entity Framework integrated with a huge legacy database.
+          </p>
+
+        </div>
+
+        <div class="portfolio-image-container">
+          <img src="/img/portfolio/hcc.png" alt="HCC International" />
+        </div>
+      </div>
+
+      <div class="portfolio-entry">
+
+        <div class="portfolio-text-container">
+          <h3>Brand Partners (2012)</h3>
           <hr />
           <p>
             Umbraco website built for Direct Line Group, simple functionality added with Razor and XSLT macros. 
@@ -127,10 +189,8 @@
       </div>
 
       <div class="portfolio-entry">
-
-
         <div class="portfolio-text-container">
-          <h3>OCR History Timeline</h3>
+          <h3>OCR History Timeline (2011)</h3>
           <hr />
           <p>
             This History timeline was built entirely in <strong>Javascript</strong>, making use of <strong>jQuery</strong>, <strong>jQuery Templates</strong> and Html. Some data is dynamically loaded from XML on page load and the rest is added in the background while the rest of the application is initiated.
@@ -145,7 +205,7 @@
 
         
         <div class="portfolio-text-container">
-          <h3>PEX Mobile</h3>
+          <h3>Pizza Express Mobile (2011)</h3>
           <hr />
           <p>
             An <strong>ASP.NET MVC</strong> web site built for mobiles. Uses the Geolocation API to determine the users location and shows them the nearest restaurants. Can show nearest restaurant on a map and also shows the menu.
@@ -159,16 +219,16 @@
 
       <div class="portfolio-entry">
        
-
-
         <div class="portfolio-text-container">
-          <h3>Previous Personal Website</h3>
+          <h3>Previous Personal Website (2011)</h3>
           <hr />
            <p>
             One of many iterations of my personal website, it was designed and built by me, this version was made using <strong>ASP.NET MVC</strong>, <strong>NHibernate</strong>, <strong>NHibernate Search</strong>, <strong>Castle Windsor</strong>, <strong>jQuery</strong> and <strong>Spark View Engine</strong>.
             It also consumes data feeds from <strong>Last.fm</strong>, <strong>Flickr</strong> and <strong>Delicious</strong>.
           </p>
-        </div>        <div class="portfolio-image-container">
+        </div>        
+          
+        <div class="portfolio-image-container">
           <img src="/img/portfolio/grhughes.png" alt="grhughes" />
         </div>
       </div>      
@@ -177,7 +237,7 @@
         
 
         <div class="portfolio-text-container">
-          <h3>Niveus</h3>
+          <h3>Niveus (2011)</h3>
           <hr />
           
           <p>
@@ -199,7 +259,7 @@
 
 
         <div class="portfolio-text-container">
-           <h3>Technophobia</h3>
+           <h3>Technophobia (2010)</h3>
           <hr />
           <p>
             I was the lead developer on the rebuild of the Technophobia website, it uses a bespoke content management system. 
@@ -217,7 +277,7 @@
 
 
         <div class="portfolio-text-container">
-           <h3>It's better online</h3>
+           <h3>It's Better Online (2011)</h3>
           <hr />
           <p>
             I was lead developer on this project which is a Capita initiative to get Capita employees to support Race Online 2012 by providing support to help people help get others online.
@@ -234,7 +294,7 @@
       <div class="portfolio-entry">
 
         <div class="portfolio-text-container">
-          <h3>Welcome to Yorkshire</h3>
+          <h3>Welcome to Yorkshire (2011)</h3>
           <hr />
           <p>This website uses <strong>Umbraco</strong> and Webforms and the Ntop Search service prodvided by Visit Britain. My role on this project was to maintain and enhance the search engine.</p>
         </div>        
@@ -249,7 +309,7 @@
 
 
         <div class="portfolio-text-container">
-          <h3>Alfisti</h3>
+          <h3>Alfisti (2009)</h3>
           <hr />
           <p>
             Alfisti was a geolocalised community and was built on top of <strong>Bing Maps</strong>. I was responsible for the all mapping, geo-localisation of content and the chat system as well as working in many other areas.
@@ -268,7 +328,7 @@
       <div class="portfolio-entry">
 
         <div class="portfolio-text-container">
-          <h3>Buying Solutions</h3>
+          <h3>Buying Solutions (2006-2009)</h3>
           <hr />
           <p>
             
@@ -288,7 +348,7 @@
         
 
         <div class="portfolio-text-container">
-          <h3>SMMT</h3>
+          <h3>SMMT (2012)</h3>
           <hr />
           <p>
             This iPad prototype was a web based application which was built entirely in Html and Javascript to deliver a near-native iPad experience. A completely custom mobile Javascript library was created using 3d webkit
@@ -308,7 +368,7 @@
         
 
         <div class="portfolio-text-container">
-          <h3>Morrisons Christmas</h3>
+          <h3>Morrisons Christmas (2006)</h3>
           <hr />
           <p>
             Made for Morrisons Christmas in 2006 this website was build using PHP with Postgres SQL using Prototype and XStandard for dynamically manging content. The website was fully content managed and then published, generating html files to keep server load under control.
@@ -326,7 +386,7 @@
 
 
         <div class="portfolio-text-container">
-          <h3>Byron Hamburgers</h3>
+          <h3>Byron Hamburgers (2010)</h3>
           <hr />
           <p>
            An internal blog for Bryon Hamburgers. Built in ASP.NET MVC and is a Facebook style wall and basic file management tool for Byrons staff members. 
