@@ -38,10 +38,12 @@
   </div>
   <ul class="pager">
     <li class="previous disabled?{!(Model.TotalResults > ((Model.Page+1) * Model.Limit))}">
-      <a href="${UrlHelper.ForSearch(Model.Query, Model.Page + 1)}">&larr; Previous</a>
+      <a if="(Model.TotalResults > ((Model.Page+1) * Model.Limit))" href="${UrlHelper.ForSearch(Model.Query, Model.Page + 1)}">&larr; Previous</a>
+      <a if="!(Model.TotalResults > ((Model.Page+1) * Model.Limit))" href="#">&larr; Previous</a>
     </li>
     <li class="next disabled?{Model.Page == 0}">
-      <a href="${UrlHelper.ForSearch(Model.Query, Model.Page - 1)}">Next &rarr;</a>
+      <a if="Model.Page > 0" href="${UrlHelper.ForSearch(Model.Query, Model.Page - 1)}">Next &rarr;</a>
+      <a if="Model.Page == 0" href="#">Next &rarr;</a>
     </li>
   </ul>
 </content>

@@ -28,10 +28,12 @@
   </div>
   <ul class="pager">
     <li class="previous disabled?{!(Model.TotalPosts > ((Model.Page+1) * Model.Limit))}">
-      <a href="${UrlHelper.ForPage(Model.Page+1)}">&larr; Older</a>
+      <a if="(Model.TotalPosts > ((Model.Page+1) * Model.Limit))" href="${UrlHelper.ForPage(Model.Page+1)}">&larr; Older</a>
+      <a if="!(Model.TotalPosts > ((Model.Page+1) * Model.Limit))" href="#">&larr; Older</a>
     </li>
     <li class="next disabled?{Model.Page == 0}">
-      <a href="${UrlHelper.ForPage(Model.Page-1)}">Newer &rarr;</a>
+      <a if="Model.Page > 0" href="${UrlHelper.ForPage(Model.Page-1)}">Newer &rarr;</a>
+      <a if="Model.Page == 0" href="#">Newer &rarr;</a>
     </li>
   </ul>
 </content>
