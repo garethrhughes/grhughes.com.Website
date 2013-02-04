@@ -28,11 +28,8 @@ namespace grhughes.com.Website.Web
         var blogService = container.Resolve<IBlogService>();
         new Task(() => searchService.Index(blogService.LoadAll())).Start();
       }
-    }
 
-    protected override DiagnosticsConfiguration DiagnosticsConfiguration
-    {
-      get { return new DiagnosticsConfiguration {Password = @"password"}; }
+      DiagnosticsHook.Disable(pipelines);
     }
 
     protected override void RequestStartup(TinyIoCContainer container, IPipelines pipelines, NancyContext context)
