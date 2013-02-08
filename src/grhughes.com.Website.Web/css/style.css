@@ -236,6 +236,10 @@ article div.gallery
 
 @media (max-width: 1440px)   
 {
+  body 
+  {
+    font-size: 12px;
+  }
   header #header-wrapper {
     width: 900px;
   } 
