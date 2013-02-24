@@ -64,13 +64,16 @@ article span.info
   display: inline-block;
   margin-bottom: 1em;
   margin-right: 1em;
-  padding-left: 5px;
+}
+
+article span.info > i
+{
+  padding-right: 5px;
 }
 
 article span.info > a 
 {
   color: inherit;
-  
 }
 
 article span.info > a:hover 
