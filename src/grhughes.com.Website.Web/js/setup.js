@@ -51,7 +51,7 @@
   });
 
   var mapOptions = {
-    center: new google.maps.LatLng(53.3833, -1.4667),
+    center: new google.maps.LatLng(-33.8674869, 151.2069902),
     zoom: 11,
     mapTypeId: google.maps.MapTypeId.ROADMAP,
     disableDefaultUI: true
