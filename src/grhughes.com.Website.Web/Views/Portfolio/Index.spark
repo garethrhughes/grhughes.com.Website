@@ -133,7 +133,7 @@
         This was a project for Open University and the goal was to take an existing web app which was written in Flash and rebuild it with new web technologies. I chose to use <strong>SVG</strong> and <strong>JavaScript</strong>.
       </p>
       <p>
-        This was recently completed and has not yet gone live, the original is currently up at: <a href="http://www.open.edu/openlearn/science-maths-technology/science/physics-and-astronomy/astronomy/virtual-planisphere">http://www.open.edu/openlearn/science-maths-technology/science/physics-and-astronomy/astronomy/virtual-planisphere</a> and the new version can be seen at <a href="http://planisphere.dev.hotwoofy.com/">http://planisphere.dev.hotwoofy.com/</a>.
+        Currently live at: <a href="http://www.open.edu/openlearn/science-maths-technology/science/physics-and-astronomy/astronomy/virtual-planisphere">http://www.open.edu/openlearn/science-maths-technology/science/physics-and-astronomy/astronomy/virtual-planisphere</a>.
       </p>
     </div>
 
@@ -148,7 +148,7 @@
       <h3>PNI.org.uk (2011)</h3>
       <hr />
       <p>
-        Charity website built using Wordpress and Proboards. <a href="http://grhughes.com/29/pni-org-uk">I have written a blog post about it here.</a>
+        Charity website built using <strong>PHP</strong>, <strong>Wordpress</strong> and Proboards. <a href="http://grhughes.com/29/pni-org-uk">I have written a blog post about it here.</a>
       </p>
 
     </div>
@@ -164,7 +164,7 @@
           <h3>HCC International (2011)</h3>
           <hr />
           <p>
-            Bond management portal for HCCi, allows bond schedule display and bond applications to be created online. Used a custom build JS validation framework (<a href="https://github.com/garethrhughes/JS-Validation-Library">https://github.com/garethrhughes/JS-Validation-Library</a>). Built using ASP.NET MVC, Razor and Entity Framework integrated with a huge legacy database.
+            Bond management portal for HCCi, allows bond schedule display and bond applications to be created online. Used a custom build JS validation framework (<a href="https://github.com/garethrhughes/JS-Validation-Library">https://github.com/garethrhughes/JS-Validation-Library</a>). Built using <strong>ASP.NET MVC</strong>, <strong>Razor</strong> and <strong>Entity Framework</strong> integrated with a huge legacy database.
           </p>
 
         </div>
