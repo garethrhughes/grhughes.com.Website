@@ -21,8 +21,8 @@ namespace grhughes.com.Website.Web.Modules
       Get["/"] = _ => BlogIndex();
       Get[@"/page/(?<page>[\d]+)"] = p => BlogIndex((int) p.Page);
 
-      Get["/rss"] = _ => BlogRSS();
-      Get["/rss.xml"] = _ => BlogRSS();
+      Get["/rss"] = _ => View["RSS", blogService.Load(0)].WithContentType("application/rss+xml");
+      
 
       Get[@"/{year}/{month}/{day}/{slug}.html"] = p => BlogPage(p);
       Get[@"/{id}/{slug}"] = p => BlogPageRedirect(p);
@@ -32,11 +32,6 @@ namespace grhughes.com.Website.Web.Modules
                    ctx.ViewBag.Active = "Blog";
                  };
 
-    }
-
-    private Negotiator BlogRSS()
-    {
-      return View["RSS", blogService.Load(0)].WithContentType("text/xml");
     }
 
     private dynamic BlogIndex(int page = 0)
