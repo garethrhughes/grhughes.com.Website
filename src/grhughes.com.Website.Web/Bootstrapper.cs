@@ -53,7 +53,7 @@ namespace grhughes.com.Website.Web
       nancyConventions.StaticContentsConventions.Add(StaticContentConventionBuilder.AddFile("/robots.txt", "/robots.txt"));
 
       StaticConfiguration.CaseSensitive = false;
-      StaticConfiguration.DisableErrorTraces = false;
+      StaticConfiguration.DisableErrorTraces = true;
 
       base.ConfigureConventions(nancyConventions);
     }
