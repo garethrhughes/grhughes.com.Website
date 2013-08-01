@@ -2,11 +2,16 @@
 
 body {
   font-family:'Open Sans', sans-serif;
-  line-height: 24px;
+  line-height: 26px;
 }
 
 h1, h2, h3, h4 {
   font-weight: normal;
+}
+
+p
+{
+  margin: 1em 0;
 }
 
 #top-bar {
