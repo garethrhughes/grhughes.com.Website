@@ -17,13 +17,12 @@
 
   <article>
 
-    <h2>!{Model.Title}</h2>
+    <h2>
+      !{Model.Title}
+      <span class="pull-right">${Model.PublishDate.ToString("dd MMM yyyy")}</span>
+    </h2>
 
     !{Model.Content}
-
-    <span class="info">
-      <i class="icon-calendar"></i> ${Model.PublishDate.ToString("dd MMMM yyyy")}
-    </span>
 
   </article>
 

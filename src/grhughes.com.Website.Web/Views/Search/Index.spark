@@ -22,13 +22,11 @@
 
       <h2>
         <a href="!{article.GetUrl()}">${article.Title}</a>
+        <span class="pull-right">${article.PublishDate.ToString("dd MMM yyyy")}</span>
       </h2>
 
       !{article.Content}
 
-      <span class="info">
-        <i class="icon-calendar"></i> ${article.PublishDate.ToString("dd MMMM yyyy")}
-      </span>
       <span class="info">
         <i class="icon-comment"></i>
         <a href="!{article.GetUrl()}#disqus_thread"> Comments</a>
