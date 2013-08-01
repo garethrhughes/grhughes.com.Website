@@ -13,15 +13,16 @@
       <h2>
         <a href="!{article.GetUrl()}">!{article.Title}</a>
       </h2>
-      <hr />
+
+      !{article.Content}
+
       <span class="info">
         <i class="icon-calendar"></i> ${article.PublishDate.ToString("dd MMMM yyyy")}
       </span>
       <span class="info">
-        <i class="icon-comment"></i> <a href="!{article.GetUrl()}#disqus_thread"> Comments</a>
+        <i class="icon-comment"></i>
+        <a href="!{article.GetUrl()}#disqus_thread"> Comments</a>
       </span>
-
-      !{article.Content}
 
     </article>
 

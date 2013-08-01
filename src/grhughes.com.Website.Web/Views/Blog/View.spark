@@ -18,12 +18,12 @@
   <article>
 
     <h2>!{Model.Title}</h2>
-    <hr />
+
+    !{Model.Content}
+
     <span class="info">
       <i class="icon-calendar"></i> ${Model.PublishDate.ToString("dd MMMM yyyy")}
     </span>
-
-    !{Model.Content}
 
   </article>
 

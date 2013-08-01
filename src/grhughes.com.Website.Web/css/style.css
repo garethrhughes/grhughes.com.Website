@@ -1,9 +1,7 @@
-﻿@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600,600italic,700,700italic,800,800italic);
+﻿@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic);
 
 body {
-  font-family: 'Segoe UI', 'Open Sans', sans-serif;
-  font-weight: 300;
+  font-family:'Open Sans', sans-serif;
   line-height: 24px;
 }
 
@@ -13,7 +11,7 @@ h1, h2, h3, h4 {
 
 #top-bar {
   height: 20px;
-  background-color: #444444;
+  background-color: #444b5b;
 }
 
 #wrapper {
@@ -52,6 +50,7 @@ header #header-wrapper {
 #search-container {
   float: right;
   margin-top: 30px;
+  text-align: right
 }
 
 ul.left-nav 
@@ -62,7 +61,7 @@ ul.left-nav
 article span.info 
 {
   display: inline-block;
-  margin-bottom: 1em;
+  margin-top: 1em;
   margin-right: 1em;
 }
 
@@ -165,7 +164,7 @@ div.bottom
 
 h1 > a 
 {
-  color: inherit;
+  color: #444b5b;
 }
 
 h1 > a:hover 
@@ -173,14 +172,24 @@ h1 > a:hover
   text-decoration: none;
 }
 
-article h2 > a 
+h2:first-child
 {
-  color: inherit;
+  display: block;
+  background-color: #444b5b;
+  padding: 5px 10px;
+  color: #eee;
 }
 
-article h2 > a:hover 
+h2 > a
+{
+  color: #eee;
+}
+
+
+h2 > a:hover 
 {
   text-decoration: none;
+  color: #ccc;
 }
 
 ol.admin-list li
@@ -238,6 +247,50 @@ article div.gallery
   max-width:768px; 
   margin: 0 auto;
 }
+
+.portfolio-text-container h3,
+.page-header h3,
+#sidebar h3,
+#main-content > h3
+{
+  display: block;
+  background-color: #444b5b;
+  padding: 5px 10px;
+  color: #eee;
+}
+
+.page-header
+{
+  border-bottom: 0;
+  margin: 0;
+}
+
+.page-header h3
+{
+  margin-top: 0;
+}
+
+#main-content > h3:first-of-type,
+#sidebar h3:first-child
+{
+  margin-top: 0;
+}
+
+.profile
+{
+  margin-bottom: 20px;
+}
+
+.profile > img
+{
+  margin-bottom: 10px;
+}
+
+h2, h3
+{
+  font-size: 30px;
+}
+
 
 @media (max-width: 1440px)   
 {

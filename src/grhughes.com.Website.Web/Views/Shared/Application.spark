@@ -38,7 +38,13 @@
           <div class="container-fluid">
             <div id="search-container">
               <form class="navbar-search pull-left" method="GET" action="/search">
-                <input type="text" class="search-query" name="query" placeholder="Search" value="${ViewBag.SearchQuery}" />
+
+                <div class="input-append span6 search-form">
+                  <div>
+                    <input class="" id="appendedInputButtons" type="text" name="query" placeholder="Search, C#, JavaScript etc" value="${ViewBag.SearchQuery}" />
+                    <button class="btn" type="button">Search</button>
+                  </div>
+                </div>
               </form>
             </div>
 
@@ -52,41 +58,7 @@
 
         <div class="container-fluid">
           <div class="row-fluid">
-
-            <div class="span3">
-
-              <div id="sidebar">
-
-                <div class="thumbnail">
-                  <img src="https://graph.facebook.com/garethrhughes/picture?width=300" alt="Gareth Hughes" class="img-rounded" />
-             
-                  <div class="caption">
-                    <h3>About Me</h3>
-                    
-                    <p>Software Developer from Sheffield, England with a first class degree in Software Engineering. Specialising in .NET, JavaScript and PHP.</p>
-                  </div>
-                </div>
-
-                <section>
-                  <h3 class="widget-title">Navigation</h3>
-                  <ul class="nav nav-tabs nav-stacked left-nav">
- 
-                    <li class="active?{ViewBag.Active == 'Blog'}"><a href="/">Blog</a></li>
-                    <li class="active?{ViewBag.Active == 'Profile'}"><a href="/profile">Profile</a></li>
-                    <li class="active?{ViewBag.Active == 'Portfolio'}"><a href="/portfolio">Portfolio</a></li>
-                  </ul>
-                </section>
-
-                <section>
-                  <h3 class="widget-title">Projects</h3>
-                  <ul class="nav nav-tabs nav-stacked left-nav">
-                    <li><a href="https://github.com/garethrhughes/grhughes.com.Website">grhughes.com Website Source</a></li>
-                    <li><a href="https://github.com/garethrhughes/JS-Gesture-Library">JS Gesture Library Source</a></li>
-                  </ul>
-                </section>
-              </div>
-            </div>
-
+            
             <div class="span9">
 
               <div id="main-content">
@@ -100,6 +72,34 @@
 
               </div>
             </div>
+            <div class="span3">
+
+              <div id="sidebar">
+
+                <h3>About Me</h3>
+
+                <div class="profile">
+                  <img src="https://graph.facebook.com/garethrhughes/picture?width=300" alt="Gareth Hughes" />
+             
+                  <div class="caption">
+                
+                    <p>Software Developer from Sheffield, England with a first class degree in Software Engineering. Specialising in .NET, JavaScript and PHP.</p>
+                  </div>
+                </div>
+
+                <section>
+                  <h3 class="widget-title">Navigation</h3>
+                  <ul class="nav nav-tabs nav-stacked left-nav">
+ 
+                    <li class="active?{ViewBag.Active == 'Blog'}"><a href="/">Blog</a></li>
+                    <li class="active?{ViewBag.Active == 'Profile'}"><a href="/profile">Profile</a></li>
+                    <li class="active?{ViewBag.Active == 'Portfolio'}"><a href="/portfolio">Portfolio</a></li>
+                  </ul>
+                </section>
+              </div>
+            </div>
+
+
           </div>
         </div>
 
