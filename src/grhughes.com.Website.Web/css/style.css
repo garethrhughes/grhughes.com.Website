@@ -389,5 +389,31 @@ h2, h3
   {
     font-size: 10px;
   }
+
+  header #header-wrapper
+  {
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar-inner
+  {
+    padding-left: 0;
+  }
+
+  header
+  {
+    height: 75px;
+  }
+
+  header h1
+  {
+    line-height: 75px;
+  }
+
+  #main
+  {
+    margin: 20px auto;
+  }
 }
  
