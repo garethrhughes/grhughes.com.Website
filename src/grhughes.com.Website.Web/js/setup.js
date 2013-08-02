@@ -8,11 +8,11 @@
   }
 
   var sidebar = $('#sidebar'),
-        top = sidebar.offset().top,
-        height = sidebar.height(),
-        footer = $('footer'),
-        mainContent = $('#main-content'),
-        leftContainer = $('div.span3');
+      top = 148,
+      height = sidebar.height(),
+      footer = $('footer'),
+      mainContent = $('#main-content'),
+      leftContainer = $('div.span3');
 
   var checkScroll = function () {
     if (sidebar.height() >= mainContent.height()) return;

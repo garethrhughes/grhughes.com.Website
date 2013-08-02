@@ -3,6 +3,7 @@
 body {
   font-family:'Open Sans', sans-serif;
   line-height: 26px;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4 {
@@ -104,6 +105,11 @@ article span.info > a:hover
 .navbar-search .search-query 
 {
   line-height: normal;
+}
+
+.navbar
+{
+  display: none;
 }
 
 footer p.heading
@@ -303,30 +309,56 @@ h2, h3
 }
 
 
-@media (max-width: 1440px)   
+@media (max-width: 1180px)   
 {
-  body 
+  h2, h3
   {
-    font-size: 12px;
+    font-size: 24px;
   }
+
   header #header-wrapper {
-    width: 900px;
+    width: 95%;
   } 
   
   #main {
-    width: 900px;
+    width: 95%;
   }
   
   footer .footer-row {
-    width: 900px;
+    width: 95%;
   }
-  
-  footer ul#slideshow li img {
-    width: 40px;
+}
+
+ @media (max-width: 745px)
+{
+  #main > div > div > div.span9
+  {
+    width: 100%
   }
-  
-  ul#social-media img {
-    width: 26px;
+
+  #main > div > div > div.span3
+  {
+    display: none;
+  }
+
+  footer > .footer-row > div > div > div:first-child
+  {
+    width: 100%;
+  }
+
+  footer > .footer-row > div > div > div:nth-child(n+2)
+  {
+    display: none;
+  }
+
+  #search-container
+  {
+    display: none;
+  }
+
+  .navbar
+  {
+    display: block;
   }
 }
  

@@ -39,7 +39,7 @@
             <div id="search-container">
               <form class="navbar-search pull-left" method="GET" action="/search">
 
-                <div class="input-append span6 search-form">
+                <div class="input-append span4 search-form">
                   <div>
                     <input class="" id="appendedInputButtons" type="text" name="query" placeholder="Search, C#, JavaScript etc" value="${ViewBag.SearchQuery}" />
                     <button class="btn" type="button">Search</button>
@@ -63,9 +63,14 @@
 
               <div id="main-content">
   
-                <div class="alert alert-block" if="!ViewBag.HideCookieNotice">
-                  <button type="button" class="close cookie-dismiss" data-dismiss="alert">&times;</button>
-                  This website uses cookies to improve user experience. By continuing to use this website I assume that you are okay with this.
+                <div class="navbar" style="">
+                  <div class="navbar-inner">
+                    <ul class="nav">
+                      <li class="active?{ViewBag.Active == 'Blog'}"><a href="/">Home</a></li>
+                      <li class="active?{ViewBag.Active == 'Profile'}"><a href="/profile">Profile</a></li>
+                      <li class="active?{ViewBag.Active == 'Portfolio'}"><a href="/portfolio">Portfolio</a></li>
+                    </ul>
+                  </div>
                 </div>
 
                 <use content="main" />
@@ -91,7 +96,7 @@
                   <h3 class="widget-title">Navigation</h3>
                   <ul class="nav nav-tabs nav-stacked left-nav">
  
-                    <li class="active?{ViewBag.Active == 'Blog'}"><a href="/">Blog</a></li>
+                    <li class="active?{ViewBag.Active == 'Blog'}"><a href="/">Home</a></li>
                     <li class="active?{ViewBag.Active == 'Profile'}"><a href="/profile">Profile</a></li>
                     <li class="active?{ViewBag.Active == 'Portfolio'}"><a href="/portfolio">Portfolio</a></li>
                   </ul>
