@@ -328,6 +328,10 @@
       <Project>{d412e8c8-7908-4280-b23e-86f7ba2a9507}</Project>
       <Name>grhughes.com.Website.Core</Name>
     </ProjectReference>
+    <ProjectReference Include="..\grhughes.com.Website.MetaWeblog\grhughes.com.Website.MetaWeblogApi.csproj">
+      <Project>{180d7ac3-0c59-4c16-8820-363f9b0cf2ea}</Project>
+      <Name>grhughes.com.Website.MetaWeblogApi</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
