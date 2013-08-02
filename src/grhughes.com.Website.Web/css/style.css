@@ -71,6 +71,11 @@ ul.left-nav
   margin-top: 1em;
 }
 
+article
+{
+  overflow: hidden;
+}
+
 article span.info 
 {
   display: inline-block;
