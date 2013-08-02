@@ -28,6 +28,7 @@ div.bottom p
 
 #wrapper {
   width: 100%;
+  overflow: hidden;
 }
 
 header {
@@ -331,6 +332,18 @@ h2, h3
 
  @media (max-width: 745px)
 {
+  header #header-wrapper {
+    width: 99%;
+  } 
+  
+  #main {
+    width: 99%;
+  }
+  
+  footer .footer-row {
+    width: 99%;
+  }
+
   #main > div > div > div.span9
   {
     width: 100%
