@@ -360,5 +360,28 @@ h2, h3
   {
     display: block;
   }
+
+  h2
+  {
+    position: relative;
+    font-size: 20px;
+  }
+  h2 > span
+  {
+    font-size: 12px;
+    position: absolute;
+    top: 50px;
+    color: black;
+    right: 0;
+  }
+
+  article h2 + * {
+    margin-top: 30px;
+  }
+
+  .bottom p
+  {
+    font-size: 10px;
+  }
 }
  
