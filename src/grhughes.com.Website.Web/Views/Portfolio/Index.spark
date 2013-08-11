@@ -239,6 +239,10 @@
           <p>
             This History timeline was built entirely in <strong>Javascript</strong>, making use of <strong>jQuery</strong>, <strong>jQuery Templates</strong> and Html. Some data is dynamically loaded from XML on page load and the rest is added in the background while the rest of the application is initiated.
           </p>
+          <p>
+            <a href="http://www.ocr.org.uk/historytimeline/">See it here</a>
+          </p>
+          
         </div>        
         <div class="portfolio-image-container">
           <img src="/img/portfolio/placeholder.png" data-original="/img/portfolio/ocr.png" alt="OCR" class="lazy" />
