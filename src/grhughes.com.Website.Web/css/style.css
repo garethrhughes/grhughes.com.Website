@@ -15,6 +15,16 @@ p
   margin: 1em 0;
 }
 
+strong.profile
+{
+  font-size: 18px;
+}
+
+blockquote.profile p
+{
+  font-size: 14px;
+}
+
 footer p,
 div.bottom p
 {
