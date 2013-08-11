@@ -110,6 +110,8 @@
     <Content Include="img\portfolio\bp.png" />
     <Content Include="img\portfolio\buying-solutions.png" />
     <Content Include="img\portfolio\byrons.png" />
+    <Content Include="img\portfolio\carling-cider.png" />
+    <Content Include="img\portfolio\carling-zest.png" />
     <Content Include="img\portfolio\dsa-1.png" />
     <Content Include="img\portfolio\dsa-2.png" />
     <Content Include="img\portfolio\dsa-3.png" />

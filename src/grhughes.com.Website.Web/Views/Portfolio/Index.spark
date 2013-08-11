@@ -6,22 +6,22 @@
 <h3>Portfolio</h3>
 </div>
 
-<div class="case-study">
-   <h3>SMMT Case Study (2012)</h3>
+  <div class="case-study">
+    <h3>SMMT Case Study (2012)</h3>
 
-   <p>
-    The second iteration of the SMMT prototype. After the first was developed and I learned a lot more about how the touch events are handled I wanted to scrap the code and start again, 
-    I wrote a <a href="https://github.com/garethrhughes/JS-Gesture-Library">gesture library</a> to handle the tracking of a number of gestures and actions and built all the interactions on top of this. This meant 
-    I had much more control over which events would fire depending on the number of fingers on screen and what elements had focus.
-  </p>
-  <p>
-    I also developed a small <a href="https://github.com/garethrhughes/JS-Gesture-Library">mobile framework</a> with some common UI features like a scrollable area with iOS like bounce and interactions.
-    These combined with usage of webkit transforms provided a near native experience through a web app.
-  </p>
+    <p>
+      The second iteration of the SMMT prototype. After the first was developed and I learned a lot more about how the touch events are handled I wanted to scrap the code and start again,
+      I wrote a <a href="https://github.com/garethrhughes/JS-Gesture-Library">gesture library</a> to handle the tracking of a number of gestures and actions and built all the interactions on top of this. This meant
+      I had much more control over which events would fire depending on the number of fingers on screen and what elements had focus.
+    </p>
+    <p>
+      I also developed a small <a href="https://github.com/garethrhughes/JS-Gesture-Library">mobile framework</a> with some common UI features like a scrollable area with iOS like bounce and interactions.
+      These combined with usage of webkit transforms provided a near native experience through a web app.
+    </p>
 
-  <p>
-    A live demo can be seen at <a href="http://smmt.technophobia.com">smmt.technophobia.com</a> and is best viewed on an iPad.
-  </p>
+    <p>
+      A live demo can be seen at <a href="http://smmt.technophobia.com">smmt.technophobia.com</a> and is best viewed on an iPad.
+    </p>
 
 
     <div id="smmt-carousel" class="carousel slide">
@@ -56,14 +56,56 @@
             </p>
           </div>
         </div>
-        
+
       </div>
       <!-- Carousel nav -->
       <a class="carousel-control left" href="#smmt-carousel" data-slide="prev">&lsaquo;</a>
       <a class="carousel-control right" href="#smmt-carousel" data-slide="next">&rsaquo;</a>
     </div>
-   
+
   </div>
+
+
+  <div class="portfolio-entry">
+    <div class="portfolio-text-container">
+      <h3>Carling Cider (2013)</h3>
+      <p>
+        This was a touch screen application running on Surface and iPad devices. It was created with <strong>HTML5</strong>, <strong>JavaScript</strong>, <strong>Canvas</strong> and <strong>PhoneGap</strong>. It was important that the application worked offline so made use of Application Cache to store a copy of the application on the device.
+      </p>
+      <p>
+        The goal is the successfully draw an apple with your finger and staying roughly within the lines seen then allow you to enter the competition.
+      </p>
+
+      <p>
+        <a href="/2013/08/02/carling-cider.html">Read more here</a>
+      </p>
+    </div>
+
+    <div class="portfolio-image-container">
+      <img src="/img/portfolio/placeholder.png" data-original="/img/portfolio/carling-cider.png" alt="Carling Cider" class="lazy" />
+    </div>
+  </div>
+
+  <div class="portfolio-entry">
+    <div class="portfolio-text-container">
+      <h3>Carling Zest (2013)</h3>
+      <p>
+        This was a touch screen application running on Surface and iPad devices. It was created with <strong>HTML5</strong>, <strong>JavaScript</strong>, <strong>CSS Animations</strong> and <strong>PhoneGap</strong>. It was important that the application worked offline so made use of Application Cache to store a copy of the application on the device.
+      </p>
+      <p>
+        The goal is to answer several questions and be given a zest rating then allow you to enter a competition.
+      </p>
+
+      <p>
+        <a href="/2013/05/13/do-it-with-zest.html">Read more here</a>
+      </p>
+    </div>
+
+    <div class="portfolio-image-container">
+      <img src="/img/portfolio/placeholder.png" data-original="/img/portfolio/carling-zest.png" alt="Carling Zest" class="lazy" />
+    </div>
+  </div>
+  
 
 
 
