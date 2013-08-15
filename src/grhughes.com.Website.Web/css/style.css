@@ -32,8 +32,16 @@ div.bottom p
 }
 
 #top-bar {
-  height: 20px;
-  background-color: #444b5b;
+  height: 300px;
+  overflow: hidden
+}
+
+#top-bar > div
+{
+  background: url(http://static.tumblr.com/3f7f5499db89e6f966f10adb7c45775f/iwlyx4x/cdLmrgn80/tumblr_static_51673326_n06_h.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 100%;
 }
 
 #wrapper {

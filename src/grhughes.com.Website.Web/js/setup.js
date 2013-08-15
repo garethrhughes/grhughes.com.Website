@@ -1,7 +1,7 @@
 ﻿(function () {
 
   var sidebar = $('#sidebar'),
-      top = 148,
+      top = 428,
       height = sidebar.height(),
       footer = $('footer'),
       mainContent = $('#main-content'),
@@ -30,7 +30,20 @@
   };
 
   $().ready(function () {
-    $(window).scroll(checkScroll);
+
+    var ele = $('#top-bar > div');
+
+    $(window).scroll(function () {
+      var scrollTop = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
+      var para = parseInt(scrollTop / 3.3);
+
+      ele.css({
+        '-webkit-transform': 'translate3d(0, ' + para + 'px, 0)',
+        '-moz-transform': 'translate3d(0, ' + para + 'px, 0)',
+        'transform': 'translate3d(0, ' + para + 'px, 0)'
+      });
+      checkScroll()
+    });
     $(window).resize(checkScroll);
     checkScroll();
 
