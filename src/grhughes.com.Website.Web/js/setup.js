@@ -1,7 +1,7 @@
 ﻿(function () {
 
   var sidebar = $('#sidebar'),
-      top = 378,
+      top = 272,
       height = sidebar.height(),
       footer = $('footer'),
       mainContent = $('#main-content'),

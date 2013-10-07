@@ -37,6 +37,10 @@
       <header>
         <div id="header-wrapper">
           <div class="container-fluid">
+
+
+
+
             <div id="search-container">
               <form class="navbar-search pull-left" method="GET" action="/search">
 
@@ -51,6 +55,15 @@
 
             <h1><a href="/">Gareth Hughes</a> <span><use content="title" /></span></h1>
 
+            <div class="navbar" style="">
+              <ul class="nav">
+                <li class="active?{ViewBag.Active == 'Blog'}"><a href="/">Home</a></li>
+                <li class="active?{ViewBag.Active == 'Profile'}"><a href="/profile">Profile</a></li>
+                <li class="active?{ViewBag.Active == 'Portfolio'}"><a href="/portfolio">Portfolio</a></li>
+              </ul>
+
+            </div>
+
           </div>
         </div>
       </header>
@@ -63,16 +76,6 @@
             <div class="span9">
 
               <div id="main-content">
-  
-                <div class="navbar" style="">
-                  <div class="navbar-inner">
-                    <ul class="nav">
-                      <li class="active?{ViewBag.Active == 'Blog'}"><a href="/">Home</a></li>
-                      <li class="active?{ViewBag.Active == 'Profile'}"><a href="/profile">Profile</a></li>
-                      <li class="active?{ViewBag.Active == 'Portfolio'}"><a href="/portfolio">Portfolio</a></li>
-                    </ul>
-                  </div>
-                </div>
 
                 <use content="main" />
 
@@ -93,15 +96,6 @@
                   </div>
                 </div>
 
-                <section>
-                  <h3 class="widget-title">Navigation</h3>
-                  <ul class="nav nav-tabs nav-stacked left-nav">
- 
-                    <li class="active?{ViewBag.Active == 'Blog'}"><a href="/">Home</a></li>
-                    <li class="active?{ViewBag.Active == 'Profile'}"><a href="/profile">Profile</a></li>
-                    <li class="active?{ViewBag.Active == 'Portfolio'}"><a href="/portfolio">Portfolio</a></li>
-                  </ul>
-                </section>
               </div>
             </div>
 
