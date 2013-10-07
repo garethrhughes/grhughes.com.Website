@@ -1,21 +1,10 @@
 ﻿<viewdata model="SearchResults[[BlogPost]]" />
 
 <content name="title">
-  Search
+  Search: "${Model.Query}"
 </content>
 
 <content name="main">
-
-  <ul class="breadcrumb">
-    <li>
-      <a href="/">Home</a>
-      <span class="divider">/</span>
-    </li>
-    <li>
-      Search: "${Model.Query}"
-    </li>
-  </ul>
-   
   <div id="posts">
 
     <article each="var article in Model.Results">

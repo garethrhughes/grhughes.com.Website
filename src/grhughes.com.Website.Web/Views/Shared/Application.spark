@@ -8,10 +8,11 @@
 
     <meta name="description" content="Blog of Gareth Hughes who is a Software Developer living in Sydney, Australia originally from Sheffield, England. Specialising in .NET, JavaScript and PHP."/>
     <meta name="keywords" content="Gareth Hughes, Developer, Software, .NET, JavaScript, PHP, Sheffield, Sydney, Gaming"/>
+    <meta name="author" content="Gareth Hughes" />
 
     <link href="/css/bootstrap.css" type="text/css" rel="stylesheet"/>
 
-    <link href="/css/style.css" type="text/css" rel="stylesheet"/>
+    <link href="/css/style.css?1" type="text/css" rel="stylesheet"/>
     <link rel="shortcut icon" type="image/ico" href="https://graph.facebook.com/garethrhughes/picture"/>
 
     <link rel="alternate" type="application/rss+xml" title="RSS" href="http://grhughes.com/rss" />
@@ -48,7 +49,7 @@
               </form>
             </div>
 
-            <h1><a href="/">Gareth Hughes</a> <span>&gt; <use content="title" /></span></h1>
+            <h1><a href="/">Gareth Hughes</a> <span><use content="title" /></span></h1>
 
           </div>
         </div>

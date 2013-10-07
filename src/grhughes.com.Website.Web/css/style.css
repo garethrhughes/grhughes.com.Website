@@ -38,8 +38,8 @@ div.bottom p
 
 #top-bar > div
 {
-  background: url(http://static.tumblr.com/3f7f5499db89e6f966f10adb7c45775f/iwlyx4x/cdLmrgn80/tumblr_static_51673326_n06_h.jpg);
-  background-position: 50% 50%;
+  background: url(http://farm6.staticflickr.com/5511/coverphoto/51673326@N06_h.jpg?1381107500#51673326@N06);
+  background-position: 50% 43%;
   background-size: cover;
   height: 100%;
 }
@@ -56,9 +56,7 @@ header {
 
 header h1 {
   font-size: 25px;
-  line-height: 95px;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 10px 0 0 0;
   display: inline-block;
 }
 
@@ -121,6 +119,7 @@ article span.info > a:hover
     margin-top: 3em;
 }
 
+.post article:first-child > h2, 
 #posts article:first-child > h2 
 {
   margin-top: 0;
@@ -206,6 +205,8 @@ div.bottom
 h1 > a 
 {
   color: #444b5b;
+  display: block;
+  font-size: 30px;
 }
 
 h1 > a:hover 
@@ -221,9 +222,15 @@ h2:first-child
   color: #eee;
 }
 
+article > h2 > .title, 
 h2 > a
 {
   color: #eee;
+  width: 75%;
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 
@@ -427,11 +434,6 @@ h2, h3
   header
   {
     height: 75px;
-  }
-
-  header h1
-  {
-    line-height: 75px;
   }
 
   #main

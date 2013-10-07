@@ -1,8 +1,12 @@
 ﻿<content name="title">Profile</content>
 
+<content name="title">
+  My Profile
+</content>
+
 <content name="main">
 
-  <h3>Gareth Hughes</h3>
+  <h3>About Me</h3>
   <div class="portfolio-entry">
     <p>
       Senior web and mobile developer specialising in

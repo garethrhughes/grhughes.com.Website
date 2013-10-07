@@ -1,4 +1,8 @@
-﻿<content name="title">Portfolio</content>
+﻿<content name="page-title">Portfolio</content>
+
+<content name="title">
+  Some of my Work
+</content>
 
 <content name="main">
 

@@ -320,7 +320,9 @@
     <Content Include="Views\Shared\Application.spark" />
     <Content Include="Views\Authentication\Register.spark" />
     <Content Include="Views\Authentication\Registered.spark" />
-    <Content Include="Views\Blog\View.spark" />
+    <Content Include="Views\Blog\View.spark">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Views\Management\Index.spark" />
     <Content Include="Views\Authentication\Login.spark" />
     <Content Include="Views\Authentication\LoginError.spark" />
