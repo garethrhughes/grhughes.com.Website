@@ -215,6 +215,7 @@ h2:first-child
   background-color: #444b5b;
   padding: 5px 10px;
   color: #eee;
+  overflow: auto;
 }
 
 article > h2 > .title, 
@@ -226,6 +227,7 @@ h2 > a
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+  float: left;
 }
 
 
