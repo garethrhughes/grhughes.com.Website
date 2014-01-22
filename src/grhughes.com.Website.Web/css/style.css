@@ -4,6 +4,7 @@ body {
   font-family:'Open Sans', sans-serif;
   line-height: 26px;
   overflow-x: hidden;
+  background-color: rgba(200, 200, 200, 0.1)
 }
 
 h1, h2, h3, h4 {
@@ -12,8 +13,9 @@ h1, h2, h3, h4 {
 
 p
 {
-  margin: 1em 0;
+  margin: 15px 0;
 }
+
 
 strong.profile
 {
@@ -32,7 +34,7 @@ div.bottom p
 }
 
 #top-bar {
-  height: 200px;
+  height: 250px;
   overflow: hidden
 }
 
@@ -51,15 +53,15 @@ div.bottom p
 
 header {
   height: 44px;
-  background-color: #EEEEEE;
+  background-color: rgba(200, 200 ,200, 0.4);
 }
 
 header h1 {
-  font-size: 25px;
+  font-size: 28px;
   margin: 10px 0 0 0;
   display: inline-block;
   position: absolute;
-  top: 100px;
+  top: 150px;
   color: white;
   text-shadow: 1px 1px 10px rgba(20, 20, 20, 0.5)
 }
@@ -326,9 +328,10 @@ article div.gallery
   margin-bottom: 20px;
 }
 
-.profile > img
-{
-  margin-bottom: 10px;
+.profile > img {
+  float: left;
+  width: 56%;
+  margin-right: 10px;
 }
 
 h2, h3
@@ -336,10 +339,13 @@ h2, h3
   font-size: 30px;
 }
 
+ul.social,
 ul.latest {
   list-style-type: none;
   margin: 0;
+  overflow: auto;
 }
+
 
 ul.latest > li {
   margin: 0 0 10px 0;
@@ -351,11 +357,20 @@ ul.latest > li > span {
   color: rgba(100, 100, 100, 0.8);
 }
 
-ul.latest > li > a{
-  color: rgba(50, 50, 50, 1);
+ul.social > li > a,
+ul.latest > li > a {
+  color: rgba(50, 50, 50, 0.9);
   text-transform: uppercase;
   font-size: 16px;
   font-weight: bold;
+}
+
+ul.social > li > a {
+  font-size: 14px;
+}
+
+ul.social > li > a > img {
+  width: 18px
 }
 
 @media (max-width: 1180px)   
@@ -375,6 +390,14 @@ ul.latest > li > a{
   
   footer .footer-row {
     width: 95%;
+  }
+
+  ul.social {
+    display: none;
+  }
+  .profile > img {
+    width: 100%;
+    float: none;
   }
 }
 

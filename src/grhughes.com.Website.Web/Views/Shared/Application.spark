@@ -12,7 +12,7 @@
 
     <link href="/css/bootstrap.css" type="text/css" rel="stylesheet"/>
 
-    <link href="/css/style.css?1" type="text/css" rel="stylesheet"/>
+    <link href="/css/style.css?20140122" type="text/css" rel="stylesheet"/>
     <link rel="shortcut icon" type="image/ico" href="https://graph.facebook.com/garethrhughes/picture"/>
 
     <link rel="alternate" type="application/rss+xml" title="RSS" href="http://grhughes.com/rss" />
@@ -89,11 +89,22 @@
 
                 <div class="profile">
                   <img src="https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-ash3/61683_10151660784047337_1702551933_n.jpg" alt="Gareth Hughes" />
+
+                  <ul class="social">
+                    <li><a href="http://www.facebook.com/garethrhughes"><img src="/img/social-media/facebook.png" alt="Facebook" /> Facebook</a></li>
+                    <li><a href="http://twitter.com/garethrhughes"><img src="/img/social-media/twitter.png" alt="Twitter" /> Twitter</a></li>
+                    <li><a href="http://www.linkedin.com/in/garethhughes"><img src="/img/social-media/linkedin.png" alt="LinkedIn" /> LinkedIn</a></li>
+                    <li><a href="http://instagram.com/garethrhughes"><img src="/img/social-media/instagram.png" alt="Instagram" /> Instagram</a></li>
+                    <li><a href="https://github.com/garethrhughes"><img src="/img/social-media/github.png" alt="Github" /> Github</a></li>
+                    <li><a href="mailto:gareth@grhughes.com"><img src="/img/social-media/email.png" alt="Email" /> Email</a></li>
+                  </ul>
              
                   <div class="caption">
                 
                     <p>Software Developer from Sheffield, England with a first class degree in Software Engineering. Specialising in .NET, JavaScript and PHP.</p>
                   </div>
+
+
                 </div>
 
                 <h3>Latest</h3>
@@ -148,7 +159,7 @@
       <script type="text/javascript" src="/js/bootstrap.min.js"></script>
       <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1EGlJfOdILSGYdbK2Al7VhKNtd2zzB2Y&sensor=false"></script>
       <script type="text/javascript" src="/js/jquery-embedagram.pack.js"></script>
-      <script type="text/javascript" src="/js/setup.js?10413"></script>
+      <script type="text/javascript" src="/js/setup.js?20140122"></script>
 
     </div>
 

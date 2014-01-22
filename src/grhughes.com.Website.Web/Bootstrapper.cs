@@ -54,6 +54,7 @@ namespace grhughes.com.Website.Web
 
       StaticConfiguration.CaseSensitive = false;
       StaticConfiguration.DisableErrorTraces = true;
+ 
 
       base.ConfigureConventions(nancyConventions);
     }
