@@ -40,10 +40,15 @@ div.bottom p
 
 #top-bar > div
 {
-  background: url(http://farm6.staticflickr.com/5511/coverphoto/51673326@N06_h.jpg?1381107500#51673326@N06);
+  background: url(/img/top.png);
   background-position: 50% 43%;
   background-size: cover;
   height: 100%;
+}
+
+.navbar .nav > li.active > a,
+.navbar .nav > li > a {
+  color: #1e011d
 }
 
 #wrapper {
@@ -214,7 +219,7 @@ h1 > a:hover
 h2:first-child
 {
   display: block;
-  background-color: #444b5b;
+  background-color: #1e011d;
   padding: 5px 10px;
   color: #eee;
   overflow: auto;
@@ -301,7 +306,7 @@ article div.gallery
 #main-content > h3
 {
   display: block;
-  background-color: #444b5b;
+  background-color: #1e011d;
   padding: 5px 10px;
   color: #eee;
 }

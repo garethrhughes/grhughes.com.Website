@@ -12,8 +12,8 @@
 
     <link href="/css/bootstrap.css" type="text/css" rel="stylesheet"/>
 
-    <link href="/css/style.css?20140122" type="text/css" rel="stylesheet"/>
-    <link rel="shortcut icon" type="image/ico" href="https://graph.facebook.com/garethrhughes/picture"/>
+    <link href="/css/style.css?20140123" type="text/css" rel="stylesheet"/>
+    <link rel="shortcut icon" type="image/ico" href="/img/me.jpg"/>
 
     <link rel="alternate" type="application/rss+xml" title="RSS" href="http://grhughes.com/rss" />
 
