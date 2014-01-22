@@ -12,7 +12,7 @@ namespace grhughes.com.Website.Web.Modules
   {
     private readonly IAuthenticationService authenticationService;
 
-    public AuthenticationModule(IAuthenticationService authenticationService)
+    public AuthenticationModule(IAuthenticationService authenticationService, IBlogService blogService): base(blogService)
     {
       this.authenticationService = authenticationService;
 

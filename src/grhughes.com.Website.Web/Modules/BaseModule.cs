@@ -1,26 +1,32 @@
 ﻿namespace grhughes.com.Website.Web.Modules
 {
+  using Core.Services.Interfaces;
   using Nancy;
 
   public class BaseModule : NancyModule
   {
-    public BaseModule()
+    private readonly IBlogService _blogService;
+
+    public BaseModule(IBlogService blogService)
     {
-      SetupCookieHandler();
+      _blogService = blogService;
+      SetupHandlers();
     }
 
-    public BaseModule(string modulePath)
+    public BaseModule(string modulePath, IBlogService blogService)
       : base(modulePath)
     {
-      SetupCookieHandler();
+      _blogService = blogService;
+      SetupHandlers();
     }
 
-    private void SetupCookieHandler()
+    private void SetupHandlers()
     {
       After += ctx =>
-                 {
-                   ctx.ViewBag.HideCookieNotice = ctx.Request.Cookies.ContainsKey("CookiePolicyAccepted");
-                 };
+      {
+        ctx.ViewBag.HideCookieNotice = ctx.Request.Cookies.ContainsKey("CookiePolicyAccepted");
+        ctx.ViewBag.LatestPosts = _blogService.Load(0, 15);
+      };
     }
   }
 }

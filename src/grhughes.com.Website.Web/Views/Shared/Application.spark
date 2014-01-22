@@ -88,13 +88,21 @@
                 <h3>About Me</h3>
 
                 <div class="profile">
-                  <img src="https://graph.facebook.com/garethrhughes/picture?width=300" alt="Gareth Hughes" />
+                  <img src="https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-ash3/61683_10151660784047337_1702551933_n.jpg" alt="Gareth Hughes" />
              
                   <div class="caption">
                 
                     <p>Software Developer from Sheffield, England with a first class degree in Software Engineering. Specialising in .NET, JavaScript and PHP.</p>
                   </div>
                 </div>
+
+                <h3>Latest</h3>
+                <ul class="latest">
+                  <li each="var article in ViewBag.LatestPosts">
+                    <span>${article.PublishDate.ToString("dd MMMM yyyy @ HH:mm:ss")}</span>
+                    <a href="!{((BlogPost)article).GetUrl()}">!{article.Title}</a>
+                  </li>
+                </ul>
 
               </div>
             </div>

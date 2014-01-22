@@ -57,6 +57,14 @@
 
   <h3>Work Experience</h3>
   <div class="portfolio-entry">
+    <strong class="profile">Senior Developer - Ninemsn</strong>
+    <strong class="pull-right profile">
+      April 2013 to­ Present
+    </strong>
+    <blockquote class="profile">
+      <p>Working on a variety of applications and projects including Node JS, ASP.NET, and JavaScript mobile and web applications for ninemsn, one of the most visited websites in Australia. Also working on websites for Channel 9 including The Block and Big Brother.</p>
+    </blockquote>
+    
     <strong class="profile">Freelance Developer</strong>
     <strong class="pull-right profile">
       May 2011 to­ Present

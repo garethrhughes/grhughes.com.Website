@@ -6,7 +6,7 @@ namespace grhughes.com.Website.Web.Modules
 
   public class ManagementModule : BaseModule
   {
-    public ManagementModule(IBlogService blogService) : base("/manage")
+    public ManagementModule(IBlogService blogService) : base("/manage", blogService)
     {
       this.RequiresAuthentication();
 

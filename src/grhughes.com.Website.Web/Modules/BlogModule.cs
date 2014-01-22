@@ -5,13 +5,12 @@ namespace grhughes.com.Website.Web.Modules
   using Helpers;
   using Nancy;
   using Nancy.Responses;
-  using Nancy.Responses.Negotiation;
 
   public class BlogModule : BaseModule
   {
     private readonly IBlogService blogService;
 
-    public BlogModule(IBlogService blogService)
+    public BlogModule(IBlogService blogService) : base(blogService)
     {
       this.blogService = blogService;
 
@@ -22,27 +21,23 @@ namespace grhughes.com.Website.Web.Modules
       Get[@"/page/(?<page>[\d]+)"] = p => BlogIndex((int) p.Page);
 
       Get["/rss"] = _ => View["RSS", blogService.Load(0)].WithContentType("application/rss+xml");
-      
+
 
       Get[@"/{year}/{month}/{day}/{slug}.html"] = p => BlogPage(p);
       Get[@"/{id}/{slug}"] = p => BlogPageRedirect(p);
 
-      After += ctx =>
-                 {
-                   ctx.ViewBag.Active = "Blog";
-                 };
-
+      After += ctx => { ctx.ViewBag.Active = "Blog"; };
     }
 
     private dynamic BlogIndex(int page = 0)
     {
       return View["Index", new BlogViewModel
-                             {
-                               Page = page,
-                               Posts = blogService.Load(page, 5),
-                               TotalPosts = blogService.Count(),
-                               Limit = 5
-                             }];
+      {
+        Page = page,
+        Posts = blogService.Load(page, 5),
+        TotalPosts = blogService.Count(),
+        Limit = 5
+      }];
     }
 
     private dynamic BlogPageRedirect(dynamic p)
@@ -56,7 +51,7 @@ namespace grhughes.com.Website.Web.Modules
     private dynamic BlogPage(dynamic p)
     {
       var blog = blogService.Load((int) p.year, (int) p.month,
-                                  (int) p.day, (string) p.slug);
+        (int) p.day, (string) p.slug);
 
       if (blog == null) return 404;
 

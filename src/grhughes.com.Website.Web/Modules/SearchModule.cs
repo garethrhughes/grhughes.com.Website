@@ -6,7 +6,7 @@
 
   public class SearchModule : BaseModule
   {
-    public SearchModule (ISearchService<BlogPost> searchService)
+    public SearchModule (ISearchService<BlogPost> searchService, IBlogService blogService) : base(blogService)
     {
       Get["/search"] = p =>
                          {
